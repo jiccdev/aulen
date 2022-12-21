@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Propiedades = () => {
-  return <div>Propiedades</div>;
+  return (
+    <section>
+      <h1>Propiedades</h1>
+    </section>
+  );
 };
 
 export default Propiedades;

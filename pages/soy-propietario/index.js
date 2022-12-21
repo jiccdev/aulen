@@ -1,7 +1,11 @@
 import React from 'react';
 
 const SoyPropietario = () => {
-  return <div>SoyPropietario</div>;
+  return (
+    <section>
+      <h1>Soy Propietario</h1>
+    </section>
+  );
 };
 
 export default SoyPropietario;

@@ -275,8 +275,8 @@ footer .footer__content {
 .footer__content .footer__about,
 .footer__content .footer__info {
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   padding-right: 2rem;
 }
@@ -404,15 +404,3 @@ footer .footer__content {
   border-radius: 50%;
   color: #4e2772;
 }
-/* FABIAN */
-
-/* DAVID */
-body {
-  background-color: pink;
-}
-
-/* DAVID */
-
-/* JOSÉ */
-
-/* JOSÉ */
