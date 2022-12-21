@@ -1,5 +1,15 @@
-import '../styles/globals.css'
+import LayoutPage from '../src/components/LayoutPage/LayoutPage';
+import PropertiesProvider from '../src/context/properties/PropertiesProvider';
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+export const App = ({ Component, pageProps }) => {
+  return (
+    <PropertiesProvider>
+      <LayoutPage>
+        <Component {...pageProps} />
+      </LayoutPage>
+    </PropertiesProvider>
+  );
+};
+
+export default App;
