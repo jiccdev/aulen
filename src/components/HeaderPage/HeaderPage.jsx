@@ -3,7 +3,7 @@ import NavbarPage from '../NavbarPage/NavbarPage';
 
 const HeaderPage = () => {
   return (
-    <header>
+    <header className="container-fluid">
       <NavbarPage />
     </header>
   );

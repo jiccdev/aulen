@@ -57,11 +57,10 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
   background: var(--text-white);
   color: var(--text-dark);
   font-family: var(--font-family-primary);
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -70,7 +69,7 @@ a {
 }
 
 /* ===== LOGO =====  */
-.img-logo {
+/* .img-logo {
   width: 100%;
   height: 2rem;
   object-fit: cover;
@@ -84,7 +83,7 @@ a {
 }
 
 /* ===== NAVBAR =====  */
-.navbar {
+/* .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -242,10 +241,10 @@ a {
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
   }
-}
+} */
 
 /* Toogle button */
-.navbar-toggler {
+/* .navbar-toggler {
   border: none;
   outline: none;
   background-color: transparent;
@@ -256,10 +255,10 @@ a {
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
-}
+} */
 
 /* ===== FOOTER =====  */
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -392,15 +391,4 @@ footer .footer__content {
   border-radius: 50%;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.11);
   text-decoration: none;
-}
-
-/*  ===== Desde aquí 👇 =====  */
-
-/* FABIAN */
-.footer__content .footer__social-media ul li a {
-  font-size: 1.5rem;
-  background-color: var(--color-white);
-  padding: 0.39rem 0.72rem;
-  border-radius: 50%;
-  color: #4e2772;
-}
+} */

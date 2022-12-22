@@ -1,0 +1,41 @@
+.navItem {
+  color: #252525;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navItem:hover {
+  color: #000000;
+}
+
+.navItem::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.navItem.active::before {
+  left: 0;
+  right: center;
+  width: 40%;
+  margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .navItem:hover::before {
+    left: 0;
+    right: center;
+    width: 40%;
+    margin: auto;
+  }
+}

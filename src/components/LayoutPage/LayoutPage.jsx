@@ -6,10 +6,14 @@ import Container from 'react-bootstrap/Container';
 
 const LayoutPage = ({ children }) => {
   return (
-    <Container>
+    <Container fluid>
+      {/* Header */}
       <HeaderPage />
+
       {/* Content */}
-      <main>{children}</main>
+      <Container className="bg-light">
+        <main>{children}</main>
+      </Container>
 
       {/* Footer */}
     </Container>
