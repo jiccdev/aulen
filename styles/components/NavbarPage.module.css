@@ -12,3 +12,10 @@
     padding: 1rem 0 !important;
   }
 }
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+  background-color: #f8f9fa;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}

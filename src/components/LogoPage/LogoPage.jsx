@@ -9,8 +9,8 @@ const LogoPage = () => {
       alt="logo-aulen-propiedades"
       priority
       className="img-fluid"
-      width={250}
-      height={250}
+      width={220}
+      height={220}
     />
   );
 };
