@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import HeadPage from '../../src/components/HeadPage/HeadPage';
 import HeaderSection from '../../src/components/Section/HeaderSection';
 import CardItem from '../../src/components/Card/ItemCard';
+import PlanFrom from '../../src/components/Form/PlanFrom';
 import { plansData } from '../../src/api/fakeData/plans';
 
 /** Bootstrap components */
@@ -15,18 +16,16 @@ const AdministracionDeArriendo = () => {
       <HeadPage title="Administración de arriendo" />
       <Row className={styles.rowContainer}>
         <Col xl={8} className={styles.col}>
+          <HeaderSection titleSection="Conoce nuestros planes" />
+
           <Row className={styles.rowItems}>
-            <HeaderSection titleSection="Conoce nuestros planes" />
             {plansData &&
               plansData.map((plan) => <CardItem key={plan?.id} plan={plan} />)}
           </Row>
         </Col>
 
-        <Col xl={4}>
-          <form>
-            ¡Despreocúpate por tu propiedad de inversión! COMPLETA EL FORMULARIO
-            Y ENTÉRATE CÓMO
-          </form>
+        <Col xl={4} className={styles.colForm}>
+          <PlanFrom />
         </Col>
       </Row>
     </Fragment>

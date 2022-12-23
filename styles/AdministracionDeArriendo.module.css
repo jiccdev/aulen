@@ -7,13 +7,20 @@
 }
 
 .col {
-  padding: 0.5rem;
   display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap;
+  flex-direction: column !important;
   justify-content: space-between;
   align-items: center !important;
-  align-content: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.colForm {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+  padding: 0.1rem 2rem;
 }
 
 @media screen and (min-width: 992px) {
