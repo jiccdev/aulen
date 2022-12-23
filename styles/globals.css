@@ -22,6 +22,7 @@
   --color-bg-publishing-form: hsl(260 5% 35% /0.2);
 
   /* Font size */
+  --font-size-xs: 0.6rem;
   --font-size-sm: 0.8rem;
   --font-size-md: 1rem;
   --font-size-lg: 1.2rem;
@@ -29,6 +30,8 @@
   --font-size-xxl: 1.6rem;
   --font-size-2xl: 1.8rem;
   --font-size-3xl: 2rem;
+  --font-size-4xl: 2.2rem;
+  --font-size-5xl: 2.4rem;
 
   /* Font weight */
   --font-weight-light: 300;
@@ -49,6 +52,7 @@
   --border-radius-xxl: 1rem;
   --border-radius-2xl: 1.2rem;
   --border-radius-3xl: 1.4rem;
+  --border-radius-5xl: 3rem;
 }
 
 * {

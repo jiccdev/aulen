@@ -12,7 +12,7 @@ const LayoutPage = ({ children }) => {
       <HeaderPage />
 
       {/* Content */}
-      <Container className={styles.layout}>
+      <Container fluid className={styles.layout}>
         <main>{children}</main>
       </Container>
 

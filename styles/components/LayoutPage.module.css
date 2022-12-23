@@ -1,10 +1,14 @@
 .layout {
   margin: 0.5rem 0;
-  border: 1px solid var(--color-light);
+  width: 100% !important;
+  margin: 0 auto !important;
+  height: auto !important;
 }
 
 @media screen and (min-width: 992px) {
   .layout {
     margin: 2rem 0;
+    width: 95% !important;
+    margin: 0 auto !important;
   }
 }

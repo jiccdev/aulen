@@ -1,18 +1,37 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import styles from '../../../styles/components/ItemCard.module.css';
 
-const ItemCard = ({ children }) => {
+/** Bootstrap components */
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import styles from '../../../styles/components/CardItem.module.css';
+
+const CardItem = ({ plan }) => {
+  const { id, name, supply, brokersInfo, characteristics } = plan;
   return (
-    <Card style={{ width: '18rem' }} className={styles.card}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        {children}
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <Col lg={4} key={plan?.id} plan={plan} className={styles.colItem}>
+      <Card
+        className={id % 2 === 0 ? styles.cardSecundary : styles.cardPrimary}
+      >
+        <Card.Body className={styles.cardBody}>
+          <Card.Title className={styles.cardTitle}>{name}</Card.Title>
+          <div className={styles.supplyContainer}>
+            <span className={styles.supply}>
+              <strong>{supply}</strong>
+            </span>
+            <span className={styles?.brokersInfo}>{brokersInfo}</span>
+          </div>
+
+          <ul className={styles.characteristics}>
+            {characteristics.map((characteristic, index) => (
+              <li className={styles.characteristicsItem} key={index}>
+                {characteristic}
+              </li>
+            ))}
+          </ul>
+        </Card.Body>
+      </Card>
+    </Col>
   );
 };
 
-export default ItemCard;
+export default CardItem;

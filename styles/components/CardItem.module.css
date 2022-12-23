@@ -1,0 +1,71 @@
+.cardPrimary,
+.cardSecundary {
+  border: none !important;
+  border-radius: var(--border-radius-5xl) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.2rem;
+}
+
+/* Orange Card */
+.cardPrimary {
+  background-color: var(--color-primary) !important;
+}
+
+/* Purple Card */
+.cardSecundary {
+  background-color: var(--color-secondary) !important;
+  height: auto;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .cardSecundary {
+    padding-bottom: 3.5rem;
+  }
+}
+
+.cardTitle {
+  font-size: var(--font-size-xl) !important;
+  font-weight: var(--font-weight-medium) !important;
+  color: var(--color-white) !important;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.supplyContainer {
+  background-color: var(--color-white) !important;
+  display: flex !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  width: 100%;
+  border: 1.5px solid var(--color-primary);
+  border-radius: var(--border-radius-5xl);
+  padding: 0.3rem 1rem;
+  text-align: center !important;
+  margin: 0.5rem 0;
+}
+
+.supply {
+  color: var(--color-primary);
+  font-size: var(--font-size-2xl) !important;
+}
+
+.brokersInfo {
+  width: auto !important;
+  font-size: var(--font-size-sm) !important;
+  font-weight: bold;
+}
+
+.characteristics {
+  color: var(--color-white);
+  padding: 0.5rem 2rem;
+}
+
+.characteristicsItem {
+  line-height: 1.6rem !important;
+}

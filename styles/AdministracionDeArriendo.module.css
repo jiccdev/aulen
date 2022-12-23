@@ -1,0 +1,23 @@
+.rowItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.col {
+  padding: 0.5rem;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center !important;
+  align-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .col {
+    padding: 2rem;
+  }
+}
