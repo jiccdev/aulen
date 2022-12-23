@@ -96,12 +96,13 @@
   left: 0;
   right: 0;
   text-align: center !important;
-  background-color: transparent;
+  background-color: transparent !important;
   border: none !important;
   z-index: 999;
   animation: slideIn 0.3s ease-in-out;
   -webkit-animation: slideIn 0.3s ease-in-out;
   margin-top: -0.2rem !important;
+  min-width: 180px !important;
 }
 
 .dropdownItem {

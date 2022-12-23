@@ -3,6 +3,7 @@ import HeaderPage from '../HeaderPage/HeaderPage';
 
 /** Bootstrap components */
 import Container from 'react-bootstrap/Container';
+import styles from '../../../styles/components/LayoutPage.module.css';
 
 const LayoutPage = ({ children }) => {
   return (
@@ -11,7 +12,7 @@ const LayoutPage = ({ children }) => {
       <HeaderPage />
 
       {/* Content */}
-      <Container className="bg-light">
+      <Container className={styles.layout}>
         <main>{children}</main>
       </Container>
 
