@@ -1,0 +1,10 @@
+.navbarToggle {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.navbarToggle:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

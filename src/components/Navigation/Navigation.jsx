@@ -5,11 +5,15 @@ import { navigationData } from '../../api/fakeData/navigation';
 /** Bootstrap components */
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import styles from '../../../styles/components/Navigation.module.css';
 
 const Navigation = () => {
   return (
     <Fragment>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Toggle
+        aria-controls="responsive-navbar-nav"
+        className={styles.navbarToggle}
+      />
       <Navbar.Collapse
         id="responsive-navbar-nav"
         className="justify-content-end"
