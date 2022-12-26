@@ -1,7 +1,9 @@
 import React from "react";
 import styles from '../../../styles/components/PublishingForm.module.css';
+import { icons } from '../Icons';
 
 export const PublishingForm = () => {
+  const { FaUserAlt, BsTelephoneFill, MdOutlineMailOutline } = icons
   return (
     <form className={`${styles.customCol} ${styles.form}`} >
       <header className={`${styles.customCol} ${styles.form__header}`}>
@@ -10,15 +12,15 @@ export const PublishingForm = () => {
       </header>
       <main className={`${styles.customCol} ${styles.form__inputs}`}>
         <div className={`${styles.customRow} ${styles.form__inputs__name}`}>
-          <img />
+          <FaUserAlt className={styles.formIcon} />
           <input type="text" placeholder="Nombre" />
         </div>
         <div className={`${styles.customRow} ${styles.form__inputs__tel}`}>
-          <img />
+          <BsTelephoneFill className={styles.formIcon} />
           <input type="text" placeholder="Teléfono celular" />
         </div>
         <div className={`${styles.customRow} ${styles.form__inputs__email}`}>
-          <img />
+          <MdOutlineMailOutline className={styles.formIcon} />
           <input type="text" placeholder="Correo electrónico"/>
         </div>
         <label className={styles.customRow}>
