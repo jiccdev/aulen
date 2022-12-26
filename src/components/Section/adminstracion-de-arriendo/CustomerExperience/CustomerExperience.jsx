@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
+import CustomersContext from '../../../../context/customers/CustomersContext';
+import CustomerCard from '../../../Card/CustomerCard';
+import GliderJs from '../../../../components/GliderJs/GliderJs';
 
 /** Bootstrap components */
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import styles from '../../../../../styles/AdministracionDeArriendo.module.css';
 
 const CustomerExperience = () => {
+  const { customers, getAllCustomers } = useContext(CustomersContext);
+
+  console.log(customers);
+
+  useEffect(() => {
+    getAllCustomers();
+  }, []);
+
   return (
     <Row>
-      <Col></Col>
-      <Col></Col>
-      <Col></Col>
+      <GliderJs>
+        {customers &&
+          customers.map((customer) => (
+            <CustomerCard key={customer?.id} customer={customer} />
+          ))}
+      </GliderJs>
     </Row>
   );
 };

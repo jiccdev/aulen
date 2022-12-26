@@ -3,6 +3,8 @@ import PropertiesContext from '../src/context/properties/PropertiesContext';
 import HeadPage from '../src/components/HeadPage/HeadPage';
 import styles from '../styles/Inicio.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import { icons } from '../src/components/Icons';
 
 const Inicio = () => {

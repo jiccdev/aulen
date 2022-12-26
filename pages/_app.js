@@ -1,14 +1,18 @@
 import LayoutPage from '../src/components/LayoutPage/LayoutPage';
 import PropertiesProvider from '../src/context/properties/PropertiesProvider';
+import CustomersProvider from '../src/context/customers/CustomersProvider';
+
 import '../styles/globals.css';
 
 export const App = ({ Component, pageProps }) => {
   return (
-    <PropertiesProvider>
-      <LayoutPage>
-        <Component {...pageProps} />
-      </LayoutPage>
-    </PropertiesProvider>
+    <CustomersProvider>
+      <PropertiesProvider>
+        <LayoutPage>
+          <Component {...pageProps} />
+        </LayoutPage>
+      </PropertiesProvider>
+    </CustomersProvider>
   );
 };
 
