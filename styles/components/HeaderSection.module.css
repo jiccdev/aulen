@@ -13,7 +13,6 @@
   font-size: var(--font-size-2xl);
   font-weight: 700;
   margin: 0 !important;
-  white-space: nowrap !important;
   text-align: center;
   width: 100% !important;
   padding: 1rem 1rem 2rem 1rem;

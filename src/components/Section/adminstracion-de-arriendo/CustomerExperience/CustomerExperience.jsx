@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import CustomersContext from '../../../../context/customers/CustomersContext';
+import HeaderSection from '../../HeaderSection';
 import CustomerCard from '../../../Card/CustomerCard';
 import GliderJs from '../../../../components/GliderJs/GliderJs';
 
@@ -17,6 +18,7 @@ const CustomerExperience = () => {
 
   return (
     <Row>
+      <HeaderSection titleSection="Conoce la experiencia de nuestros clientes" />
       <GliderJs>
         {customers &&
           customers.map((customer) => (

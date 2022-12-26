@@ -1,0 +1,54 @@
+.col {
+  background-color: red;
+  margin: 2rem;
+}
+
+.cardImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.card {
+  background-color: var(--bg-white);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: var(--border-radius-5xl);
+  padding: 1.5rem;
+  border: 2px solid var(--color-primary);
+}
+
+.avatar {
+  border-radius: 100px !important;
+}
+
+.cardText {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark);
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 12rem;
+}
+
+.cardTitle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: var(--font-weight-bold);
+}
+
+.cardTitle small {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    padding: 2rem;
+  }
+}

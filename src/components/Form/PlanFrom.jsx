@@ -47,7 +47,7 @@ const PlanFrom = () => {
           <MdOutlineMailOutline />
         </Form.Label>
         <Form.Control
-          type="text"
+          type="email"
           className={styles.formControl}
           placeholder="Correo electrónico"
           name="email"
