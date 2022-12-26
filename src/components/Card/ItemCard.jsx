@@ -10,7 +10,6 @@ const CardItem = ({ plan }) => {
   return (
     <Col lg={4} key={plan?.id} plan={plan} className={styles.colItem}>
       <Card
-        style={{ width: '18rem' }}
         className={id % 2 === 0 ? styles.cardSecundary : styles.cardPrimary}
       >
         <Card.Body className={styles.cardBody}>

@@ -1,9 +1,10 @@
 .rowItems {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  align-content: center;
+  justify-content: space-between;
+  background-color: green;
+  width: 100% !important;
 }
 
 .col {

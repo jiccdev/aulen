@@ -17,7 +17,6 @@ const AdministracionDeArriendo = () => {
       <Row className={styles.rowContainer}>
         <Col xl={8} className={styles.col}>
           <HeaderSection titleSection="Conoce nuestros planes" />
-
           <Row className={styles.rowItems}>
             {plansData &&
               plansData.map((plan) => <CardItem key={plan?.id} plan={plan} />)}

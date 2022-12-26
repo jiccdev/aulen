@@ -1,18 +1,26 @@
+.colItem {
+  background-color: red;
+  height: 80%;
+}
+
 .cardPrimary,
 .cardSecundary {
   border: none !important;
-  border-radius: var(--border-radius-5xl) !important;
+  border-radius: 60px !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin: 0.2rem;
 }
 
 /* Orange Card */
 .cardPrimary {
   background-color: var(--color-primary) !important;
+  font-size: 0.8rem;
+  height: auto;
+  width: auto !important;
+  margin: 0 auto !important;
 }
 
 /* Purple Card */
@@ -20,11 +28,23 @@
   background-color: var(--color-secondary) !important;
   height: auto;
   padding-bottom: 0;
+
+  height: auto;
+  width: auto !important;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1920px) {
   .cardSecundary {
-    padding-bottom: 3.5rem;
+    padding-bottom: 3.5rem !important;
+    height: auto;
+  }
+  /* a */
+  .cardPrimary {
+    width: 17rem !important;
+  }
+
+  .cardSecundary {
+    /* width: 30rem !important; */
   }
 }
 
@@ -33,7 +53,7 @@
   font-weight: var(--font-weight-medium) !important;
   color: var(--color-white) !important;
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
