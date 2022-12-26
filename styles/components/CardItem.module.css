@@ -1,59 +1,66 @@
-.colItem {
-  background-color: red;
-  height: 80%;
+.col,
+.colCardPrimary {
+  margin: 0 !important;
+  padding: 0.9rem !important;
+}
+
+.colCardPrimary,
+.colCardSecundary,
+.cardPrimary,
+.cardSecundary {
+  border-radius: var(--border-radius-5xl);
+}
+
+.colCardPrimary {
+  background-color: transparent !important;
+  background-color: var(--bg-white) !important;
 }
 
 .cardPrimary,
 .cardSecundary {
-  border: none !important;
-  border-radius: 60px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  border: none;
 }
 
-/* Orange Card */
 .cardPrimary {
-  background-color: var(--color-primary) !important;
-  font-size: 0.8rem;
-  height: auto;
-  width: auto !important;
-  margin: 0 auto !important;
+  background-color: var(--color-primary);
+  padding: 1.2rem !important;
+  font-size: var(--font-size-sm);
 }
 
-/* Purple Card */
-.cardSecundary {
+.colCardSecundary {
+  display: flex;
+  justify-content: center;
+  align-items: start;
   background-color: var(--color-secondary) !important;
-  height: auto;
-  padding-bottom: 0;
-
-  height: auto;
-  width: auto !important;
+  padding: 1rem 0;
+  font-size: var(--font-size-md) !important;
 }
 
-@media screen and (min-width: 1920px) {
-  .cardSecundary {
-    padding-bottom: 3.5rem !important;
-    height: auto;
-  }
-  /* a */
-  .cardPrimary {
-    width: 17rem !important;
-  }
+.cardSecundary {
+  background-color: var(--color-secondary);
+}
 
-  .cardSecundary {
-    /* width: 30rem !important; */
+@media screen and (min-width: 992px) {
+  .colCardSecundary {
+    height: 40rem;
+    padding: 1.5rem 0.5rem;
   }
+}
+
+.card,
+.cardBody {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none;
 }
 
 .cardTitle {
-  font-size: var(--font-size-xl) !important;
-  font-weight: var(--font-weight-medium) !important;
+  font-size: var(--font-size-2xl) !important;
+  font-weight: var(--font-weight-bold) !important;
   color: var(--color-white) !important;
   text-align: center;
-  width: 80%;
+  width: 87%;
   margin: 0 auto;
 }
 
@@ -62,12 +69,12 @@
   display: flex !important;
   justify-content: space-evenly !important;
   align-items: center !important;
-  width: 100%;
+  width: 80%;
   border: 1.5px solid var(--color-primary);
   border-radius: var(--border-radius-5xl);
   padding: 0.3rem 1rem;
   text-align: center !important;
-  margin: 0.5rem 0;
+  margin: 0.7rem auto;
 }
 
 .supply {
@@ -83,9 +90,12 @@
 
 .characteristics {
   color: var(--color-white);
-  padding: 0.5rem 2rem;
+  width: 90%;
+  margin: 0 auto !important;
+  padding: 1rem !important;
 }
 
 .characteristicsItem {
-  line-height: 1.6rem !important;
+  line-height: 1.5rem !important;
+  line-height: 1.7rem !important;
 }

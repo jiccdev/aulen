@@ -8,7 +8,13 @@ import styles from '../../../styles/components/CardItem.module.css';
 const CardItem = ({ plan }) => {
   const { id, name, supply, brokersInfo, characteristics } = plan;
   return (
-    <Col lg={4} key={plan?.id} plan={plan} className={styles.colItem}>
+    <Col
+      xs={12}
+      md={4}
+      key={plan?.id}
+      plan={plan}
+      className={id % 2 === 0 ? styles.colCardSecundary : styles.colCardPrimary}
+    >
       <Card
         className={id % 2 === 0 ? styles.cardSecundary : styles.cardPrimary}
       >
