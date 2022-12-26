@@ -6,9 +6,89 @@
 }
 
 .form h3 {
-  color: red !important;
-  font-size: var(--font-size-xl);
+  color: var(--color-dark) !important;
+  font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-bold);
+}
+
+.form p {
+  color: var(--color-dark) !important;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+/* Form groups */
+
+.formGroup {
+  display: flex !important;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.formGroup .label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  margin-right: 0.7rem;
+  width: 15%;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-2xl);
+  font-size: var(--font-size-lg);
+  color: var(--color-dark-light);
+}
+
+.formGroup .formControl {
+  width: 85%;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-2xl);
+  border: none;
+}
+
+.formGroup .formControl {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.formGroup .formControl:focus {
+  outline: none;
+}
+
+.formGroup .formControl::placeholder {
+  color: var(--color-dark);
+  font-weight: var(--font-weight-bold);
+}
+
+.btnSubmit[type='submit'] {
+  background-color: var(--color-primary);
+  color: var(--color-white) !important;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-md) !important;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-2xl);
+  cursor: pointer;
+}
+
+.btnSubmit[type='submit']:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.formCheck {
+  font-size: var(--font-size-sm);
+  color: var(--color-dark);
+  font-weight: var(--font-weight-bold);
+  padding: 1rem;
+  text-align: start;
+  width: 85%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 992px) {

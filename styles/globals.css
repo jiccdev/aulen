@@ -22,6 +22,9 @@
 
   --color-bg-publishing-form: hsl(260 5% 35% /0.2);
 
+  /* Dark color palette */
+  --color-primary-dark: #e77212;
+
   /* Font size */
   --font-size-xs: 0.6rem;
   --font-size-sm: 0.8rem;
