@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import HeadPage from '../../src/components/HeadPage/HeadPage';
+import LayoutSection from '../../src/components/Section/LayoutSection';
 import Plans from '../../src/components/Section/adminstracion-de-arriendo/Plans/Plans';
 import CustomerExperience from '../../src/components/Section/adminstracion-de-arriendo/CustomerExperience/CustomerExperience';
-import LayoutSection from '../../src/components/Section/LayoutSection';
+import StepsToRentDepartment from '../../src/components/Section/adminstracion-de-arriendo/StepsToRentDepartment/StepsToRentDepartment';
 
 const AdministracionDeArriendo = () => {
   return (
@@ -17,6 +18,11 @@ const AdministracionDeArriendo = () => {
       {/* CONOCE LA EXPERIENCIA DE NUESTROS CLIENTES */}
       <LayoutSection>
         <CustomerExperience />
+      </LayoutSection>
+
+      {/* PASOS PARA ARRENDAR UN DEPARTAMENTO */}
+      <LayoutSection>
+        <StepsToRentDepartment />
       </LayoutSection>
     </Fragment>
   );
