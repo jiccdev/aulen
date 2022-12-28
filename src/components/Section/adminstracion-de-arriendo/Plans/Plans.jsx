@@ -1,5 +1,4 @@
-import React, { Fragment } from 'react';
-import HeadPage from '../../../../../src/components/HeadPage/HeadPage';
+import React from 'react';
 import HeaderSection from '../../../../../src/components/Section/HeaderSection';
 import CardItem from '../../../../../src/components/Card/ItemCard';
 import PlanFrom from '../../../../../src/components/Form/PlanFrom';
