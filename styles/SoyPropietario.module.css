@@ -31,7 +31,7 @@
 /* STEPS SECTION */
 
 .stepSectionContainer{
-    width: 50%;
+    width: 60%;
 }
 
 /* END STEPS SECTION */
@@ -58,3 +58,22 @@
 }
 
 /* END STEPS */
+
+/* IMG-HEADER */
+.imgContainer{
+    width: 60%;
+    align-self: flex-start;
+    justify-content: center;
+
+}
+.imgHeader{
+    min-width: 320px;
+    min-height: 433px;
+    
+
+    border-radius: var(--border-radius-5xl, 4rem);
+
+    background: var(--color-dark-light, #868686);
+
+}
+/* END IMG-HEADER */

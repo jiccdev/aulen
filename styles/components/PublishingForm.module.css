@@ -15,9 +15,9 @@
   position: fixed;
   /* 1200px para el corte */
   top: 20%;
-  right: 10%;
-  background-color: var(--color-bg-publishing-form, hsl(260 5% 35% /.2));
-  border-radius: var(--border-radius-3xl, 1.4rem);
+  left: calc(60vw + 2rem);
+  background-color: var(--color-pale-gray, #f4f3f1);
+  border-radius: var(--border-radius-5xl, 4rem);
 
 
   width: 380px;
