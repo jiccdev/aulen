@@ -23,18 +23,6 @@
     height: 128px;
 }
 
-.number{
-    background: var( --color-primary, #f57914);
-    color: var(--color-white, #ffffff);
-    font-size: var(  --font-size-lg, 1.2rem);
-    font-weight: var(  --font-weight-bold, 700);
-    text-align: center;
-
-    padding: .4em .9em;
-    
-    border-radius: 50%;
-    user-select: none;
-}
 
 .boldP{
     font-weight: var(  --font-weight-bold, 700);
