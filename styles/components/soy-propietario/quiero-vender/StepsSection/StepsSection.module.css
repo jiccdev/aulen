@@ -1,0 +1,35 @@
+.customCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+  }
+  
+  .customRow {
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+  }
+
+/* STEPS HEADING */
+.stepHeader{
+    text-align: center;
+}
+.stepHeader h2{
+    font-weight: var(--font-weight-bold, 700);
+    font-size: var(--font-size-2xl, 1.8rem);
+
+    margin-bottom: .1rem;
+}
+.stepHeader h3{
+    font-weight: var(--font-weight-medium, 500);
+    font-size: var(--font-size-sm, 0.8rem);
+}
+/* END STEPS HEAING */
+
+/* STEPS */
+.stepsContainer p{
+    font-size: var(--font-size-md, 1rem);
+}
+
+/* END STEPS */

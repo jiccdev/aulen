@@ -1,0 +1,41 @@
+.customCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+  
+.customRow {
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+}
+
+/* SELL PAGE */
+
+.sellPageHeader h1{
+    position: relative;
+    text-align: center;
+    font-weight: var(--font-weight-bold, 700);
+    font-size: var(--font-size-3xl, 2rem);
+}
+
+/* END SELL PAGE */
+
+/* IMG-HEADER */
+.imgContainer{
+    align-self: center;
+    justify-content: center;
+
+}
+.imgHeader{
+    min-width: 320px;
+    min-height: 433px;
+    
+
+    border-radius: var(--border-radius-5xl, 4rem);
+
+    background: var(--color-dark-light, #868686);
+
+}
+/* END IMG-HEADER */
