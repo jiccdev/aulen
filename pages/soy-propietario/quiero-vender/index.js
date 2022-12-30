@@ -1,7 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/SoyPropietario.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { PublishingForm } from '../../../src/components/PublishingForm/PublishingForm';
 import LayoutSection from '../../../src/components/Section/LayoutSection';
 import Plans from '../../../src/components/Section/adminstracion-de-arriendo/Plans/Plans';
 import CustomerExperience from '../../../src/components/Section/adminstracion-de-arriendo/CustomerExperience/CustomerExperience';

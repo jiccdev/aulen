@@ -1,0 +1,13 @@
+.customCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+  
+.customRow {
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+}
+
