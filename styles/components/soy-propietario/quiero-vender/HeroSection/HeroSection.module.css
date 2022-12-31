@@ -26,16 +26,21 @@
 .imgContainer{
     align-self: center;
     justify-content: center;
+    width: 50%;
 
 }
 .imgHeader{
-    min-width: 320px;
-    min-height: 433px;
+    width: 70%;
+    height: 600px;
+    object-fit: cover;
     
 
     border-radius: var(--border-radius-5xl, 4rem);
 
-    background: var(--color-dark-light, #868686);
+    /* background-image: url('../../../../../src/img/soy-propietario/key.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 
 }
 /* END IMG-HEADER */

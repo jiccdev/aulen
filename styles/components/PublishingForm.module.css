@@ -20,7 +20,8 @@
   border-radius: var(--border-radius-5xl, 4rem);
 
 
-  width: 380px;
+  width: calc(100% - 4em);
+  max-width: 35%;
   padding: 2em;
 }
 
