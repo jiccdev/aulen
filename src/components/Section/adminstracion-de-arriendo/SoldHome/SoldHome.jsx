@@ -15,7 +15,7 @@ const SoldHome = () => {
         <Image
           src={SoldHomeImg}
           alt="Sold Home"
-          width={420}
+          width={600}
           height={500}
           className={styles.img}
           style={{

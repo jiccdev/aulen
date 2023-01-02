@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import HeadPage from '../../src/components/HeadPage/HeadPage';
+import LayoutSection from '../../src/components/Section/LayoutSection';
+import Departments from '../../src/components/Section/propiedades/Departments';
 
 const Propiedades = () => {
   return (
-    <section>
-      <h1>Propiedades</h1>
-    </section>
+    <Fragment>
+      <HeadPage title="Propiedades" />
+
+      {/* DEPARTAMENTOS */}
+      <LayoutSection>
+        <Departments />
+      </LayoutSection>
+    </Fragment>
   );
 };
 
