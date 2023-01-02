@@ -8,16 +8,8 @@ import styles from '../../../styles/components/CardItem.module.css';
 const CardItem = ({ plan }) => {
   const { id, name, supply, brokersInfo, characteristics } = plan;
   return (
-    <Col
-      xs={12}
-      md={4}
-      key={plan?.id}
-      plan={plan}
-      className={id % 2 === 0 ? styles.colCardSecundary : styles.colCardPrimary}
-    >
-      <Card
-        className={id % 2 === 0 ? styles.cardSecundary : styles.cardPrimary}
-      >
+    <Col xs={12} md={4} key={plan?.id} plan={plan} className={styles.colCard}>
+      <Card className={styles.card}>
         <Card.Body className={styles.cardBody}>
           <Card.Title className={styles.cardTitle}>{name}</Card.Title>
           <div className={styles.supplyContainer}>
