@@ -1,4 +1,3 @@
-import { FaUserAlt, FaTools, FaHandHoldingUsd } from 'react-icons/fa';
 import { BsTelephoneFill, BsPuzzle, BsCardChecklist, BsFillGearFill } from 'react-icons/bs';
 import {
   FaUserAlt,
@@ -8,7 +7,7 @@ import {
 } from 'react-icons/fa';
 import { TbChecklist } from 'react-icons/tb';
 import { BiTimer } from 'react-icons/bi';
-import { BsTelephoneFill } from 'react-icons/bs';
+
 import {
   MdOutlineMailOutline,
   MdOutlinePanTool,
