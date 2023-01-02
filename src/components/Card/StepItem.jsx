@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 /** Bootstrap components */
 import Col from 'react-bootstrap/Col';
@@ -7,6 +7,7 @@ import styles from '../../../styles/components/CardStep.module.css';
 
 const StepItem = ({ step }) => {
   const { icon, desc, span, extraIcon } = step;
+
   return (
     <Col sm={6} md={4} className={styles.col}>
       <Card className={styles.card}>

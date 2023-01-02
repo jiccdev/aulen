@@ -7,7 +7,8 @@ import { stepsToRentDepartmentData } from '../../../../api/fakeData/stepsToRentD
 /** Bootstrap components */
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import styles from '../../../../../styles/AdministracionDeArriendo.module.css';
+
+import styles from '../../../../../styles/components/administracion-de-arriendo/SoldHome.module.css';
 
 const StepsToRentDepartment = () => {
   return (
