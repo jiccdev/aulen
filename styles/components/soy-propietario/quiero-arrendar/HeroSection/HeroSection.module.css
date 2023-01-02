@@ -10,4 +10,19 @@
     justify-content: space-between;
     gap: .5em;
 }
-
+.heroH1{
+    font-weight: var(--font-weight-bold, 700);
+}
+.heroImage{
+    border-radius: var(--border-radius-5xl, 4rem);
+}
+.servicesContainer{
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.headerContainer{
+    width: 50%;
+    text-align: center;
+}

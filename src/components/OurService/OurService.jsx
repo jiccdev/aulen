@@ -1,13 +1,17 @@
 import React from "react"
 import styles from '../../../styles/components/soy-propietario/quiero-arrendar/OurService/OurService.module.css'
 import IconNumber from "../IconNumber/IconNumber"
+import { OurServicesData } from '../../api/fakeData/OurServices'
 export const OurService = () => {
   return (
-    <div className={`${styles.customCol} ${styles.OurServiceContainer}`} >
-      <img className={`${styles.img}`} />
-      <IconNumber />
-      <p><span className={`${styles.boldP}`}>Publica gratis</span> tu propiedad con fotos y videos profesionales.</p>
-    </div>
+    <>
+    {OurServicesData !== 0 ? OurServicesData.map(el => <div key={el.id} className={`${styles.customCol} ${styles.OurServiceContainer}`} >
+        <img className={`${styles.img}`} />
+        <IconNumber elNumber={el.id} />
+        <p><span className={`${styles.boldP}`}>{el.span}</span>{el.p}</p>
+      </div>) : null}
+    </>
+
   )
 }
 
