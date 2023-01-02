@@ -1,53 +1,26 @@
 .col,
-.colCardPrimary {
+.colCard {
   margin: 0 !important;
-  padding: 0.9rem !important;
+  background-color: var(--color-white);
+  padding: 0.4rem;
 }
 
-.colCardPrimary,
-.colCardSecundary,
-.cardPrimary,
-.cardSecundary {
-  border-radius: var(--border-radius-5xl);
-}
-
-.colCardPrimary {
-  background-color: transparent !important;
-  background-color: var(--bg-white) !important;
-}
-
-.cardPrimary,
-.cardSecundary {
-  border: none;
-}
-
-.cardPrimary {
+.card {
   background-color: var(--color-primary);
-  padding: 1.2rem !important;
+  border-radius: var(--border-radius-5xl);
+  cursor: pointer;
+  border: none;
+  padding: 1rem 0.5rem !important;
   font-size: var(--font-size-sm);
 }
 
-.colCardSecundary {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: var(--color-secondary) !important;
-  padding: 1rem 0;
-  font-size: var(--font-size-md) !important;
-}
-
-.cardSecundary {
+.card:hover {
   background-color: var(--color-secondary);
+  scale: 1.1;
+  transition: 0.3s all ease;
+  z-index: 999;
 }
 
-@media screen and (min-width: 992px) {
-  .colCardSecundary {
-    height: 40rem;
-    padding: 1.5rem 0.5rem;
-  }
-}
-
-.card,
 .cardBody {
   width: 100% !important;
   padding: 0 !important;

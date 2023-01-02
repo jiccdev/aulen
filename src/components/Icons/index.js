@@ -1,12 +1,17 @@
-import { FaUserAlt, FaTools, FaHandHoldingUsd } from 'react-icons/fa';
+import {
+  FaUserAlt,
+  FaTools,
+  FaHandHoldingUsd,
+  FaArrowRight,
+} from 'react-icons/fa';
+import { TbChecklist } from 'react-icons/tb';
+import { BiTimer } from 'react-icons/bi';
 import { BsTelephoneFill } from 'react-icons/bs';
 import {
   MdOutlineMailOutline,
   MdOutlinePanTool,
   MdOutlineVerified,
 } from 'react-icons/md';
-
-import { TbChecklist } from 'react-icons/tb';
 
 export const icons = {
   FaUserAlt,
@@ -17,4 +22,6 @@ export const icons = {
   FaTools,
   MdOutlineVerified,
   FaHandHoldingUsd,
+  BiTimer,
+  FaArrowRight,
 };

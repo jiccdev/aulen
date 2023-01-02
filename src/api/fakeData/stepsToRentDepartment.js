@@ -6,6 +6,8 @@ const {
   FaTools,
   MdOutlineVerified,
   FaHandHoldingUsd,
+  BiTimer,
+  FaArrowRight,
 } = icons;
 
 export const stepsToRentDepartmentData = [
@@ -14,24 +16,36 @@ export const stepsToRentDepartmentData = [
     desc: 'Elige un plan',
     span: 'que se adapte a tus necesidades',
     icon: <TbChecklist />,
+    extraIcon: {
+      set: true,
+      arrow: <FaArrowRight />,
+    },
   },
   {
     id: 2,
     desc: 'Arrendamos tú propiedad',
     span: 'en tiempo record',
-    icon: <TbChecklist />,
+    icon: <BiTimer />,
+    extraIcon: {
+      set: true,
+      arrow: <FaArrowRight />,
+    },
   },
   {
     id: 3,
     desc: 'Gestionamos las reparaciones',
     span: 'de tú propiedad',
-    icon: <TbChecklist />,
+    icon: <FaTools />,
   },
   {
     id: 4,
     desc: 'Verificación de pago',
     span: 'de servicios y gastos comunes',
-    icon: <TbChecklist />,
+    icon: <MdOutlineVerified />,
+    extraIcon: {
+      set: true,
+      arrow: <FaArrowRight />,
+    },
   },
   {
     id: 5,

@@ -15,14 +15,14 @@ const AdministracionDeArriendo = () => {
         <Plans />
       </LayoutSection>
 
-      {/* CONOCE LA EXPERIENCIA DE NUESTROS CLIENTES */}
-      <LayoutSection>
-        <CustomerExperience />
-      </LayoutSection>
-
       {/* PASOS PARA ARRENDAR UN DEPARTAMENTO */}
       <LayoutSection>
         <StepsToRentDepartment />
+      </LayoutSection>
+
+      {/* CONOCE LA EXPERIENCIA DE NUESTROS CLIENTES */}
+      <LayoutSection>
+        <CustomerExperience />
       </LayoutSection>
     </Fragment>
   );

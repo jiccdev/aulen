@@ -9,7 +9,6 @@
 .col {
   display: flex !important;
   flex-direction: column !important;
-  justify-content: space-between;
   align-items: center !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -20,11 +19,5 @@
   justify-content: center !important;
   align-items: center !important;
   flex-direction: column;
-  padding: 0.1rem 2rem;
-}
-
-@media screen and (min-width: 992px) {
-  .col {
-    padding: 2rem;
-  }
+  padding: 0 0.7rem;
 }
