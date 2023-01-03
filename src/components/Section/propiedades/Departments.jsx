@@ -15,7 +15,7 @@ const Departments = () => {
         <Row className={styles.rowItems}>
           {propertiesData &&
             propertiesData.map((department) => (
-              <DepartmentItem key={department?.id} department={department} />
+              <DepartmentItem key={department?.cod} department={department} />
             ))}
         </Row>
       </Col>
