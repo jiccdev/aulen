@@ -10,8 +10,6 @@ import Row from 'react-bootstrap/Row';
 const CustomerExperience = () => {
   const { customers, getAllCustomers } = useContext(CustomersContext);
 
-  console.log(customers);
-
   useEffect(() => {
     getAllCustomers();
   }, []);

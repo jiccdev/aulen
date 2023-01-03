@@ -8,11 +8,12 @@ export const propertiesData = [
   {
     cod: 1,
     name: 'Casa en Condominio',
-    address: {
-      street: 'Av. Apoquindo 5000',
-      city: 'Las Condes',
-      country: 'Chile',
-    },
+    address: 'La Quisca, Rinconada de Doñihue',
+    // address: {
+    //   street: 'Av. Apoquindo 5000',
+    //   city: 'Las Condes',
+    //   country: 'Chile',
+    // },
     price: 1000000,
     image: Property1,
     squareMeters: 100,
@@ -20,11 +21,13 @@ export const propertiesData = [
   {
     cod: 2,
     name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
+    address: 'La Quisca, Rinconada de Doñihue',
+
+    // address: {
+    //   street: 'Rinconada de Donilhue',
+    //   city: 'La Quisca',
+    //   country: 'Chile',
+    // },
     price: 1000000,
     image: Property2,
     squareMeters: 100,
@@ -32,11 +35,13 @@ export const propertiesData = [
   {
     cod: 3,
     name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: Property3,
-      country: 'Chile',
-    },
+    address: 'La Quisca, Rinconada de Doñihue',
+
+    // address: {
+    //   street: 'Rinconada de Donilhue',
+    //   city: Property3,
+    //   country: 'Chile',
+    // },
     price: 1000000,
     image: Property3,
     squareMeters: 100,
@@ -44,11 +49,13 @@ export const propertiesData = [
   {
     cod: 4,
     name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
+    address: 'La Quisca, Rinconada de Doñihue',
+
+    // address: {
+    //   street: 'Rinconada de Donilhue',
+    //   city: 'La Quisca',
+    //   country: 'Chile',
+    // },
     price: 1000000,
     image: Property4,
     squareMeters: 100,
@@ -56,11 +63,13 @@ export const propertiesData = [
   {
     cod: 5,
     name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
+    address: 'La Quisca, Rinconada de Doñihue',
+
+    // address: {
+    //   street: 'Rinconada de Donilhue',
+    //   city: 'La Quisca',
+    //   country: 'Chile',
+    // },
     price: 1000000,
     image: Property5,
     squareMeters: 100,
@@ -68,11 +77,13 @@ export const propertiesData = [
   {
     cod: 6,
     name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
+    address: 'La Quisca, Rinconada de Doñihue',
+
+    // address: {
+    //   street: 'Rinconada de Donilhue',
+    //   city: 'La Quisca',
+    //   country: 'Chile',
+    // },
     price: 1000000,
     image: Property1,
     squareMeters: 100,
@@ -80,11 +91,13 @@ export const propertiesData = [
   {
     cod: 7,
     name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
+    address: 'La Quisca, Rinconada de Doñihue',
+
+    // address: {
+    //   street: 'Rinconada de Donilhue',
+    //   city: 'La Quisca',
+    //   country: 'Chile',
+    // },
     price: 1000000,
     image: Property2,
     squareMeters: 100,
@@ -92,11 +105,13 @@ export const propertiesData = [
   {
     cod: 8,
     name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
+    address: 'La Quisca, Rinconada de Doñihue',
+
+    // address: {
+    //   street: 'Rinconada de Donilhue',
+    //   city: 'La Quisca',
+    //   country: 'Chile',
+    // },
     price: 1000000,
     image: Property3,
     squareMeters: 100,
@@ -104,11 +119,13 @@ export const propertiesData = [
   {
     cod: 9,
     name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
+    address: 'La Quisca, Rinconada de Doñihue',
+
+    // address: {
+    //   street: 'Rinconada de Donilhue',
+    //   city: 'La Quisca',
+    //   country: 'Chile',
+    // },
     price: 1000000,
     image: Property4,
     squareMeters: 100,
