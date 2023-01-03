@@ -1,0 +1,21 @@
+.customCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+}
+
+.customRow {
+  display: flex;
+  justify-content: space-between;
+  gap: .5em;
+}
+
+.whyContainer{
+  width: 60%;
+  gap: 3rem;
+}
+
+.whyH2{
+  font-weight: var(--font-weight-bold, 700);
+}

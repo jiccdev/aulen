@@ -14,8 +14,9 @@
 
 .cardContainer{
     border-radius: var(--border-radius-5xl, 4rem);
+    background: var(--color-pale-gray, #f4f3f1);
     border: 1px solid black;
-    width: fit-content;
+    width: calc(100% / 3.2);
     gap: 0;
     overflow: hidden;
 }
@@ -34,7 +35,6 @@
 }
 
 .cardTextContainer{
-    background: var(--color-pale-gray, #f4f3f1);
     padding: 2rem;
     text-align: center;
 
