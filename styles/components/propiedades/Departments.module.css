@@ -1,0 +1,36 @@
+.headerProperties {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0rem 0rem 2rem 0;
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: bold;
+  color: var(--color-black);
+  text-transform: capitalize;
+}
+
+.urlViewMap {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  border-radius: var(--border-radius-3xl);
+  cursor: pointer;
+}
+
+.urlViewMap:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 992px) {
+  .headerProperties {
+    width: 75%;
+  }
+}

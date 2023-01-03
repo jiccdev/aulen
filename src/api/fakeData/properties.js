@@ -38,7 +38,7 @@ export const propertiesData = [
       country: 'Chile',
     },
     price: 1000000,
-    image: '',
+    image: Property3,
     squareMeters: 100,
   },
   {
