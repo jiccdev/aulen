@@ -3,12 +3,14 @@ import {
   BsPuzzle,
   BsCardChecklist,
   BsFillGearFill,
+  BsFillGridFill,
 } from 'react-icons/bs';
 import {
   FaUserAlt,
   FaTools,
   FaHandHoldingUsd,
   FaArrowRight,
+  FaThList,
 } from 'react-icons/fa';
 import {
   MdOutlineMailOutline,
@@ -35,4 +37,6 @@ export const icons = {
   BiTimer,
   FaArrowRight,
   BiMap,
+  BsFillGridFill,
+  FaThList,
 };

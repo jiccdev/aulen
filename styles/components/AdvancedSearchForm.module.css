@@ -15,8 +15,9 @@
   width: 100%;
   background-color: var(--color-primary);
   color: var(--color-white);
-  border: none;
   border-radius: var(--border-radius-3xl);
+  text-transform: uppercase;
+  border: none;
 }
 
 .btnSubmit[type='submit']:hover {

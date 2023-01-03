@@ -4,6 +4,7 @@ import RSelect from '../../RSelect/RSelect';
 import AdvancedSearchForm from '../../Form/AdvancedSearchForm';
 import DepartmentItem from './DepartmentItem';
 import OutstandingProjects from './OutstandingProjects';
+import IconFilter from '../../IconFilter/IconFilter';
 import { icons } from '../../Icons/index.js';
 import { propertiesData } from '../../../api/fakeData/properties';
 import { orderDepartmentBy } from '../../../api/fakeData/selects';
@@ -43,6 +44,10 @@ const Departments = () => {
           />
         </div>
       </div>
+
+      {/* FILTAR PROPIEDADES */}
+      <IconFilter />
+
       <Col xl={9} className={styles.col}>
         <Row className={styles.rowItems}>
           {propertiesData &&
