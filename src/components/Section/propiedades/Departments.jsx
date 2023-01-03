@@ -3,6 +3,7 @@ import Link from 'next/link';
 import RSelect from '../../RSelect/RSelect';
 import AdvancedSearchForm from '../../Form/AdvancedSearchForm';
 import DepartmentItem from './DepartmentItem';
+import OutstandingProjects from './OutstandingProjects';
 import { icons } from '../../Icons/index.js';
 import { propertiesData } from '../../../api/fakeData/properties';
 import { orderDepartmentBy } from '../../../api/fakeData/selects';
@@ -56,7 +57,7 @@ const Departments = () => {
         <AdvancedSearchForm />
 
         {/* PROYECTOS DESTACADOS */}
-        <h1>Proyectos destacados</h1>
+        <OutstandingProjects />
       </Col>
     </Row>
   );
