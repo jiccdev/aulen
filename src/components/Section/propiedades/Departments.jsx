@@ -5,6 +5,7 @@ import AdvancedSearchForm from '../../Form/AdvancedSearchForm';
 import DepartmentItem from './DepartmentItem';
 import { icons } from '../../Icons/index.js';
 import { propertiesData } from '../../../api/fakeData/properties';
+import { orderDepartmentBy } from '../../../api/fakeData/selects';
 
 /** Bootstrap components */
 import Col from 'react-bootstrap/Col';
@@ -14,6 +15,11 @@ import styles from '../../../../styles/components/propiedades/Departments.module
 const Departments = () => {
   const { BiMap } = icons;
 
+  const onOrderDepartmentByChange = (option) => {
+    console.log(orderDepartmentBy[0]);
+    console.log(option);
+  };
+
   return (
     <Row className={styles.rowContainer}>
       <div className={styles.headerProperties}>
@@ -22,15 +28,18 @@ const Departments = () => {
         </div>
         <div>
           <Link href="/" className={styles.urlViewMap}>
-            <span>
+            <span className={styles.spanMapIcon}>
               <BiMap />
             </span>
             Ver mapa
           </Link>
         </div>
         <div>
-          Ordenar por:
-          <RSelect options="" defaultValue="" onChange="" />
+          <RSelect
+            options={orderDepartmentBy}
+            defaultValue={orderDepartmentBy[0]}
+            onChange={onOrderDepartmentByChange}
+          />
         </div>
       </div>
       <Col xl={9} className={styles.col}>

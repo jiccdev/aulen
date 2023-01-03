@@ -1,17 +1,20 @@
 .headerProperties {
-  background-color: red;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  margin: 0rem 0rem 2rem 0;
 }
 
 .title {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   font-size: var(--font-size-4xl);
   font-weight: bold;
   color: var(--color-black);
   text-transform: capitalize;
+  margin: 0.5rem;
+  text-align: center;
 }
 
 .urlViewMap {
@@ -19,9 +22,18 @@
   color: var(--color-white);
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.5rem 2rem;
+  padding: 0.2rem 2rem;
   border-radius: var(--border-radius-3xl);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.spanMapIcon {
+  margin-right: 0.5rem;
+  font-size: var(--font-size-xl);
 }
 
 .urlViewMap:hover {
@@ -32,5 +44,12 @@
 @media screen and (min-width: 992px) {
   .headerProperties {
     width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0rem 0rem 2rem 0;
+  }
+  .title {
   }
 }

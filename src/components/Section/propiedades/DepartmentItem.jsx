@@ -13,7 +13,7 @@ const DepartmentItem = ({ department }) => {
       <Card className={styles.card}>
         <Image
           src={image}
-          alt="Picture of the author"
+          alt={`image-${name}`}
           width={291}
           height={200}
           style={{
