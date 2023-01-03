@@ -52,7 +52,11 @@ const Departments = () => {
       </Col>
 
       <Col xl={3} className={styles.colForm}>
+        {/* BÚSQUEDA AVANZADA */}
         <AdvancedSearchForm />
+
+        {/* PROYECTOS DESTACADOS */}
+        <h1>Proyectos destacados</h1>
       </Col>
     </Row>
   );

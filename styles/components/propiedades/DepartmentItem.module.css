@@ -38,6 +38,7 @@
   text-transform: uppercase;
   padding: 0.2rem 1rem;
   border-radius: var(--border-radius-3xl);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .deptStatusFeatured {
@@ -51,6 +52,7 @@
   text-transform: uppercase;
   padding: 0.2rem 1rem;
   border-radius: var(--border-radius-3xl);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .cardImage {
@@ -88,7 +90,7 @@
 .priceContainer {
   display: flex;
   justify-content: flex-end;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   margin-top: 1rem;
 }
