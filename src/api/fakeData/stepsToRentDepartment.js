@@ -2,7 +2,6 @@ import { icons } from '../../components/Icons';
 
 const {
   TbChecklist,
-  MdOutlinePanTool,
   FaTools,
   MdOutlineVerified,
   FaHandHoldingUsd,
