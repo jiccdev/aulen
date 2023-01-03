@@ -1,12 +1,8 @@
-export const truncateString = (str, limit) => {
-  if (str.length > limit) {
-    return `${str.substring(0, limit)}...`;
-  } else {
-    return str;
-  }
-};
+/** Truncate string lenght */
+export const truncateString = (str, limit = 25) =>
+  str.length > limit ? `${str.substring(0, limit)}...` : str;
 
-// parse number to chilean currency
+/** Parse number to CLP currency */
 export const parseToCLPCurrency = (number) => {
   return new Intl.NumberFormat('es-CL', {
     style: 'currency',
