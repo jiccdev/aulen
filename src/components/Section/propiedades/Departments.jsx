@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import { propertiesData } from '../../../api/fakeData/properties';
+import RSelect from '../../RSelect/RSelect';
 import AdvancedSearchForm from '../../Form/AdvancedSearchForm';
 import DepartmentItem from './DepartmentItem';
 import { icons } from '../../Icons/index.js';
+import { propertiesData } from '../../../api/fakeData/properties';
 
 /** Bootstrap components */
 import Col from 'react-bootstrap/Col';
@@ -12,6 +13,7 @@ import styles from '../../../../styles/components/propiedades/Departments.module
 
 const Departments = () => {
   const { BiMap } = icons;
+
   return (
     <Row className={styles.rowContainer}>
       <div className={styles.headerProperties}>
@@ -28,12 +30,7 @@ const Departments = () => {
         </div>
         <div>
           Ordenar por:
-          <select>
-            <option>Menor precio</option>
-            <option>Mayor precio</option>
-            <option>Menor superficie</option>
-            <option>Mayor superficie</option>
-          </select>
+          <RSelect options="" defaultValue="" onChange="" />
         </div>
       </div>
       <Col xl={9} className={styles.col}>
