@@ -60,7 +60,7 @@ export const propertiesData = [
     cod: 4,
     name: 'Casa en Condominio',
     price: 1000000,
-    image: Property1,
+    image: Property2,
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -77,7 +77,7 @@ export const propertiesData = [
     cod: 5,
     name: 'Casa en Condominio',
     price: 1000000,
-    image: Property1,
+    image: Property3,
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -94,7 +94,7 @@ export const propertiesData = [
     cod: 6,
     name: 'Casa en Condominio',
     price: 1000000,
-    image: Property1,
+    image: Property4,
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -111,7 +111,7 @@ export const propertiesData = [
     cod: 7,
     name: 'Casa en Condominio',
     price: 1000000,
-    image: Property1,
+    image: Property5,
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
