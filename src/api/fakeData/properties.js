@@ -10,6 +10,28 @@ export const propertiesData = [
     name: 'Casa en Condominio',
     price: 1000000,
     image: Property1,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -27,6 +49,28 @@ export const propertiesData = [
     name: 'Casa en Condominio',
     price: 1000000,
     image: Property1,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -44,6 +88,28 @@ export const propertiesData = [
     name: 'Casa en Condominio',
     price: 1000000,
     image: Property1,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -61,6 +127,28 @@ export const propertiesData = [
     name: 'Casa en Condominio',
     price: 1000000,
     image: Property2,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -78,6 +166,28 @@ export const propertiesData = [
     name: 'Casa en Condominio',
     price: 1000000,
     image: Property3,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -95,6 +205,28 @@ export const propertiesData = [
     name: 'Casa en Condominio',
     price: 1000000,
     image: Property4,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -112,6 +244,28 @@ export const propertiesData = [
     name: 'Casa en Condominio',
     price: 1000000,
     image: Property5,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
