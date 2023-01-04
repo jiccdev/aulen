@@ -3,10 +3,14 @@
     color: var(--color-white, #ffffff);
     font-size: var(  --font-size-lg, 1.2rem);
     font-weight: var(  --font-weight-bold, 700);
-    text-align: center;
-
-    padding: .4em .9em;
     
+    
+    min-width: 2.5rem;
+    height: 2.5rem;
+    padding-top: .4em;
+    
+    text-align: center;
+    vertical-align: middle;
     border-radius: 50%;
     user-select: none;
 }
