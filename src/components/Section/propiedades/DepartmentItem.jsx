@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { truncateString, parseToCLPCurrency } from '../../../utils';
@@ -8,11 +8,13 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import styles from '../../../../styles/components/propiedades/DepartmentItem.module.css';
 
-const DepartmentItem = ({ department }) => {
+const DepartmentItem = ({ department, isGrid, isList }) => {
   const { cod, name, price, image, squareMeters, address, status } = department;
 
   return (
-    <Col sm={6} md={4} className={styles.col}>
+    // sm={6} md={4} grid
+    // md={12} list
+    <Col  md={isGrid ? 4 : isList ? 12 : 4} className={styles.col}>
       <Card className={styles.card}>
         <span
           className={

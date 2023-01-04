@@ -30,3 +30,37 @@
     padding: 0.5rem 0;
   }
 }
+
+.isFilterGridActive {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  color: var(--color-dark-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  transition: 0.3s all ease;
+  border-radius: var(--border-radius-3xl);
+  background-color: var(--color-pale-gray);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-3xl);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.isFilterListActive {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  color: var(--color-dark-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  transition: 0.3s all ease;
+  border-radius: var(--border-radius-3xl);
+  background-color: var(--color-pale-gray);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-3xl);
+  color: var(--color-primary);
+  cursor: pointer;
+}

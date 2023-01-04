@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import RSelect from '../../RSelect/RSelect';
 import AdvancedSearchForm from '../../Form/AdvancedSearchForm';
@@ -15,6 +15,9 @@ import Row from 'react-bootstrap/Row';
 import styles from '../../../../styles/components/propiedades/Departments.module.css';
 
 const Departments = () => {
+  const [isGrid, setIsGrid] = useState(false);
+  const [isList, setIsList] = useState(false);
+
   const { BiMap } = icons;
 
   const onOrderDepartmentByChange = (option) => {
@@ -46,13 +49,23 @@ const Departments = () => {
       </div>
 
       {/* FILTAR PROPIEDADES */}
-      <IconFilter />
+      <IconFilter
+        isGrid={isGrid}
+        setIsGrid={setIsGrid}
+        isList={isList}
+        setIsList={setIsList}
+      />
 
       <Col xl={9} className={styles.col}>
         <Row className={styles.rowItems}>
           {propertiesData &&
             propertiesData.map((department) => (
-              <DepartmentItem key={department?.cod} department={department} />
+              <DepartmentItem
+                key={department?.cod}
+                department={department}
+                isGrid={isGrid}
+                isList={isList}
+              />
             ))}
         </Row>
       </Col>
