@@ -1,0 +1,41 @@
+.link {
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.link:hover {
+  scale: 1.1;
+}
+
+.outstandingProject__image {
+  position: relative;
+}
+
+.code {
+  position: absolute;
+  top: 0;
+  padding: 0rem 0.5rem;
+  left: 0;
+  margin: 0.5rem;
+  width: auto;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-light);
+  border-radius: var(--border-radius-3xl);
+}
+
+.deptName {
+  position: absolute;
+  bottom: 0;
+  padding: 0.2rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+}

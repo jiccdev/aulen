@@ -8,109 +8,273 @@ export const propertiesData = [
   {
     cod: 1,
     name: 'Casa en Condominio',
+    price: 1000000,
+    image: Property1,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
+    squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
       city: 'Las Condes',
       country: 'Chile',
     },
-    price: 1000000,
-    image: Property1,
-    squareMeters: 100,
+    status: {
+      id: 1,
+      name: 'Venta',
+    },
   },
+
   {
     cod: 2,
-    name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
-    price: 1000000,
-    image: Property2,
-    squareMeters: 100,
-  },
-  {
-    cod: 3,
-    name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: Property3,
-      country: 'Chile',
-    },
-    price: 1000000,
-    image: '',
-    squareMeters: 100,
-  },
-  {
-    cod: 4,
-    name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
-    price: 1000000,
-    image: Property4,
-    squareMeters: 100,
-  },
-  {
-    cod: 5,
-    name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
-    price: 1000000,
-    image: Property5,
-    squareMeters: 100,
-  },
-  {
-    cod: 6,
-    name: 'Agricola en Donilhue',
-    address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
-      country: 'Chile',
-    },
+    name: 'Casa en Condominio',
     price: 1000000,
     image: Property1,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
-  },
-  {
-    cod: 7,
-    name: 'Agricola en Donilhue',
     address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
+      street: 'Av. Apoquindo 5000',
+      city: 'Las Condes',
       country: 'Chile',
     },
+    status: {
+      id: 1,
+      name: 'Venta',
+    },
+  },
+
+  {
+    cod: 3,
+    name: 'Casa en Condominio',
+    price: 1000000,
+    image: Property1,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
+    squareMeters: 100,
+    address: {
+      street: 'Av. Apoquindo 5000',
+      city: 'Las Condes',
+      country: 'Chile',
+    },
+    status: {
+      id: 2,
+      name: 'Destacado',
+    },
+  },
+
+  {
+    cod: 4,
+    name: 'Casa en Condominio',
     price: 1000000,
     image: Property2,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
-  },
-  {
-    cod: 8,
-    name: 'Agricola en Donilhue',
     address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
+      street: 'Av. Apoquindo 5000',
+      city: 'Las Condes',
       country: 'Chile',
     },
+    status: {
+      id: 1,
+      name: 'Venta',
+    },
+  },
+
+  {
+    cod: 5,
+    name: 'Casa en Condominio',
     price: 1000000,
     image: Property3,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
-  },
-  {
-    cod: 9,
-    name: 'Agricola en Donilhue',
     address: {
-      street: 'Rinconada de Donilhue',
-      city: 'La Quisca',
+      street: 'Av. Apoquindo 5000',
+      city: 'Las Condes',
       country: 'Chile',
     },
+    status: {
+      id: 2,
+      name: 'Destacado',
+    },
+  },
+
+  {
+    cod: 6,
+    name: 'Casa en Condominio',
     price: 1000000,
     image: Property4,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
     squareMeters: 100,
+    address: {
+      street: 'Av. Apoquindo 5000',
+      city: 'Las Condes',
+      country: 'Chile',
+    },
+    status: {
+      id: 1,
+      name: 'Venta',
+    },
+  },
+
+  {
+    cod: 7,
+    name: 'Casa en Condominio',
+    price: 1000000,
+    image: Property5,
+    slider: [
+      {
+        id: 0,
+        img: Property1,
+      },
+      {
+        id: 2,
+        img: Property2,
+      },
+      {
+        id: 3,
+        img: Property3,
+      },
+      {
+        id: 4,
+        img: Property4,
+      },
+      {
+        id: 5,
+        img: Property5,
+      },
+    ],
+    squareMeters: 100,
+    address: {
+      street: 'Av. Apoquindo 5000',
+      city: 'Las Condes',
+      country: 'Chile',
+    },
+    status: {
+      id: 2,
+      name: 'Destacado',
+    },
   },
 ];

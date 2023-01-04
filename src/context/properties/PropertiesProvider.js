@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import PropertiesContext from './PropertiesContext';
+import { propertiesData } from '../../api/fakeData/properties';
 
 /** API Services */
 import PropertiesServices from '../../services/PropertiesServices';
 
 const PropertiesProvider = ({ children }) => {
+  const [data, setData] = useState(propertiesData);
   const [properties, setProperties] = useState([]);
 
   // Get all properties
@@ -15,7 +17,9 @@ const PropertiesProvider = ({ children }) => {
   };
 
   return (
-    <PropertiesContext.Provider value={{ properties, getProperties }}>
+    <PropertiesContext.Provider
+      value={{ properties, getProperties, contextData: [data, setData] }}
+    >
       {children}
     </PropertiesContext.Provider>
   );

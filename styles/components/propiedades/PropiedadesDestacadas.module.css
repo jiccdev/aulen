@@ -1,0 +1,10 @@
+.row {
+  margin: 3rem 0;
+}
+.titleSection {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-black);
+  margin-bottom: 1rem;
+  text-align: start;
+}

@@ -1,0 +1,35 @@
+.form {
+  padding: 2rem;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius-3xl);
+}
+
+.label {
+  color: var(--color-black);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.btnSubmit[type='submit'] {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius-3xl);
+  text-transform: uppercase;
+  border: none;
+}
+
+.btnSubmit[type='submit']:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.radio[type='radio'] {
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-white);
+}
+
+.radio[type='radio']:checked {
+  background-color: var(--color-primary);
+}

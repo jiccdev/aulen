@@ -1,19 +1,25 @@
-import { BsTelephoneFill, BsPuzzle, BsCardChecklist, BsFillGearFill } from 'react-icons/bs';
+import {
+  BsTelephoneFill,
+  BsPuzzle,
+  BsCardChecklist,
+  BsFillGearFill,
+  BsFillGridFill,
+} from 'react-icons/bs';
 import {
   FaUserAlt,
   FaTools,
   FaHandHoldingUsd,
   FaArrowRight,
+  FaThList,
 } from 'react-icons/fa';
-import { TbChecklist } from 'react-icons/tb';
-import { BiTimer } from 'react-icons/bi';
-
 import {
   MdOutlineMailOutline,
   MdOutlinePanTool,
   MdOutlineVerified,
 } from 'react-icons/md';
-import {RiMoneyDollarCircleLine} from 'react-icons/ri'
+import { RiMoneyDollarCircleLine } from 'react-icons/ri';
+import { TbChecklist } from 'react-icons/tb';
+import { BiTimer, BiMap } from 'react-icons/bi';
 
 export const icons = {
   FaUserAlt,
@@ -30,4 +36,7 @@ export const icons = {
   BsFillGearFill,
   BiTimer,
   FaArrowRight,
+  BiMap,
+  BsFillGridFill,
+  FaThList,
 };
