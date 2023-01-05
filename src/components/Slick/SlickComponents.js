@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
+// react-gallery-carousel
 
-const SlickComponents = () => {
-  return <div></div>;
+const SlickComponent = () => {
+  return <div>ds</div>;
 };
 
-export default SlickComponents;
+export default SlickComponent;

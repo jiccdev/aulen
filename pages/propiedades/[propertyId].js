@@ -1,14 +1,8 @@
 import React, { useState, useContext } from 'react';
-
-import Image from 'next/image';
-
-import Slider from 'react-slick';
-import PropertiesContext from '../../src/context/properties/PropertiesContext';
 import { useRouter } from 'next/router';
-import {
-  SlickArrowLeft,
-  SlickArrowRight,
-} from '../../src/components/Slick/SlickComponents';
+import Image from 'next/image';
+import PropertiesContext from '../../src/context/properties/PropertiesContext';
+import SlickComponents from '../../src/components/Slick/SlickComponents';
 
 /** Bootstrap componets */
 import Row from 'react-bootstrap/Row';
@@ -25,6 +19,7 @@ const PropiedadId = () => {
   return (
     <Container>
       <h2>Departamento {propertyId}</h2>
+      <SlickComponents />
     </Container>
   );
 };
