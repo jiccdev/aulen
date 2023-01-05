@@ -21,8 +21,9 @@
 
 
   width: calc(100% - 4em);
-  max-width: 35%;
-  padding: 2em;
+  max-width: 470px;
+  max-height: 550px;
+  padding: 2em 2.5em;
 }
 
 /* HEADER */
@@ -38,11 +39,11 @@
 
 .form__header>h2 {
   /* font-weight: var(--font-weight-extra-bold, 800); */
-  font-size: var(--font-size-3xl, 2rem);
+  font-size: var(--font-size-5xl, 4rem);
 }
 
 .form__header>h3 {
-  font-size: var(--font-size-md, 1rem);
+  font-size: var(--font-size-xl, 1.4rem);
 }
 
 /* END HEADER */
@@ -52,7 +53,7 @@
 .form__btn {
   all: unset;
 
-  font-weight: var(--font-weight-medium, 500);
+  font-weight: var(--font-weight-bold, 700);
   color: var(--color-white, white);
   background: var(--color-primary, #f57914);
   border-radius: var(--border-radius-3xl, 1.4rem);
@@ -75,6 +76,14 @@
 
 .form__inputs{
   margin: 1rem 0 ;
+  width: 100%;
+  gap: 1.2rem;
+}
+
+.form__inputs__name,
+.form__inputs__tel,
+.form__inputs__email{
+  width: 90%;
 }
 
 .form__inputs > div > input{
@@ -82,14 +91,14 @@
 
   background-color: var(--color-white, white);
   border-radius: var(--border-radius-3xl, 1.4rem);
-  font-size: var(--font-size-sm, .8rem);
+  font-size: var(--font-size-md, 1rem);
 
   padding: .3em 1em;
-  width: calc(100% - 36px) -.5rem;
+  width: 100%;
 }
 
 .form__inputs > div > input::placeholder{
-  font-weight: var(--font-weight-medium, 500);
+  font-weight: var(--font-weight-bold, 700);
   color: var(--color-dark, #252525);
 }
 
@@ -118,8 +127,8 @@
   color: var(--color-dark-light, #868686);
   border-radius: var(--border-radius-3xl, 1.4rem);
 
-  width: 36px;
-  height: 26px;
+  width: 52px;
+  height: 32px;
 
   padding: .3em .6em;
 
