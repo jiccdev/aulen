@@ -2,13 +2,12 @@ import React, { useState, useContext } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import PropertiesContext from '../../src/context/properties/PropertiesContext';
-import SlickComponents from '../../src/components/Slick/SlickComponents';
+import GalleryCarousel from '../../src/components/GalleryCarousel/GalleryCarousel';
 
 /** Bootstrap componets */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import styles from '../../styles/components/Slick.module.css';
 
 const PropiedadId = () => {
   const { query } = useRouter();
@@ -16,10 +15,21 @@ const PropiedadId = () => {
   const { contextData } = useContext(PropertiesContext);
   const [data] = contextData;
 
+  console.log(data);
+
   return (
     <Container>
       <h2>Departamento {propertyId}</h2>
-      <SlickComponents />
+
+      <Row>
+        <Col xs={12} md={7}>
+          <GalleryCarousel data={data} />
+        </Col>
+
+        <Col xs={12} md={5}>
+          Más Información
+        </Col>
+      </Row>
     </Container>
   );
 };
