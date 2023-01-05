@@ -44,3 +44,15 @@
 
 }
 /* END IMG-HEADER */
+
+@media (width < 991px){
+    .imgAndForm{
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgContainer{
+        display: none;
+        width: 100%;
+    }
+}

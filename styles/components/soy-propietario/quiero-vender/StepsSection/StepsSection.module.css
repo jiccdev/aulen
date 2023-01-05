@@ -63,3 +63,15 @@
     color: var(--color-primary, #f57914);
 }
 /* END STEP ICON */
+
+@media (width < 991px){
+    .stepHeader{
+        width: 100%;
+    }
+    .iconDivsContainer{
+        width: 90%;
+    }
+    .mainContainer{
+        align-items: center;
+    }
+}

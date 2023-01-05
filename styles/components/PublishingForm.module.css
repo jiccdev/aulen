@@ -135,3 +135,10 @@
 }
 
 /* END ICON */
+@media (width < 991px){
+  .form{
+    width: 70%;
+    max-width: 70%;
+    height: 600px;
+  }
+}

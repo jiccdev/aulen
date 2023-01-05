@@ -8,7 +8,7 @@ export const HeroSection = () => {
   return (
     <header className={`${styles.customCol} ${styles.sellPageHeader}`}>
       <h1>¡Vende tu propiedad rápido y sin complicaciones!</h1>
-      <div className={`${styles.customRow}`}>
+      <div className={`${styles.customRow} ${styles.imgAndForm}`}>
         <div className={`${styles.customRow} ${styles.imgContainer}`}>
           <Image className={`${styles.imgHeader}`} src={keyImg} alt='' />
         </div>
