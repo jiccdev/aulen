@@ -9,10 +9,10 @@ import { publishingFormData } from "../../../../api/fakeData/publishingForm"
 
 export const WhyLease = () => {
   return (
-    <main className={`${styles.customRow} `} >
+    <main className={`${styles.customRow} ${styles.mainWhyContainer}`} >
       <div className={`${styles.customCol} ${styles.whyContainer}`}>
         <h2 className={`${styles.whyH2}`} >¿Por qué arrendar tu propiedad con nosotros?</h2>
-        <div className={`${styles.customRow}`} >
+        <div className={`${styles.customRow} ${styles.featureCardContainer}`} >
           <FeatureCard features={FeaturesData} />
         </div>
         <div>

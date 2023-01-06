@@ -50,6 +50,7 @@
 .cardTextContainer{
     padding: 1.2em 2em;
     text-align: center;
+    min-height: 155px;
 
 }
 
@@ -60,4 +61,43 @@
 
 .card__p{
     font-size: var(--font-size-sm, 0.8rem);
+}
+
+@media (width <= 1600px){
+    .card__h2{
+        font-size: var(--font-size-md, 1rem);
+        font-weight: var(--font-weight-bold, 700);
+    }
+    
+    .card__p{
+        font-size: var(--font-size-xs, 0.6rem);
+    }
+    .cardTextContainer{
+        padding: 1em 1em;
+        text-align: center;
+    
+    }
+    .card__img{
+        width: 72px;
+        height: 72px;
+    }
+
+}
+
+@media (width <= 1350px){
+    .cardTextContainer{
+        padding: 1.2em 2em;
+        text-align: center;
+        max-height: 155px;
+        max-width: 300px;
+    }
+    
+    .card__h2{
+        font-size: var(--font-size-lg, 1.2rem);
+        font-weight: var(--font-weight-bold, 700);
+    }
+    
+    .card__p{
+        font-size: var(--font-size-sm, 0.8rem);
+    }
 }

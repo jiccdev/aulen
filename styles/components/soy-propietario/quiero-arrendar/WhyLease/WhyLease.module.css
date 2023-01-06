@@ -47,3 +47,23 @@
 .stepsContainer{
   margin-top: 2rem;
 }
+.featureCardContainer{
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.mainWhyContainer{
+  gap: 5%;
+}
+@media (width <= 1350px){
+  .mainWhyContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .whyContainer{
+    width: 100%;
+  }
+  .stepsContainer{
+    margin: 3rem;
+  }
+}
