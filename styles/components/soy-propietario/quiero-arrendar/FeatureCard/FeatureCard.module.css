@@ -19,13 +19,25 @@
     width: calc(100% / 3.5);
     gap: 0;
     overflow: hidden;
+    user-select: none;
+    transition: transform 250ms linear;
+}
+.cardContainer:is(:hover, :focus){
+    transform: scale(1.1);
 }
 
-.cardImgContainer{
+.cardContainer:has(.cardImgContainer) .cardImgContainer{
     background: var(--color-primary, #f57914);
     width: 100%;
     padding: 2rem;
+    transition: background 250ms linear;
 }
+
+.cardContainer:is(:hover, :focus):has(.cardImgContainer) .cardImgContainer{
+    background: var(--color-secondary, #4e2772);
+}
+
+
 
 .card__img{
     width: 128px;
