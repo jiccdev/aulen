@@ -3,6 +3,7 @@ import styles from '../../../../../styles/components/soy-propietario/quiero-vend
 import keyImg from '../../../../img/soy-propietario/key.jpg'
 import Image from "next/image";
 import { PublishingForm } from '../../../PublishingForm/PublishingForm.jsx';
+import { publishingFormData } from "../../../../api/fakeData/publishingForm"; /** revisar el indice según lo que quiera el form */
 
 export const HeroSection = () => {
   return (
@@ -12,7 +13,8 @@ export const HeroSection = () => {
         <div className={`${styles.customRow} ${styles.imgContainer}`}>
           <Image className={`${styles.imgHeader}`} src={keyImg} alt='' />
         </div>
-        <PublishingForm /></div>
+        <PublishingForm formData={publishingFormData[0]} />
+      </div>
     </header>
   )
 }

@@ -1,14 +1,14 @@
 import React from "react";
 import styles from '../../../styles/components/PublishingForm.module.css';
 import { icons } from '../Icons';
-
-export const PublishingForm = () => {
+/** Recibe un objeto con los datos. */
+export const PublishingForm = ({formData}) => {
   const { FaUserAlt, BsTelephoneFill, MdOutlineMailOutline } = icons
   return (
     <form className={`${styles.customCol} ${styles.form}`} >
       <header className={`${styles.customCol} ${styles.form__header}`}>
-        <h2>¡Publica tu propiedad gratis!</h2>
-        <h3>COMPLETA EL FORMULARIO</h3>
+        <h2>{formData.h2}</h2>
+        <h3>{formData.h3}</h3>
       </header>
       <main className={`${styles.customCol} ${styles.form__inputs}`}>
         <div className={`${styles.customRow} ${styles.form__inputs__name}`}>
@@ -28,7 +28,7 @@ export const PublishingForm = () => {
           Al continuar estás aceptando los términos y condiciones y la política de privacidad.
         </label>
       </main>
-      <button className={styles.form__btn}>ENVIAR</button>
+      <button className={styles.form__btn}>{formData.btn}</button>
     </form>
   )
 }
