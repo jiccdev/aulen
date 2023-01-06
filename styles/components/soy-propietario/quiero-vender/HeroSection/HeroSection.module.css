@@ -22,6 +22,10 @@
 
 /* END SELL PAGE */
 
+.imgAndForm{
+    gap: 5%;
+}
+
 /* IMG-HEADER */
 .imgContainer{
     align-self: center;
@@ -30,8 +34,8 @@
 
 }
 .imgHeader{
-    width: 70%;
-    height: 600px;
+    width: 470px;
+    height: 550px;
     object-fit: cover;
     
 

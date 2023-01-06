@@ -18,15 +18,13 @@ const QuieroVender = () => {
         <StepsSection />
       </LayoutSection>
 
-      <main>
-        <h2>Conoce nuestros planes</h2>
-        {/* <LayoutSection>
-            <Plans />
-        </LayoutSection> */}
-      </main>
-        <LayoutSection>
-          <CustomerExperience />
-        </LayoutSection>
+      <LayoutSection>
+        <Plans />
+      </LayoutSection>
+
+      <LayoutSection>
+        <CustomerExperience />
+      </LayoutSection>
     </>
 
   );

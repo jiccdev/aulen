@@ -64,7 +64,7 @@
 }
 /* END STEP ICON */
 
-@media (width < 991px){
+@media (width < 1200px){
     .stepHeader{
         width: 100%;
     }
