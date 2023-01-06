@@ -6,7 +6,7 @@ import OurService from "../../../OurService/OurService";
 
 export const HeroSection = () => {
     return(
-        <section className={`${styles.customRow}`}>
+        <section className={`${styles.customRow} ${styles.sectionHeroContainer}`}>
             <div className={`${styles.customRow} ${styles.servicesContainer}`} >
                 <OurService />
             </div>
