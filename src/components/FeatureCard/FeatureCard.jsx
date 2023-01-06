@@ -9,7 +9,7 @@ export const FeatureCard = ({ features }) => {
           <div key={el.id} className={`${styles.customCol} ${styles.cardContainer}`}>
             
               <div className={`${styles.customCol} ${styles.cardImgContainer}`} >
-                <img src="" alt="" className={`${styles.card__img}`} />
+                {el.img}
               </div>
               <div className={`${styles.customCol} ${styles.cardTextContainer}`}>
                 <h2 className={`${styles.card__h2}`}>{el.h2}</h2>
