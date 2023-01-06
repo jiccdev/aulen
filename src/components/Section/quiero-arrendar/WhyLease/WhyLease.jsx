@@ -5,6 +5,7 @@ import Steps from "../Steps/Steps"
 import { FeaturesData } from '../../../../api/fakeData/featuresCard'
 import { StepsData } from '../../../../api/fakeData/stepsLease'
 import { PublishingForm } from '../../../PublishingForm/PublishingForm.jsx';
+import { publishingFormData } from "../../../../api/fakeData/publishingForm"
 
 export const WhyLease = () => {
   return (
@@ -21,7 +22,7 @@ export const WhyLease = () => {
           </div>
         </div>
       </div>
-      <PublishingForm />
+      <PublishingForm formData={publishingFormData[0]} />
     </main>
   )
 }
