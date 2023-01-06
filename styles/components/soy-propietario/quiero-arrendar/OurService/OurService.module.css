@@ -14,13 +14,14 @@
 .OurServiceContainer{
     max-width: calc(100% / 3.4);
     padding: .6em;
-    border: black solid 1px;
+    /* border: black solid 1px; */
 }
 
 .img{
-    width: 128px;
+    width: 84px;
     min-width: 32px;
-    height: 128px;
+    height: 84px;
+    font-weight: var(--font-weight-light, 300);
 }
 
 

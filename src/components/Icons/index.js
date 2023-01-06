@@ -4,6 +4,7 @@ import {
   BsCardChecklist,
   BsFillGearFill,
   BsFillGridFill,
+  BsPerson,
 } from 'react-icons/bs';
 import {
   FaUserAlt,
@@ -11,15 +12,31 @@ import {
   FaHandHoldingUsd,
   FaArrowRight,
   FaThList,
+  FaRegNewspaper,
+ 
 } from 'react-icons/fa';
 import {
   MdOutlineMailOutline,
   MdOutlinePanTool,
   MdOutlineVerified,
+  MdOutlineTimer,
 } from 'react-icons/md';
-import { RiMoneyDollarCircleLine } from 'react-icons/ri';
-import { TbChecklist } from 'react-icons/tb';
+import { 
+  RiMoneyDollarCircleLine,
+  RiUserHeartLine,
+  RiTimerFlashLine,
+ } from 'react-icons/ri';
+import { 
+  TbChecklist,
+  TbHandClick,
+ } from 'react-icons/tb';
 import { BiTimer, BiMap } from 'react-icons/bi';
+import {
+  CgSearchFound,
+} from 'react-icons/cg'
+import { 
+  VscPerson,
+} from 'react-icons/vsc'
 
 export const icons = {
   FaUserAlt,
@@ -39,4 +56,12 @@ export const icons = {
   BiMap,
   BsFillGridFill,
   FaThList,
+  BsPerson,
+  FaRegNewspaper,
+  MdOutlineTimer,
+  RiUserHeartLine,
+  TbHandClick,
+  CgSearchFound,
+  RiTimerFlashLine,
+  VscPerson,
 };
