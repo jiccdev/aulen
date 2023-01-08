@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import PlanForm from '../../Form/PlanFrom';
 
 /** Bootstrap components */
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from '../../../../styles/components/administracion-de-arriendo/Layout.module.css';
@@ -16,7 +15,7 @@ const Layout = ({ children }) => {
       'scroll',
       () => {
         const isTop = window.scrollY > 50;
-        const isTop2 = window.scrollY > 50 && window.scrollY > 1300;
+        const isTop2 = window.scrollY > 50 && window.scrollY > 1850;
 
         if (isTop !== isScrolledPast) {
           setScrolledPast(isTop);

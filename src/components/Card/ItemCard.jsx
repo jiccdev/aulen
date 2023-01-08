@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 /** Bootstrap components */
 import Col from 'react-bootstrap/Col';
@@ -8,7 +9,7 @@ import styles from '../../../styles/components/CardItem.module.css';
 const CardItem = ({ plan }) => {
   const { id, name, supply, brokersInfo, characteristics } = plan;
   return (
-    <Col xs={12} md={4} key={plan?.id} plan={plan} className={styles.colCard}>
+    <Col xs={12} md={4} key={id} plan={plan} className={styles.colCard}>
       <Card className={styles.card}>
         <Card.Body className={styles.cardBody}>
           <Card.Title className={styles.cardTitle}>{name}</Card.Title>
@@ -26,6 +27,15 @@ const CardItem = ({ plan }) => {
               </li>
             ))}
           </ul>
+
+          <Card.Footer className={styles.cardFooter}>
+            <Link
+              href={`/administracion-de-arriendo/plans/${id}`}
+              className={styles.moreInfo}
+            >
+              Más información
+            </Link>
+          </Card.Footer>
         </Card.Body>
       </Card>
     </Col>

@@ -1,0 +1,60 @@
+.dropdownIconToggle {
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  margin: 2.5rem;
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.dropdownBtn {
+  border: none !important;
+}
+
+.dropdownItem {
+  animation: slideIn 0.3s ease-in-out;
+  -webkit-animation: slideIn 0.3s ease-in-out;
+  text-align: center !important;
+  background-color: none !important;
+  border: none !important;
+  font-size: var(--font-size-4xl);
+  color: var(--color-dark) !important;
+  cursor: pointer;
+  z-index: 999;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}

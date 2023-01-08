@@ -12,9 +12,7 @@ const DepartmentItem = ({ department, isGrid, isList }) => {
   const { cod, name, price, image, squareMeters, address, status } = department;
 
   return (
-    // sm={6} md={4} grid
-    // md={12} list
-    <Col  md={isGrid ? 4 : isList ? 12 : 4} className={styles.col}>
+    <Col md={isGrid ? 4 : isList ? 12 : 4} className={styles.col}>
       <Card className={styles.card}>
         <span
           className={

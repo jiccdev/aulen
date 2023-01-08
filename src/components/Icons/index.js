@@ -13,7 +13,6 @@ import {
   FaArrowRight,
   FaThList,
   FaRegNewspaper,
- 
 } from 'react-icons/fa';
 import {
   MdOutlineMailOutline,
@@ -21,22 +20,16 @@ import {
   MdOutlineVerified,
   MdOutlineTimer,
 } from 'react-icons/md';
-import { 
+import {
   RiMoneyDollarCircleLine,
   RiUserHeartLine,
   RiTimerFlashLine,
- } from 'react-icons/ri';
-import { 
-  TbChecklist,
-  TbHandClick,
- } from 'react-icons/tb';
+} from 'react-icons/ri';
+import { TbChecklist, TbHandClick } from 'react-icons/tb';
 import { BiTimer, BiMap } from 'react-icons/bi';
-import {
-  CgSearchFound,
-} from 'react-icons/cg'
-import { 
-  VscPerson,
-} from 'react-icons/vsc'
+import { CgSearchFound } from 'react-icons/cg';
+import { VscPerson } from 'react-icons/vsc';
+import { AiOutlineWhatsApp } from 'react-icons/ai';
 
 export const icons = {
   FaUserAlt,
@@ -64,4 +57,5 @@ export const icons = {
   CgSearchFound,
   RiTimerFlashLine,
   VscPerson,
+  AiOutlineWhatsApp,
 };

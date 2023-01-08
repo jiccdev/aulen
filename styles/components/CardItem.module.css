@@ -23,6 +23,15 @@
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
+.card:hover .moreInfo {
+  background-color: var(--color-primary) !important;
+  transition: 0.3s all ease;
+}
+
+.card:hover .moreInfo:hover {
+  background-color: var(--color-primary-dark) !important;
+}
+
 .cardBody {
   width: 100% !important;
   padding: 0 !important;
@@ -72,4 +81,29 @@
 
 .characteristicsItem {
   line-height: 1.7rem !important;
+}
+
+.cardFooter {
+  border: none !important;
+  background-color: transparent !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.moreInfo {
+  background-color: var(--color-secondary);
+  color: var(--color-white) !important;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-md) !important;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-2xl);
+  cursor: pointer;
+  width: 100% !important;
+  text-decoration: none;
+  white-space: nowrap;
 }
