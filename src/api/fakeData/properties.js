@@ -13,23 +13,23 @@ export const propertiesData = [
     slider: [
       {
         id: 0,
-        img: Property1,
+        src: Property1,
       },
       {
         id: 2,
-        img: Property2,
+        src: Property2,
       },
       {
         id: 3,
-        img: Property3,
+        src: Property3,
       },
       {
         id: 4,
-        img: Property4,
+        src: Property4,
       },
       {
         id: 5,
-        img: Property5,
+        src: Property5,
       },
     ],
     squareMeters: 100,
@@ -52,23 +52,23 @@ export const propertiesData = [
     slider: [
       {
         id: 0,
-        img: Property1,
+        src: Property1,
       },
       {
         id: 2,
-        img: Property2,
+        src: Property2,
       },
       {
         id: 3,
-        img: Property3,
+        src: Property3,
       },
       {
         id: 4,
-        img: Property4,
+        src: Property4,
       },
       {
         id: 5,
-        img: Property5,
+        src: Property5,
       },
     ],
     squareMeters: 100,
@@ -91,23 +91,23 @@ export const propertiesData = [
     slider: [
       {
         id: 0,
-        img: Property1,
+        src: Property1,
       },
       {
         id: 2,
-        img: Property2,
+        src: Property2,
       },
       {
         id: 3,
-        img: Property3,
+        src: Property3,
       },
       {
         id: 4,
-        img: Property4,
+        src: Property4,
       },
       {
         id: 5,
-        img: Property5,
+        src: Property5,
       },
     ],
     squareMeters: 100,
@@ -130,23 +130,23 @@ export const propertiesData = [
     slider: [
       {
         id: 0,
-        img: Property1,
+        src: Property1,
       },
       {
         id: 2,
-        img: Property2,
+        src: Property2,
       },
       {
         id: 3,
-        img: Property3,
+        src: Property3,
       },
       {
         id: 4,
-        img: Property4,
+        src: Property4,
       },
       {
         id: 5,
-        img: Property5,
+        src: Property5,
       },
     ],
     squareMeters: 100,
@@ -173,19 +173,19 @@ export const propertiesData = [
       },
       {
         id: 2,
-        img: Property2,
+        src: Property2,
       },
       {
         id: 3,
-        img: Property3,
+        src: Property3,
       },
       {
         id: 4,
-        img: Property4,
+        src: Property4,
       },
       {
         id: 5,
-        img: Property5,
+        src: Property5,
       },
     ],
     squareMeters: 100,
@@ -208,23 +208,23 @@ export const propertiesData = [
     slider: [
       {
         id: 0,
-        img: Property1,
+        src: Property1,
       },
       {
         id: 2,
-        img: Property2,
+        src: Property2,
       },
       {
         id: 3,
-        img: Property3,
+        src: Property3,
       },
       {
         id: 4,
-        img: Property4,
+        src: Property4,
       },
       {
         id: 5,
-        img: Property5,
+        src: Property5,
       },
     ],
     squareMeters: 100,
@@ -247,23 +247,23 @@ export const propertiesData = [
     slider: [
       {
         id: 0,
-        img: Property1,
+        src: Property1,
       },
       {
         id: 2,
-        img: Property2,
+        src: Property2,
       },
       {
         id: 3,
-        img: Property3,
+        src: Property3,
       },
       {
         id: 4,
-        img: Property4,
+        src: Property4,
       },
       {
         id: 5,
-        img: Property5,
+        src: Property5,
       },
     ],
     squareMeters: 100,

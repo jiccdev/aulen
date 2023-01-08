@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import HeadPage from '../../src/components/HeadPage/HeadPage';
+import Layout from '../../src/components/Section/adminstracion-de-arriendo/Layout';
 import LayoutSection from '../../src/components/Section/LayoutSection';
 import Plans from '../../src/components/Section/adminstracion-de-arriendo/Plans/Plans';
 import CustomerExperience from '../../src/components/Section/adminstracion-de-arriendo/CustomerExperience/CustomerExperience';
@@ -11,20 +12,22 @@ const AdministracionDeArriendo = () => {
     <Fragment>
       <HeadPage title="Administración de arriendo" />
 
-      {/* CONOCE NUESTROS PLANES */}
-      <LayoutSection>
-        <Plans />
-      </LayoutSection>
+      <Layout>
+        {/* CONOCE NUESTROS PLANES */}
+        <LayoutSection>
+          <Plans />
+        </LayoutSection>
 
-      {/* PASOS PARA ARRENDAR UN DEPARTAMENTO */}
-      <LayoutSection>
-        <StepsToRentDepartment />
-      </LayoutSection>
+        {/* PASOS PARA ARRENDAR UN DEPARTAMENTO */}
+        <LayoutSection>
+          <StepsToRentDepartment />
+        </LayoutSection>
 
-      {/* CASA VENDIDA */}
-      <LayoutSection>
-        <SoldHome />
-      </LayoutSection>
+        {/* CASA VENDIDA */}
+        <LayoutSection>
+          <SoldHome />
+        </LayoutSection>
+      </Layout>
 
       {/* CONOCE LA EXPERIENCIA DE NUESTROS CLIENTES */}
       <LayoutSection>

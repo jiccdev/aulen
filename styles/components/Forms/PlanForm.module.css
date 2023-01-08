@@ -3,6 +3,7 @@
   background-color: var(--color-pale-gray);
   padding: 1.5rem;
   border-radius: var(--border-radius-5xl);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .form h3 {

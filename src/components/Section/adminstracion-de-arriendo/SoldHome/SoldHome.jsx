@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import PlanFrom from '../../../../components/Form/PlanFrom';
 import SoldHomeImg from '../../../../../src/assets/img/SoldHome/sold-home.jpg';
 
 /** Bootstrap components */
@@ -24,10 +23,6 @@ const SoldHome = () => {
             borderRadius: '15%',
           }}
         />
-      </Col>
-
-      <Col xl={4} className={styles.colForm}>
-        <PlanFrom />
       </Col>
     </Row>
   );

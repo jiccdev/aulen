@@ -1,0 +1,43 @@
+.row {
+  position: relative;
+}
+
+.rightCol {
+  position: fixed;
+  right: auto;
+  top: 0;
+  display: none;
+}
+
+.isScrolledPast {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
+  display: none;
+}
+
+.isScrolledPast2 {
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .rightCol {
+    position: fixed;
+    right: 3rem;
+    top: 12rem;
+    display: block;
+  }
+
+  .isScrolledPast {
+    position: fixed;
+    right: 2rem;
+    top: 4rem;
+    display: block;
+  }
+
+  .isScrolledPast2 {
+    display: none;
+  }
+}

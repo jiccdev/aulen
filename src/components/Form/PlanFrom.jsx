@@ -15,7 +15,7 @@ const PlanFrom = () => {
   };
 
   return (
-    <Form className={styles.form} onSubmit={onSubmit}>
+    <Form className={styles.form} onSubmit={onSubmit} id="planForm">
       <h3>¡Despreocúpate por tú propiedad de inversión!</h3>
       <p>Completa el formulacio y entérate como</p>
       <Form.Group className={styles.formGroup} controlId="formBasicName">

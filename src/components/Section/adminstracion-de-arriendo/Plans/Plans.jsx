@@ -1,7 +1,6 @@
 import React from 'react';
 import HeaderSection from '../../../../../src/components/Section/HeaderSection';
 import CardItem from '../../../../../src/components/Card/ItemCard';
-import PlanFrom from '../../../../../src/components/Form/PlanFrom';
 import { plansData } from '../../../../../src/api/fakeData/plans';
 
 /** Bootstrap components */
@@ -12,17 +11,13 @@ import styles from '../../../../../styles/AdministracionDeArriendo.module.css';
 const Plans = () => {
   return (
     <Row className={styles.rowContainer}>
-      <Col xl={8} className={styles.col}>
+      <Col md={12} xl={9} className={styles.col}>
         <HeaderSection titleSection="Conoce nuestros planes" />
 
         <Row className={styles.rowItems}>
           {plansData &&
             plansData.map((plan) => <CardItem key={plan?.id} plan={plan} />)}
         </Row>
-      </Col>
-
-      <Col xl={4} className={styles.colForm}>
-        <PlanFrom />
       </Col>
     </Row>
   );

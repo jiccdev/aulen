@@ -1,7 +1,6 @@
 import React from 'react';
 import HeaderSection from '../../../../../src/components/Section/HeaderSection';
 import StepItem from '../../../../../src/components/Card/StepItem';
-import PlanFrom from '../../../../../src/components/Form/PlanFrom';
 import { stepsToRentDepartmentData } from '../../../../api/fakeData/stepsToRentDepartment';
 
 /** Bootstrap components */
@@ -22,10 +21,6 @@ const StepsToRentDepartment = () => {
               <StepItem key={step?.id} step={step} />
             ))}
         </Row>
-      </Col>
-
-      <Col xl={4} className={styles.colForm}>
-        <PlanFrom />
       </Col>
     </Row>
   );
