@@ -6,9 +6,9 @@ const Details = ({ filtredData }) => {
   return (
     filtredData &&
     filtredData?.map((detail) => (
-      <section key={detail.cod}>
-        <h2>{detail.cod}</h2>
-        <h3>{detail.name}</h3>
+      <section key={detail.cod} className={styles.detailContainer}>
+        <h2>{detail.address?.city}</h2>
+        <h4>Publicado por {detail.address?.city}</h4>
       </section>
     ))
   );

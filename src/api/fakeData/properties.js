@@ -32,6 +32,9 @@ export const propertiesData = [
         src: Property5,
       },
     ],
+    createdBy: {
+      username: 'Sinergia',
+    },
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -71,6 +74,9 @@ export const propertiesData = [
         src: Property5,
       },
     ],
+    createdBy: {
+      username: 'Sinergia',
+    },
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -110,6 +116,9 @@ export const propertiesData = [
         src: Property5,
       },
     ],
+    createdBy: {
+      username: 'Sinergia',
+    },
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -149,6 +158,9 @@ export const propertiesData = [
         src: Property5,
       },
     ],
+    createdBy: {
+      username: 'Sinergia',
+    },
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -188,6 +200,9 @@ export const propertiesData = [
         src: Property5,
       },
     ],
+    createdBy: {
+      username: 'Sinergia',
+    },
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -227,6 +242,9 @@ export const propertiesData = [
         src: Property5,
       },
     ],
+    createdBy: {
+      username: 'Sinergia',
+    },
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',
@@ -266,6 +284,9 @@ export const propertiesData = [
         src: Property5,
       },
     ],
+    createdBy: {
+      username: 'Sinergia',
+    },
     squareMeters: 100,
     address: {
       street: 'Av. Apoquindo 5000',

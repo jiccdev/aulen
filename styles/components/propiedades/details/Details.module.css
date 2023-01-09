@@ -25,3 +25,10 @@
 .printLink:hover {
   color: var(--color-primary);
 }
+
+.detailContainer h2 {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark);
+  margin-bottom: 0;
+}
