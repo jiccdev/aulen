@@ -5,6 +5,7 @@ import {
   BsFillGearFill,
   BsFillGridFill,
   BsPerson,
+  BsHeart,
 } from 'react-icons/bs';
 import {
   FaUserAlt,
@@ -62,4 +63,5 @@ export const icons = {
   AiOutlineWhatsApp,
   GrClose,
   ImArrowRight,
+  BsHeart,
 };

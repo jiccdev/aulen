@@ -1,0 +1,27 @@
+.col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.deptoDetailsShare {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.shareLink,
+.printLink {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-size: var(--font-size-lg);
+  transition: 0.3 all ease-in-out;
+}
+
+.shareLink:hover,
+.printLink:hover {
+  color: var(--color-primary);
+}
