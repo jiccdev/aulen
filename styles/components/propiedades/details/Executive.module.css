@@ -1,0 +1,51 @@
+.executiveContainer {
+  width: 100%;
+  margin: 1.8rem 0;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem 2rem 1rem;
+  border: 2px solid var(--color-dark);
+  border-radius: var(--border-radius-3xl);
+}
+
+.executiveContainer h3 {
+  padding-bottom: 0.5rem;
+}
+
+.executiveContainer h3,
+.executiveContainer p {
+  color: var(--color-dark);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: 1rem;
+}
+
+.executiveContainer form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.executiveContainer form .contactBtn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  padding: 0.5rem 2rem;
+  border-radius: var(--border-radius-2xl);
+  border: none;
+  transition: 0.3 all ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.executiveContainer form .contactBtn:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.executiveImg {
+  margin-top: 1rem;
+}

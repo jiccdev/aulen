@@ -14,6 +14,7 @@ import {
   FaArrowRight,
   FaThList,
   FaRegNewspaper,
+  FaBath,
 } from 'react-icons/fa';
 import {
   MdOutlineMailOutline,
@@ -27,12 +28,13 @@ import {
   RiTimerFlashLine,
 } from 'react-icons/ri';
 import { TbChecklist, TbHandClick } from 'react-icons/tb';
-import { BiTimer, BiMap } from 'react-icons/bi';
+import { BiTimer, BiMap, BiBuildingHouse } from 'react-icons/bi';
 import { CgSearchFound } from 'react-icons/cg';
 import { VscPerson } from 'react-icons/vsc';
 import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { GrClose } from 'react-icons/gr';
 import { ImArrowRight } from 'react-icons/im';
+import { IoBedOutline } from 'react-icons/io5';
 
 export const icons = {
   FaUserAlt,
@@ -64,4 +66,7 @@ export const icons = {
   GrClose,
   ImArrowRight,
   BsHeart,
+  BiBuildingHouse,
+  IoBedOutline,
+  FaBath,
 };

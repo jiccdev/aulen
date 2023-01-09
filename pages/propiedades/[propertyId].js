@@ -6,6 +6,7 @@ import PropertiesContext from '../../src/context/properties/PropertiesContext';
 import GalleryCarousel from '../../src/components/GalleryCarousel/GalleryCarousel';
 import Details from '../../src/components/Section/propiedades/details/Details';
 
+
 /** Bootstrap componets */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -32,6 +33,7 @@ const PropiedadId = () => {
       <Row>
         <Col xs={12} md={8}>
           <GalleryCarousel data={data} />
+          dsdsd
         </Col>
 
         <Col xs={12} md={4} className={styles.col}>
