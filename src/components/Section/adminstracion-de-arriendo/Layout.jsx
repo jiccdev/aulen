@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
 
   return (
     <Row className={styles.row}>
-      <Col md={10} xl={10}>
+      <Col md={12} xl={10}>
         {children}
       </Col>
       <Col

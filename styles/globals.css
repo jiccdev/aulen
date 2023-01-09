@@ -77,6 +77,10 @@ a {
   text-decoration: none;
 }
 
+.modal-content {
+  border-radius: var(--border-radius-5xl) !important;
+}
+
 /* ===== LOGO =====  */
 /* .img-logo {
   width: 100%;

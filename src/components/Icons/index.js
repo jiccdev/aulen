@@ -30,6 +30,7 @@ import { BiTimer, BiMap } from 'react-icons/bi';
 import { CgSearchFound } from 'react-icons/cg';
 import { VscPerson } from 'react-icons/vsc';
 import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { GrClose } from 'react-icons/gr';
 
 export const icons = {
   FaUserAlt,
@@ -58,4 +59,5 @@ export const icons = {
   RiTimerFlashLine,
   VscPerson,
   AiOutlineWhatsApp,
+  GrClose,
 };

@@ -1,3 +1,18 @@
 .modal {
   transition: 0.4s all ease;
 }
+
+.closeModal {
+  background-color: var() !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.closeModal span:hover {
+  color: var(--color-primary) !important;
+}

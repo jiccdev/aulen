@@ -14,9 +14,7 @@ const ModalPlanForm = ({ ...props }) => {
       className={styles.modal}
       centered
     >
-      {/* modal content */}
-
-      <PlanForm />
+      <PlanForm props={props} />
     </Modal>
   );
 };

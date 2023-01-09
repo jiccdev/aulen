@@ -37,6 +37,8 @@ const LayoutPage = ({ children }) => {
         <ModalPlanForm
           show={isModalOpen}
           onHide={() => setIsModalOpen(false)}
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
         />
       )}
     </Container>
