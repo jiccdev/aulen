@@ -3,7 +3,7 @@
 }
 
 .extraIcon {
-  color: var(--color-black);
+  color: var(--color-dark);
   font-size: 2rem;
   font-weight: bold;
   display: flex;

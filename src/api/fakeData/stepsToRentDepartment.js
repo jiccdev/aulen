@@ -6,7 +6,7 @@ const {
   MdOutlineVerified,
   FaHandHoldingUsd,
   BiTimer,
-  FaArrowRight,
+  ImArrowRight,
 } = icons;
 
 export const stepsToRentDepartmentData = [
@@ -17,7 +17,7 @@ export const stepsToRentDepartmentData = [
     icon: <TbChecklist />,
     extraIcon: {
       set: true,
-      arrow: <FaArrowRight />,
+      arrow: <ImArrowRight />,
     },
   },
   {
@@ -27,7 +27,7 @@ export const stepsToRentDepartmentData = [
     icon: <BiTimer />,
     extraIcon: {
       set: true,
-      arrow: <FaArrowRight />,
+      arrow: <ImArrowRight />,
     },
   },
   {
@@ -43,7 +43,7 @@ export const stepsToRentDepartmentData = [
     icon: <MdOutlineVerified />,
     extraIcon: {
       set: true,
-      arrow: <FaArrowRight />,
+      arrow: <ImArrowRight />,
     },
   },
   {

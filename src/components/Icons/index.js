@@ -31,6 +31,7 @@ import { CgSearchFound } from 'react-icons/cg';
 import { VscPerson } from 'react-icons/vsc';
 import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { GrClose } from 'react-icons/gr';
+import { ImArrowRight } from 'react-icons/im';
 
 export const icons = {
   FaUserAlt,
@@ -60,4 +61,5 @@ export const icons = {
   VscPerson,
   AiOutlineWhatsApp,
   GrClose,
+  ImArrowRight,
 };

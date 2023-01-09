@@ -1,3 +1,8 @@
+.rowItems {
+  display: flex;
+  justify-content: center;
+}
+
 .colSoldHome {
   display: flex;
   justify-content: center;
