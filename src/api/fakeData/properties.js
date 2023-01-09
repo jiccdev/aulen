@@ -8,7 +8,10 @@ export const propertiesData = [
   {
     cod: 1,
     name: 'Casa en Condominio',
-    price: 1000000,
+    price: {
+      uf: 2150,
+      clp: 74870245,
+    },
     image: Property1,
     slider: [
       {
@@ -50,7 +53,10 @@ export const propertiesData = [
   {
     cod: 2,
     name: 'Casa en Condominio',
-    price: 1000000,
+    price: {
+      uf: 2150,
+      clp: 74870245,
+    },
     image: Property1,
     slider: [
       {
@@ -92,7 +98,10 @@ export const propertiesData = [
   {
     cod: 3,
     name: 'Casa en Condominio',
-    price: 1000000,
+    price: {
+      uf: 2150,
+      clp: 74870245,
+    },
     image: Property1,
     slider: [
       {
@@ -134,7 +143,10 @@ export const propertiesData = [
   {
     cod: 4,
     name: 'Casa en Condominio',
-    price: 1000000,
+    price: {
+      uf: 2150,
+      clp: 74870245,
+    },
     image: Property2,
     slider: [
       {
@@ -176,7 +188,10 @@ export const propertiesData = [
   {
     cod: 5,
     name: 'Casa en Condominio',
-    price: 1000000,
+    price: {
+      uf: 2150,
+      clp: 74870245,
+    },
     image: Property3,
     slider: [
       {
@@ -218,7 +233,10 @@ export const propertiesData = [
   {
     cod: 6,
     name: 'Casa en Condominio',
-    price: 1000000,
+    price: {
+      uf: 2150,
+      clp: 74870245,
+    },
     image: Property4,
     slider: [
       {
@@ -260,7 +278,10 @@ export const propertiesData = [
   {
     cod: 7,
     name: 'Casa en Condominio',
-    price: 1000000,
+    price: {
+      uf: 2150,
+      clp: 74870245,
+    },
     image: Property5,
     slider: [
       {

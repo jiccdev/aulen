@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import HeadPage from '../../src/components/HeadPage/HeadPage';
 import PropertiesContext from '../../src/context/properties/PropertiesContext';
 import GalleryCarousel from '../../src/components/GalleryCarousel/GalleryCarousel';
 import Details from '../../src/components/Section/propiedades/details/Details';
@@ -25,6 +26,7 @@ const PropiedadId = () => {
 
   return (
     <Container>
+      <HeadPage title={`Departamento-${propertyId}`} />
       <h2>Departamento {propertyId}</h2>
 
       <Row>

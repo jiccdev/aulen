@@ -3,6 +3,8 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  background-color: red;
+  padding: 0 3rem;
 }
 
 .deptoDetailsShare {
@@ -10,7 +12,7 @@
   justify-content: space-evenly;
   width: 75%;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .shareLink,
@@ -28,7 +30,45 @@
 
 .detailContainer h2 {
   font-size: var(--font-size-xxl);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-extra-bold);
   color: var(--color-dark);
   margin-bottom: 0;
+  margin: 1rem 0;
+}
+
+.detailContainer h4 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark);
+}
+
+.pricesContainer {
+  margin: 1.8rem 0;
+}
+
+.detailContainer .ufPrice,
+.detailContainer .clpPrice {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 2.7rem !important;
+  text-transform: uppercase;
+}
+
+.detailContainer .ufPrice {
+  font-size: 3.7rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.detailContainer .clpPrice {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+}
+
+.deptoPropsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.deptoPropsContainer span {
+  margin: .2rem 0;
 }
