@@ -97,6 +97,8 @@ export const propertiesData = [
       id: 1,
       name: 'Venta',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -144,6 +146,8 @@ export const propertiesData = [
       id: 2,
       name: 'Destacado',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -191,6 +195,8 @@ export const propertiesData = [
       id: 1,
       name: 'Venta',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -238,6 +244,8 @@ export const propertiesData = [
       id: 2,
       name: 'Destacado',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -285,6 +293,8 @@ export const propertiesData = [
       id: 1,
       name: 'Venta',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -332,5 +342,7 @@ export const propertiesData = [
       id: 2,
       name: 'Destacado',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 ];

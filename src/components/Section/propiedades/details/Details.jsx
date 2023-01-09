@@ -5,7 +5,6 @@ import { icons } from '../../../../components/Icons';
 import styles from '../../../../../styles/components/propiedades/details/Details.module.css';
 
 const Details = ({ filtredData }) => {
-  console.log('dsdsd', filtredData);
   const { BiBuildingHouse, IoBedOutline, FaBath } = icons;
   return (
     <Fragment>
