@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 import PropertiesContext from '../../src/context/properties/PropertiesContext';
 import GalleryCarousel from '../../src/components/GalleryCarousel/GalleryCarousel';
+import Details from '../../src/components/Section/propiedades/details/Details';
 
 /** Bootstrap componets */
 import Row from 'react-bootstrap/Row';
@@ -15,19 +15,24 @@ const PropiedadId = () => {
   const { contextData } = useContext(PropertiesContext);
   const [data] = contextData;
 
-  console.log(data);
+  const filtredData = data
+    ?.filter((item) => item?.cod == propertyId)
+    .map((item) => item);
 
   return (
     <Container>
       <h2>Departamento {propertyId}</h2>
 
       <Row>
-        <Col xs={12} md={7}>
+        <Col xs={12} md={8}>
           <GalleryCarousel data={data} />
         </Col>
 
-        <Col xs={12} md={5}>
-          Más Información
+        <Col xs={12} md={4}>
+          <div>
+            <a>Comprtira</a> |<a>Imprimir</a>
+          </div>
+          <Details filtredData={filtredData} />
         </Col>
       </Row>
     </Container>
