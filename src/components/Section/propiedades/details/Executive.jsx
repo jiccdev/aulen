@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from '../../../../../styles/components/propiedades/details/Executive.module.css';
 
-const Executive = () => {
+const Executive = ({ filtredData }) => {
   return (
     <div className={styles.executiveContainer}>
       <Row className={styles.row}>
@@ -17,6 +17,7 @@ const Executive = () => {
             src={SmallLogoAulen}
             height={50}
             width="auto"
+            alt="logo-aulen"
             className={styles.executiveImg}
           />
         </Col>

@@ -31,13 +31,12 @@ const PropiedadId = () => {
       <h2>Departamento {propertyId}</h2>
 
       <Row>
-        <Col xs={12} md={8}>
+        <Col xs={12} xl={8}>
           <GalleryCarousel data={data} />
-          
-          <Characteristic />
+          <Characteristic filtredData={filtredData} />
         </Col>
 
-        <Col xs={12} md={4} className={styles.col}>
+        <Col xs={12} xl={4} className={styles.col}>
           <div className={styles.deptoDetailsShare}>
             <Link href="/" className={styles.shareLink}>
               Compartir

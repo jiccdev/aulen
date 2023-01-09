@@ -38,6 +38,7 @@ const Inicio = () => {
               height={500}
               width={500}
               src={House}
+              alt="house"
               style={{
                 width: '100%',
                 height: '100%',

@@ -1,11 +1,14 @@
 import React from 'react';
+import TableDetails from './TableDetails';
 
 /** Bootstrap components */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from '../../../../../styles/components/propiedades/details/Characteristics.module.css';
 
-const Characteristics = () => {
+const Characteristics = ({ filtredData }) => {
+  console.log('filtredDataaa', filtredData);
+
   return (
     <div className={styles.characteristicsContainer}>
       <h2>Características</h2>
@@ -26,7 +29,9 @@ const Characteristics = () => {
             estacionamiento
           </p>
         </Col>
-        <Col lg={5}></Col>
+        <Col lg={5}>
+          <TableDetails />
+        </Col>
       </Row>
     </div>
   );

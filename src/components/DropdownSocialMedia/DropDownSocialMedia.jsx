@@ -12,7 +12,7 @@ const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen, handleModal }) => {
 
   return (
     <span className={styles.dropdownIconToggle}>
-      <DropdownButton id="dropdown-item-button" className={styles.dropdownBtn}>
+      <DropdownButton id="dropdown-item-button" title="" className={styles.dropdownBtn}>
         <Dropdown.Item as="span" className={styles.dropdownItem}>
           <AiOutlineWhatsApp />
         </Dropdown.Item>
