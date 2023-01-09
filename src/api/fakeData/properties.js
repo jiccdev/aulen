@@ -12,6 +12,8 @@ export const propertiesData = [
       uf: 2150,
       clp: 74870245,
     },
+    bathrooms: '1-2',
+    bedrooms: '1-2',
     image: Property1,
     slider: [
       {
@@ -57,6 +59,8 @@ export const propertiesData = [
       uf: 2150,
       clp: 74870245,
     },
+    bathrooms: '1-2',
+    bedrooms: '1-2',
     image: Property1,
     slider: [
       {
@@ -102,6 +106,8 @@ export const propertiesData = [
       uf: 2150,
       clp: 74870245,
     },
+    bathrooms: '1-2',
+    bedrooms: '1-2',
     image: Property1,
     slider: [
       {
@@ -147,6 +153,8 @@ export const propertiesData = [
       uf: 2150,
       clp: 74870245,
     },
+    bathrooms: '1-2',
+    bedrooms: '1-2',
     image: Property2,
     slider: [
       {
@@ -192,6 +200,8 @@ export const propertiesData = [
       uf: 2150,
       clp: 74870245,
     },
+    bathrooms: '1-2',
+    bedrooms: '1-2',
     image: Property3,
     slider: [
       {
@@ -237,6 +247,8 @@ export const propertiesData = [
       uf: 2150,
       clp: 74870245,
     },
+    bathrooms: '1-2',
+    bedrooms: '1-2',
     image: Property4,
     slider: [
       {
@@ -282,6 +294,8 @@ export const propertiesData = [
       uf: 2150,
       clp: 74870245,
     },
+    bathrooms: '1-2',
+    bedrooms: '1-2',
     image: Property5,
     slider: [
       {

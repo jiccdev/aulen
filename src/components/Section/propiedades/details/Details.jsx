@@ -24,10 +24,10 @@ const Details = ({ filtredData }) => {
             <strong>Superficie:</strong> {detail.squareMeters} m<sup>2</sup>
           </span>
           <span>
-            <strong>Superficie:</strong> {detail.squareMeters} m<sup>2</sup>
+            <strong>Superficie:</strong> {detail.bedrooms} dormitorios
           </span>
           <span>
-            <strong>Superficie:</strong> {detail.squareMeters} m<sup>2</sup>
+            <strong>Superficie:</strong> {detail.bathrooms} baños
           </span>
         </div>
       </section>
