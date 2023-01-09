@@ -1,0 +1,17 @@
+.characteristicsContainer {
+}
+
+.characteristicsContainer h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark);
+  margin-bottom: 0;
+  margin: 1rem 0;
+}
+
+.characteristicsContainer h6,
+.characteristicsContainer p {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.2rem;
+}

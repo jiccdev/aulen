@@ -1,13 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import SmallLogoAulen from '../../../../assets/img/LogoSite/SMALL-LOGO-AULEN.png';
 
 /** Bootstrap components */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import styles from '../../../../../styles/components/propiedades/details/Executive.module.css';
-import Image from 'next/image';
 
 const Executive = () => {
   return (

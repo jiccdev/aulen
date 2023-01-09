@@ -5,7 +5,7 @@ import HeadPage from '../../src/components/HeadPage/HeadPage';
 import PropertiesContext from '../../src/context/properties/PropertiesContext';
 import GalleryCarousel from '../../src/components/GalleryCarousel/GalleryCarousel';
 import Details from '../../src/components/Section/propiedades/details/Details';
-
+import Characteristic from '../../src/components/Section/propiedades/details/Characteristics';
 
 /** Bootstrap componets */
 import Row from 'react-bootstrap/Row';
@@ -33,7 +33,8 @@ const PropiedadId = () => {
       <Row>
         <Col xs={12} md={8}>
           <GalleryCarousel data={data} />
-          dsdsd
+          
+          <Characteristic />
         </Col>
 
         <Col xs={12} md={4} className={styles.col}>
