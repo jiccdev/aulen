@@ -3,7 +3,7 @@ import Carousel from 'react-gallery-carousel';
 import 'react-gallery-carousel/dist/index.css';
 
 const GalleryCarousel = ({ filtredData }) => {
-  const data = filtredData?.map((item) => item.slider);
+  const data = filtredData?.map((item) => item?.slider);
   const propertiesSlide = data[0];
 
   console.log('3', propertiesSlide);

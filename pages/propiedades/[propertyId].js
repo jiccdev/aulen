@@ -6,6 +6,7 @@ import PropertiesContext from '../../src/context/properties/PropertiesContext';
 import GalleryCarousel from '../../src/components/GalleryCarousel/GalleryCarousel';
 import Details from '../../src/components/Section/propiedades/details/Details';
 import Characteristic from '../../src/components/Section/propiedades/details/Characteristics';
+import InformationOnTheArea from '../../src/components/Section/propiedades/details/InformationOnTheArea';
 
 /** Bootstrap componets */
 import Row from 'react-bootstrap/Row';
@@ -25,10 +26,20 @@ const PropiedadId = () => {
     ?.filter((item) => item?.cod == propertyId)
     .map((item) => item);
 
+  const { address } = filtredData[0];
+
   return (
     <Container>
       <HeadPage title={`Departamento-${propertyId}`} />
-      <h2>Departamento {propertyId}</h2>
+      <ul className={styles.propertyTypeInfo}>
+        <li>
+          <Link href="/propiedades">Volver al listado</Link>
+        </li>
+        <li>Departamentos</li>
+        <li>Venta Proyectos</li>
+        <li>{address?.city}</li>
+        <li>{address?.country}</li>
+      </ul>
 
       <Row>
         <Col xs={12} xl={8}>
@@ -52,6 +63,8 @@ const PropiedadId = () => {
           <Details filtredData={filtredData} />
         </Col>
       </Row>
+
+      <InformationOnTheArea />
     </Container>
   );
 };
