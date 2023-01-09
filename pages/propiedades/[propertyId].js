@@ -32,7 +32,7 @@ const PropiedadId = () => {
 
       <Row>
         <Col xs={12} xl={8}>
-          <GalleryCarousel data={data} />
+          <GalleryCarousel filtredData={filtredData} />
           <Characteristic filtredData={filtredData} />
         </Col>
 

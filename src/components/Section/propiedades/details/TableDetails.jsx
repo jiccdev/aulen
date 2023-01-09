@@ -4,18 +4,15 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 
 const TableDetails = ({ filtredData }) => {
-  console.log('ArrayDepto', filtredData);
-  console.log('Departamento', filtredData[0]);
-
   const { squareMeters, bedrooms, bathrooms, projectStatus, deliveryDate } =
     filtredData[0] || {};
 
   return (
-    <Table striped bordered hover>
+    <Table striped bordered>
       <tbody>
         <tr>
           <th>Superficie útil</th>
-          <td>
+          <td className="bg-white">
             {squareMeters || ''} m<sup>2</sup>
           </td>
         </tr>
