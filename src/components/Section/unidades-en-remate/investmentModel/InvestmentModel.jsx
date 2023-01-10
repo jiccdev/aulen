@@ -4,11 +4,11 @@ import styles from "../../../../../styles/components/soy-inversionista/investmen
 export const InvestmentModel = ({investment}) => {
   return(
     <>
-      <div className={``}>
+      <div className={`${styles.customCol} ${styles.mainContainer}`}>
         {investment.img}
-        <div className={``}>
-          <h2 className={``}>{investment.h2}</h2>
-          <p className={``}>{investment.p}</p>
+        <div className={`${styles.customCol}`}>
+          <h2 className={`${styles.investment__h2}`}>{investment.h2}</h2>
+          <p className={`${styles.investment__p}`}>{investment.p}</p>
         </div>
       </div>
     </>
