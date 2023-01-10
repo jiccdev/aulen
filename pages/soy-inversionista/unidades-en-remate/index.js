@@ -5,6 +5,7 @@ import CustomerExperience from "../../../src/components/Section/adminstracion-de
 import HeaderSection from "../../../src/components/Section/unidades-en-remate/HeaderSection";
 import { InvestmentForm } from "../../../src/components/InvestmentForm/InvestmentForm";
 import { investmentFormData } from "../../../src/api/fakeData/investmentForm";
+import HeroSection from "../../../src/components/Section/unidades-en-remate/HeroSection";
 
 
 export const UnidadesEnRemate = () =>{
@@ -12,6 +13,10 @@ export const UnidadesEnRemate = () =>{
     <>
     <LayoutSection>
       <HeaderSection />
+    </LayoutSection>
+
+    <LayoutSection>
+      <HeroSection />
     </LayoutSection>
 
     <LayoutSection>
