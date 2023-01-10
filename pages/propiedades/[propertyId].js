@@ -41,7 +41,7 @@ const PropiedadId = () => {
         <li>{address?.country}</li>
       </ul>
 
-      <Row>
+      <Row className={styles.row}>
         <Col xs={12} xl={8}>
           <GalleryCarousel filtredData={filtredData} />
           <Characteristic filtredData={filtredData} />

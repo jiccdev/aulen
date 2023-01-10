@@ -1,0 +1,10 @@
+.informationOnTheAreaContainer {
+  background-color: var(--color-light);
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .informationOnTheAreaContainer {
+    padding: 3.5rem;
+  }
+}

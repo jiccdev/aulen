@@ -106,7 +106,7 @@ export const propertiesData = [
         src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-2-1.jpg',
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
         src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
@@ -156,7 +156,7 @@ export const propertiesData = [
         src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-4-1.jpg',
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
         src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',

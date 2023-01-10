@@ -6,8 +6,6 @@ const GalleryCarousel = ({ filtredData }) => {
   const data = filtredData?.map((item) => item?.slider);
   const propertiesSlide = data[0];
 
-  console.log('3', propertiesSlide);
-
   return (
     <Carousel
       images={propertiesSlide}
