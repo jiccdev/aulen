@@ -27,13 +27,7 @@
   position: relative;
 }
 
-@media (width <= 1200px){
-  .submainContainer{
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-}
+
 
 .image{
   border-radius: var(--border-radius-5xl, 4rem);
@@ -52,10 +46,19 @@
   .image{
     position: relative;
     left: 0;
+    width: 60%;
+  }
+}
+@media (width <= 1200px){
+  .submainContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .image{
     width: 90%;
   }
 }
-
 .form {
   /* position: fixed;
 
