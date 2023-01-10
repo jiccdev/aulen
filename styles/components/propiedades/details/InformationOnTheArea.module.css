@@ -3,6 +3,23 @@
   padding: 1.5rem;
 }
 
+.informationOnTheAreaContainer .headTitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1rem;
+}
+
+.informationOnTheAreaContainer h2 {
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-weight: var(--font-weight-medium);
+}
+
+.informationOnTheAreaContainer .tabs {
+  background-color: transparent !important;
+}
+
 @media screen and (min-width: 992px) {
   .informationOnTheAreaContainer {
     padding: 3.5rem;

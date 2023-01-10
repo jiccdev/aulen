@@ -1,6 +1,7 @@
 import React from 'react';
 import { icons } from '../../../../../components/Icons';
 
+/** Bootstrap components */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from '../../../../../../styles/components/propiedades/details/tabs/Transportation.module.css';

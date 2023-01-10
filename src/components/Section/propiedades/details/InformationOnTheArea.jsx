@@ -19,26 +19,38 @@ const InformationOnTheArea = () => {
       <Row>
         <Col xs={12} lg={6}>
           <div>
-            <h2>Información de la zona</h2>
+            <h2 className={styles.headTitle}>Información de la zona</h2>
             <p>Son los puntos más cercanos al inmueble en un rango de 2km.</p>
           </div>
 
           <Tabs
-            className="tabs"
+            className={styles.tabs}
             id="controlled-tab-example"
             activeKey={key}
             onSelect={(k) => setKey(k)}
           >
-            <Tab eventKey="transportationTab" title="Transporte">
+            <Tab
+              eventKey="transportationTab"
+              title="Transporte"
+              className={styles.tab}
+            >
               <TransportationTab />
             </Tab>
-            <Tab eventKey="educationTab" title="Educación">
+            <Tab
+              eventKey="educationTab"
+              title="Educación"
+              className={styles.tab}
+            >
               <EducationTab />
             </Tab>
-            <Tab eventKey="greenAreas" title="Areas verdes">
+            <Tab
+              eventKey="greenAreas"
+              title="Areas verdes"
+              className={styles.tab}
+            >
               <GreenAreas />
             </Tab>
-            <Tab eventKey="stores" title="Comercios">
+            <Tab eventKey="stores" title="Comercios" className={styles.tab}>
               <Stores />
             </Tab>
           </Tabs>

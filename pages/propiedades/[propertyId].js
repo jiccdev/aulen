@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { Fragment, useContext } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import HeadPage from '../../src/components/HeadPage/HeadPage';
@@ -29,7 +29,7 @@ const PropiedadId = () => {
   const { address } = filtredData[0];
 
   return (
-    <Container>
+    <Fragment>
       <HeadPage title={`Departamento-${propertyId}`} />
       <ul className={styles.propertyTypeInfo}>
         <li>
@@ -65,7 +65,7 @@ const PropiedadId = () => {
       </Row>
 
       <InformationOnTheArea />
-    </Container>
+    </Fragment>
   );
 };
 
