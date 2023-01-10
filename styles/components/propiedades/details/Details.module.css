@@ -1,9 +1,53 @@
+.row {
+  margin: 2rem auto !important;
+  height: auto;
+}
+
 .col {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 0 1.5rem;
+}
+
+.propertyTypeInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 0.9rem 0 !important;
+  padding: 0 !important;
+}
+
+.propertyTypeInfo li {
+  list-style: none;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark);
+  text-transform: uppercase;
+}
+
+.propertyTypeInfo li,
+.propertyTypeInfo li a {
+  text-decoration: none;
+  background-color: var(--color-light);
+  margin-right: 0.5rem;
+  text-transform: capitalize;
+  padding: 0.2rem 0.3rem;
+  font-size: var(--font-size-md);
+}
+
+.propertyTypeInfo li a {
+  color: var(--color-black);
+  font-weight: var(--font-weight-bold);
+}
+
+.propertyTypeInfo li {
+  color: var(--color-dark);
+  font-weight: var(--font-weight-medium);
 }
 
 .deptoDetailsShare {
@@ -72,4 +116,10 @@
   margin: 0.2rem 0;
   font-size: var(--font-size-md);
   color: var(--color-dark);
+}
+
+@media screen and (min-width: 1400px) {
+  .row {
+    height: 950px;
+  }
 }

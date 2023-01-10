@@ -16,8 +16,6 @@ const PlanFrom = ({ props }) => {
     ev.preventDefault();
   };
 
-  console.log(props);
-
   return (
     <div>
       {props?.show ? (

@@ -17,24 +17,19 @@ export const propertiesData = [
     image: Property1,
     slider: [
       {
-        id: 0,
-        src: Property1,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 2,
-        src: Property2,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-2-1.jpg',
       },
       {
-        id: 3,
-        src: Property3,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-5-1.jpg',
       },
       {
-        id: 4,
-        src: Property4,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-4-1.jpg',
       },
       {
-        id: 5,
-        src: Property5,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
     ],
     createdBy: {
@@ -64,24 +59,19 @@ export const propertiesData = [
     image: Property1,
     slider: [
       {
-        id: 0,
-        src: Property1,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 2,
-        src: Property2,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 3,
-        src: Property3,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-4-1.jpg',
       },
       {
-        id: 4,
-        src: Property4,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 5,
-        src: Property5,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
     ],
     createdBy: {
@@ -97,6 +87,8 @@ export const propertiesData = [
       id: 1,
       name: 'Venta',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -111,24 +103,19 @@ export const propertiesData = [
     image: Property1,
     slider: [
       {
-        id: 0,
-        src: Property1,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 2,
-        src: Property2,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 3,
-        src: Property3,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 4,
-        src: Property4,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 5,
-        src: Property5,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
     ],
     createdBy: {
@@ -144,6 +131,8 @@ export const propertiesData = [
       id: 2,
       name: 'Destacado',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -158,24 +147,19 @@ export const propertiesData = [
     image: Property2,
     slider: [
       {
-        id: 0,
-        src: Property1,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 2,
-        src: Property2,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 3,
-        src: Property3,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 4,
-        src: Property4,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 5,
-        src: Property5,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
     ],
     createdBy: {
@@ -191,6 +175,8 @@ export const propertiesData = [
       id: 1,
       name: 'Venta',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -205,24 +191,19 @@ export const propertiesData = [
     image: Property3,
     slider: [
       {
-        id: 0,
-        img: Property1,
+        img: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 2,
-        src: Property2,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 3,
-        src: Property3,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 4,
-        src: Property4,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 5,
-        src: Property5,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
     ],
     createdBy: {
@@ -238,6 +219,8 @@ export const propertiesData = [
       id: 2,
       name: 'Destacado',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -252,24 +235,19 @@ export const propertiesData = [
     image: Property4,
     slider: [
       {
-        id: 0,
-        src: Property1,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 2,
-        src: Property2,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 3,
-        src: Property3,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 4,
-        src: Property4,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 5,
-        src: Property5,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
     ],
     createdBy: {
@@ -285,6 +263,8 @@ export const propertiesData = [
       id: 1,
       name: 'Venta',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 
   {
@@ -299,24 +279,19 @@ export const propertiesData = [
     image: Property5,
     slider: [
       {
-        id: 0,
-        src: Property1,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 2,
-        src: Property2,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 3,
-        src: Property3,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 4,
-        src: Property4,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
-        id: 5,
-        src: Property5,
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
     ],
     createdBy: {
@@ -332,5 +307,7 @@ export const propertiesData = [
       id: 2,
       name: 'Destacado',
     },
+    deliveryDate: '21/03/2023',
+    projectStatus: 'Pronta entrega',
   },
 ];

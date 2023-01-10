@@ -77,8 +77,33 @@ a {
   text-decoration: none;
 }
 
+/* MODAL CONTACT FORM - ADMINISTRACIÓN DE ARRIENDO */
 .modal-content {
   border-radius: var(--border-radius-5xl) !important;
+}
+
+/* TABS - DETALLE PROPIEDAD */
+.nav-tabs {
+  background-color: transparent !important;
+  border-radius: var(--border-radius-5xl) !important;
+  border: none !important;
+}
+
+.nav-tabs .nav-link {
+  border-radius: var(--border-radius-5xl) !important;
+  color: var(--color-dark) !important;
+  border: none !important;
+  margin-right: 2rem !important;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: var(--color-primary-dark) !important;
+  color: var(--color-white) !important;
+}
+
+.nav-tabs .active {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
 }
 
 /* ===== LOGO =====  */

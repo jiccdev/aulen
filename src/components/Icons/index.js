@@ -15,6 +15,7 @@ import {
   FaThList,
   FaRegNewspaper,
   FaBath,
+  FaWalking,
 } from 'react-icons/fa';
 import {
   MdOutlineMailOutline,
@@ -69,4 +70,5 @@ export const icons = {
   BiBuildingHouse,
   IoBedOutline,
   FaBath,
+  FaWalking,
 };
