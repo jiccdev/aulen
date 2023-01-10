@@ -1,13 +1,14 @@
 import React from "react"
-import { icons } from "../../../Icons"
+import styles from "../../../../../styles/components/soy-inversionista/investmentModel/InvestmentModel.module.css"
 
-export const InvestmentModel = () => {
+export const InvestmentModel = ({investment}) => {
   return(
     <>
       <div className={``}>
+        {investment.img}
         <div className={``}>
-          <h2 className={``}>TRANSPARENTE</h2>
-          <p className={``}>La propiedad siempre está a nombre del Cliente, desde la firma de compra hasta la firma de venta.</p>
+          <h2 className={``}>{investment.h2}</h2>
+          <p className={``}>{investment.p}</p>
         </div>
       </div>
     </>
