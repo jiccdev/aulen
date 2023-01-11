@@ -18,9 +18,35 @@
   height: 450px;
   padding: 4em;
 
+  transition:
+  width 300ms linear,
+  height 300ms linear,
+  border 300ms linear;
+
   justify-content: center;
   text-align: center;
 
   position: relative;
+}
+
+@media (990px <= width <= 1250px){
+  .sectionContainer{
+    align-items: flex-start;
+  }
+  .mainContainer{
+    width: 500px;
+    height: 500px;
+  }
+}
+
+
+@media (width < 990px){
+  .mainContainer{
+    border: 0px transparent;
+    gap: 3rem;
+  }
+  .componentContainer{
+    flex-direction: column-reverse;
+  }
 }
 
