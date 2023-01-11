@@ -16,6 +16,8 @@ import {
   FaRegNewspaper,
   FaBath,
   FaWalking,
+  FaRegHandshake,
+  FaPercent,
 } from 'react-icons/fa';
 import {
   MdOutlineMailOutline,
@@ -28,7 +30,7 @@ import {
   RiUserHeartLine,
   RiTimerFlashLine,
 } from 'react-icons/ri';
-import { TbChecklist, TbHandClick } from 'react-icons/tb';
+import { TbChecklist, TbHandClick, TbTarget } from 'react-icons/tb';
 import { BiTimer, BiMap, BiBuildingHouse } from 'react-icons/bi';
 import { CgSearchFound } from 'react-icons/cg';
 import { VscPerson } from 'react-icons/vsc';
@@ -71,4 +73,7 @@ export const icons = {
   IoBedOutline,
   FaBath,
   FaWalking,
+  FaRegHandshake,
+  FaPercent,
+  TbTarget,
 };
