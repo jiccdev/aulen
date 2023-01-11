@@ -12,6 +12,7 @@
     "@next/font": "^13.0.7",
     "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
+    "mapbox-gl": "^2.12.0",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.0",
@@ -19,6 +20,7 @@
     "react-gallery-carousel": "^0.3.0",
     "react-glider": "^4.0.2",
     "react-icons": "^4.7.1",
+    "react-map-gl": "^7.0.21",
     "react-select": "^5.7.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"

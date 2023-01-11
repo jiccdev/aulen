@@ -4,7 +4,7 @@ import 'react-gallery-carousel/dist/index.css';
 
 const GalleryCarousel = ({ filtredData }) => {
   const data = filtredData?.map((item) => item?.slider);
-  const propertiesSlide = data[0];
+  const propertiesSlide = data[0] || [];
 
   return (
     <Carousel
