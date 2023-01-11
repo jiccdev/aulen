@@ -3,6 +3,7 @@ import TransportationTab from './tabs/TransportationTab';
 import EducationTab from './tabs/EducationTab';
 import GreenAreas from './tabs/GreenAreas';
 import Stores from './tabs/Stores';
+import MapComponent from '../../../Map/MapComponent';
 
 /* Bootstrap components */
 import Row from 'react-bootstrap/Row';
@@ -56,7 +57,9 @@ const InformationOnTheArea = () => {
           </Tabs>
         </Col>
 
-        <Col xs={12} lg={6}></Col>
+        <Col xs={12} lg={6}>
+          <MapComponent />
+        </Col>
       </Row>
     </div>
   );

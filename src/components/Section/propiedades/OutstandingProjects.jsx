@@ -4,8 +4,6 @@ import OutstandingProject from './OutstandingProject';
 
 /** Bootstrap components */
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import styles from '../../../../styles/components/propiedades/PropiedadesDestacadas.module.css';
 
 const OutstandingProjects = () => {

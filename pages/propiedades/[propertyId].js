@@ -11,7 +11,6 @@ import InformationOnTheArea from '../../src/components/Section/propiedades/detai
 /** Bootstrap componets */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
 import styles from '../../styles/components/propiedades/details/Details.module.css';
 import { icons } from '../../src/components/Icons';
 
@@ -24,9 +23,7 @@ const PropiedadId = () => {
 
   const filtredData = data
     ?.filter((item) => item?.cod == propertyId)
-    .map((item) => item);
-
-  const { address } = filtredData[0];
+    ?.map((item) => item);
 
   return (
     <Fragment>
@@ -37,8 +34,8 @@ const PropiedadId = () => {
         </li>
         <li>Departamentos</li>
         <li>Venta Proyectos</li>
-        <li>{address?.city}</li>
-        <li>{address?.country}</li>
+        {/* <li>{address?.city}</li>
+        <li>{address?.country}</li> */}
       </ul>
 
       <Row className={styles.row}>
