@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../../../styles/components/soy-inversionista/HeroSection/investmentStep/InvestmentStep.module.css"
-export const InvestmentStep = () => {
+export const InvestmentStep = ({stepData}) => {
   return(
     <div className={`${styles.customRow} ${styles.divContainer}`}>
         <div className={`${styles.customRow}`}>

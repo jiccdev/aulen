@@ -39,14 +39,15 @@
   left: -15%;
 
   transition: position 300ms linear,
-  left 300ms linear;
+  left 300ms linear,
+  width 300ms linear;
 }
 
 @media (width <= 1400px){
   .image{
     position: relative;
     left: 0;
-    width: 60%;
+    width: 50%;
   }
 }
 @media (width <= 1200px){
