@@ -17,6 +17,7 @@
     background: var(--color-pale-gray, #f4f3f1);
     /* border: 1px solid black; */
     width: calc(100% / 3.5);
+    min-height: 380px;
     gap: 0;
     overflow: hidden;
     user-select: none;

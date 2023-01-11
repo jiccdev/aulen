@@ -34,12 +34,12 @@ export const navigationData = [
       {
         id: 1,
         name: 'Unidades en remate',
-        url: '/unidades-en-remate',
+        url: '/soy-inversionista/unidades-en-remate',
       },
       {
         id: 2,
         name: 'Unidades nuevas',
-        url: '/unidades-nuevas',
+        url: '/soy-inversionista/unidades-nuevas',
       },
     ],
   },

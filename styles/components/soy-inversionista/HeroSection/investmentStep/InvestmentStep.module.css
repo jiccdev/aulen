@@ -1,0 +1,98 @@
+.customCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+}
+
+.customRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: .5em;
+}
+
+.divContainer1,
+.divContainer2,
+.divContainer3,
+.divContainer4{
+  position: absolute;
+  top: 0%;
+  background: transparent;
+  width: 400px;
+  height: 80px;
+  /* border: solid 1px black; */
+  border-radius: var(--border-radius-md, 0.4rem);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  transition: transform 300ms linear,
+  box-shadow 300ms linear,
+  background 300ms linear;
+}
+
+.divContainer1:is(:hover),
+.divContainer2:is(:hover),
+.divContainer3:is(:hover),
+.divContainer4:is(:hover){
+  transform: scale(1.2);
+  box-shadow: 0px 0px 300px 0px rgba(0,0,0,0.25);
+  background: var(--color-white, #fff);
+}
+
+.divContainer1{
+  right: -60%;
+}
+
+.divContainer2{
+  top: 60%;
+  right: -80%;
+}
+
+.divContainer3{
+  flex-direction: row-reverse;
+  top: 80%;
+  left: -70%;
+}
+
+.divContainer4{
+  flex-direction: row-reverse;
+  top: 15%;
+  left: -80%;
+}
+
+.divContainer3 > div,
+.divContainer4 > div {
+  flex-direction: row-reverse;
+}
+
+.textContainer{
+  gap: .1em;
+}
+
+.step__h3, .step__p{
+  margin: .05em;
+}
+
+.step__h2{
+  font-size: var(--font-size-5xl, 2.4rem);
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.step__h3{
+  font-size: var(--font-size-md, 1rem);
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.step__p{
+  font-size: var(--font-size-xs, .6rem);
+}
+
+.imgStep{
+  min-width: 64px;
+  max-width: 72px;
+  height: 64px;
+  max-height: 72px;
+  padding: .6rem;
+  color: var(--color-white, #fff);
+  background: var(--color-primary);
+  border-radius: 50%;
+}

@@ -1,0 +1,37 @@
+.customCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+}
+
+.customRow {
+  display: flex;
+  justify-content: space-between;
+  gap: .5em;
+}
+
+/** HEADER TEXT */
+.header__h1{
+  font-weight: var(--font-weight-bold, 700);
+  font-size: var(--font-size-5xl, 2.4rem);
+}
+
+.header__h2{
+  font-weight: var(--font-weight-normal, 400);
+  font-size: var(--font-size-lg, 1rem);
+}
+/** END HEADER TEXT */
+
+.investmentModelContainer{
+  width: 80%;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.headerContainer{
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  text-align: center;
+}

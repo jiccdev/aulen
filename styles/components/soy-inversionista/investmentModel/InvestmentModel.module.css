@@ -1,0 +1,35 @@
+.customCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+}
+
+.customRow {
+  display: flex;
+  justify-content: space-between;
+  gap: .5em;
+}
+
+.mainContainer{
+  width: 260px;
+}
+
+.investmentImg{
+  width: 128px;
+  height: 128px;
+  color: var(--color-white, #ffffff);
+  background: var(--color-primary, #f57914);
+  border-radius: 50%;
+  padding: 1.4em;
+}
+
+.investment__h2{
+  font-size: var(--font-size-xl, 1.4rem);
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.investment__p{
+  font-size: var(--font-size-md, 1rem);
+  text-align: center;
+}
