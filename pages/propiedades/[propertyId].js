@@ -23,9 +23,7 @@ const PropiedadId = () => {
 
   const filtredData = data
     ?.filter((item) => item?.cod == propertyId)
-    .map((item) => item);
-
-  const { address } = filtredData[0];
+    ?.map((item) => item);
 
   return (
     <Fragment>
@@ -36,8 +34,8 @@ const PropiedadId = () => {
         </li>
         <li>Departamentos</li>
         <li>Venta Proyectos</li>
-        <li>{address?.city}</li>
-        <li>{address?.country}</li>
+        {/* <li>{address?.city}</li>
+        <li>{address?.country}</li> */}
       </ul>
 
       <Row className={styles.row}>
