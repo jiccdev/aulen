@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../../../../styles/components/soy-inversionista/HeroSection/investmentStep/InvestmentStep.module.css"
 export const InvestmentStep = ({ stepData }) => {
   return (
-    <div key={stepData.id} className={`${styles.customRow} ${stepData.style}`}>
+    <div key={stepData.id} className={`${styles.customRow} ${styles.divContainer} ${stepData.style}`}>
       {stepData.img}
       <div className={`${styles.customRow}`}>
         <h2 className={`${styles.step__h2}`}>{stepData.id}</h2>
