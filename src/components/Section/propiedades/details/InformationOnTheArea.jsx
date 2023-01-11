@@ -58,7 +58,7 @@ const InformationOnTheArea = () => {
         </Col>
 
         <Col xs={12} lg={6}>
-          <ReactMap />
+          <ReactMap longitudeProp={-70.642578} latitudeProp={-33.50706} />
         </Col>
       </Row>
     </div>
