@@ -11,7 +11,6 @@ import InformationOnTheArea from '../../src/components/Section/propiedades/detai
 /** Bootstrap componets */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
 import styles from '../../styles/components/propiedades/details/Details.module.css';
 import { icons } from '../../src/components/Icons';
 
