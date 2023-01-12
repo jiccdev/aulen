@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import HeaderPage from '../HeaderPage/HeaderPage';
 import DropDownSocialMedia from '../DropdownSocialMedia/DropDownSocialMedia';
+import FooterPage from '../FooterPage/FooterPage';
 import ModalPlanForm from '../Modal/ModalPlanForm';
 
 /** Bootstrap components */
@@ -24,6 +25,7 @@ const LayoutPage = ({ children }) => {
       </Container>
 
       {/* Footer */}
+      <FooterPage />
 
       {/* Dropdown social media */}
       <DropDownSocialMedia
