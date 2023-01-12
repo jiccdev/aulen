@@ -2,6 +2,8 @@ import React from "react"
 import IconNumber from "../../../IconNumber/IconNumber"
 import { benefitsData } from "../../../../api/fakeData/newPropertyBenefits"
 import styles from "../../../../../styles/components/soy-inversionista/unidades-nuevas/Header.module.css"
+import { simpleCardData } from "../../../../api/fakeData/simpleCard"
+import SimpleCard from "../SimpleCard"
 export const Header = () => {
   return (
     <section className={`${styles.customCol}`}>
@@ -20,10 +22,13 @@ export const Header = () => {
               </div>) : null}
         </div>
       </header>
-      <div>
+      <div className={`${styles.customCol}`}>
         <h2>Elige en qué quieres invertir hoy</h2>
-        <div>
-          {/**component */}
+        <div className={`${styles.customRow} ${styles.cardContainer}`}>
+          {simpleCardData.length > 0 ?
+          simpleCardData.map(el => 
+            <SimpleCard img={el.img} title={el.title} />
+          ) : null}
         </div>
       </div>
     </section>
