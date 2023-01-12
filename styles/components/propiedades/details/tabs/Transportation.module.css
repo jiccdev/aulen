@@ -6,7 +6,7 @@
 }
 
 .col {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .col p {
@@ -20,4 +20,10 @@
 
 .col p .icon {
   padding-right: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .col {
+    margin-top: 7rem;
+  }
 }
