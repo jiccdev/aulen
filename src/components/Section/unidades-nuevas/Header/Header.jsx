@@ -6,7 +6,7 @@ import { simpleCardData } from "../../../../api/fakeData/simpleCard"
 import SimpleCard from "../SimpleCard"
 export const Header = () => {
   return (
-    <section className={`${styles.customCol}`}>
+    <section className={`${styles.customCol} ${styles.sectionContainer}`}>
       <header className={`${styles.customCol} ${styles.mainContainer}`}>
         <div className={`${styles.customCol} ${styles.title}`}>
           <h1 className={`${styles.title__h1}`}>Es momento de invertir en tu nueva propiedad</h1>
@@ -22,8 +22,8 @@ export const Header = () => {
               </div>) : null}
         </div>
       </header>
-      <div className={`${styles.customCol}`}>
-        <h2>Elige en qué quieres invertir hoy</h2>
+      <div className={`${styles.customCol} ${styles.chooseInvest}`}>
+        <h2 className={`${styles.chooseInvest__h2}`}>Elige en qué quieres invertir hoy</h2>
         <div className={`${styles.customRow} ${styles.cardContainer}`}>
           {simpleCardData.length > 0 ?
           simpleCardData.map(el => 

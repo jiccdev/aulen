@@ -30,6 +30,14 @@
   font-weight: var(--font-weight-bold, 700);
 }
 
+.chooseInvest__h2{
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.chooseInvest{
+  gap: 2.5rem;
+}
+
 .componentContainer{
   width: calc(100% / 7);
   flex-wrap: wrap;
@@ -51,6 +59,9 @@
   gap: 2rem;
 }
 
+.sectionContainer{
+  gap: 3rem;
+}
 .cardContainer{
   justify-content: center;
   gap: 3rem;
