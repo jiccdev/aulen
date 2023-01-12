@@ -43,7 +43,8 @@
 
 @media screen and (min-width: 992px) {
   .aboutFooterContainer,
-  .addressFooterContainer {
+  .addressFooterContainer,
+  .navigationFooterContainer {
     width: 82%;
   }
 }
@@ -63,4 +64,22 @@
 .addressFooterContainer .addressFooterParagraph {
   color: var(--color-white);
   line-height: 0.5rem;
+}
+
+/* Navigation Footer */
+.navigationFooterContainer .navigationFooterInfoSection {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  text-transform: capitalize;
+  line-height: 2.5rem;
+}
+
+.navLinkFooter {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.navLinkFooter:hover {
+  color: var(--color-light);
 }
