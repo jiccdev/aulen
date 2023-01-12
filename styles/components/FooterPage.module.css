@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 992px) {
   .footerContainer {
-    padding: 3rem 4rem;
+    padding: 3rem 6rem;
   }
 }
 
@@ -20,7 +20,6 @@
 .aboutFooterContainer,
 .addressFooterContainer,
 .navigationFooterContainer {
-  /* background-color: Red; */
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -63,16 +62,28 @@
 
 .addressFooterContainer .addressFooterParagraph {
   color: var(--color-white);
-  line-height: 0.5rem;
+  line-height: 0.95rem;
 }
 
 /* Navigation Footer */
+
 .navigationFooterContainer .navigationFooterInfoSection {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
   text-transform: capitalize;
   line-height: 2.5rem;
+  width: 100%;
+  text-align: center;
+  padding-left: 0rem;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .navigationFooterContainer .navigationFooterInfoSection {
+    padding-left: 5rem;
+    text-align: start;
+  }
 }
 
 .navLinkFooter {
@@ -82,4 +93,48 @@
 
 .navLinkFooter:hover {
   color: var(--color-light);
+}
+
+/* Social Media Footer */
+.socialMediaTopInfo {
+  margin-bottom: 2.5rem;
+}
+
+.socialMediaTopInfo h3 {
+  font-size: var(--font-size-md);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  color: var(--color-white);
+}
+
+.socialMediaNavbarNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialMediaNavLink {
+  margin: 2rem;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  padding: 0.2rem 0.65rem;
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  color: var(--color-pale-gray-dark);
+}
+
+.socialMediaNavLink .icon {
+  padding-bottom: 0.25rem;
+  font-size: var(--font-size-2xl);
+}
+
+.socialMediaNavLink:hover {
+  background-color: var(--color-light);
+  color: var(--color-dark-light);
 }
