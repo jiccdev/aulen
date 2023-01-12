@@ -21,17 +21,17 @@ const ReactMap = ({ longitudeProp, latitudeProp }) => {
     <div className={styles.mapContainer}>
       <div className={styles.mapTopInfoContainer}>
         <Button className={styles.showMapBtn}>Ver Mapa</Button>
-        <p>
-          <di className={styles.mapTopInfoAddress}>
+        <div>
+          <div className={styles.mapTopInfoAddress}>
             <span className={styles.spanIcon}>
               <BiMap />
             </span>
             <span>descripción</span>
-          </di>
+          </div>
           <Link href="/" className={styles.showAreaInfo}>
             Ver información de la zona
           </Link>
-        </p>
+        </div>
       </div>
       <Map
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}

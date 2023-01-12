@@ -1,12 +1,11 @@
 import React from 'react';
+import { icons } from '../../components/Icons';
 
 /** Bootstrap components */
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import styles from '../../../styles/components/Forms/PlanForm.module.css';
 import stylesModal from '../../../styles/components/Modal/PlanForm.module.css';
-
-import { icons } from '../../components/Icons';
 
 const PlanFrom = ({ props }) => {
   const { FaUserAlt, BsTelephoneFill, MdOutlineMailOutline, GrClose } = icons;

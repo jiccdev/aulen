@@ -191,7 +191,7 @@ export const propertiesData = [
     image: Property3,
     slider: [
       {
-        img: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
+        src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
       },
       {
         src: 'https://www.gratistodo.com/wp-content/uploads/2017/02/Casas-Modernas-1-1.jpg',
