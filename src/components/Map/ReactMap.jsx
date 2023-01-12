@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Map, {
   Marker,
   NavigationControl,
@@ -6,14 +7,31 @@ import Map, {
   FullscreenControl,
 } from 'react-map-gl';
 
+/** Bootstrap components */
+import Button from 'react-bootstrap/Button';
+import { icons } from '../../components/Icons';
+import styles from '../../../styles/components/propiedades/details/Maps.module.css';
+
 const ReactMap = ({ longitudeProp, latitudeProp }) => {
   const [longitude, setLongitude] = useState(longitudeProp);
   const [latitude, setLatitude] = useState(latitudeProp);
+  const { BiMap } = icons;
 
   return (
-    <div>
-      <div>
-        Map top information
+    <div className={styles.mapContainer}>
+      <div className={styles.mapTopInfoContainer}>
+        <Button className={styles.showMapBtn}>Ver Mapa</Button>
+        <p>
+          <di className={styles.mapTopInfoAddress}>
+            <span className={styles.spanIcon}>
+              <BiMap />
+            </span>
+            <span>descripción</span>
+          </di>
+          <Link href="/" className={styles.showAreaInfo}>
+            Ver información de la zona
+          </Link>
+        </p>
       </div>
       <Map
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
@@ -23,14 +41,16 @@ const ReactMap = ({ longitudeProp, latitudeProp }) => {
           zoom: 14,
           pitch: 45,
           bearing: 0,
-          width: 500,
-          height: 500,
+          width: 'auto',
+          height: 300,
         }}
         mapStyle={'mapbox://styles/mapbox/streets-v11'}
         style={{
           width: 'auto',
-          height: '500px',
+          height: '300px',
           borderRadius: '15px',
+          padding: '2rem',
+          margin: '1.5rem',
         }}
       >
         <Marker
