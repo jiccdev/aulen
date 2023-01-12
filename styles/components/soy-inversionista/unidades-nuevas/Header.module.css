@@ -1,0 +1,79 @@
+.customCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+}
+
+.customRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: .5em;
+}
+
+.title{
+  text-align: center;
+}
+
+.title__h1{
+  font-size: var(--font-size-5xl, 2.4rem);
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.title__h2{
+  font-size: var(--font-size-xl, 1.4rem);
+  font-weight: var(--font-weight-light, 300);
+}
+
+.boldP{
+  font-size: var( --font-size-lg, 1.2rem);
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.chooseInvest__h2{
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.chooseInvest{
+  gap: 2.5rem;
+}
+
+.componentContainer{
+  width: calc(100% / 7);
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.componentContainer > p{
+  font-size: var( --font-size-sm, 0.8rem);
+}
+
+
+.containerBenefits{
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mainContainer{
+  gap: 2rem;
+}
+
+.sectionContainer{
+  gap: 3rem;
+}
+.cardContainer{
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+@media (width <= 990px){
+  .containerBenefits{
+    flex-direction: column;
+    align-items: center;
+  }
+  .componentContainer{
+    width: 70%;
+  }
+}
