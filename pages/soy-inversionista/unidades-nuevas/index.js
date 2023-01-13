@@ -6,6 +6,7 @@ import styles from '../../../styles/components/soy-inversionista/unidades-nuevas
 import LayoutSection from "../../../src/components/Section/LayoutSection";
 import Header from "../../../src/components/Section/unidades-nuevas/Header/Header";
 import Departments from "../../../src/components/Section/propiedades/Departments";
+import Destacados from "../../../src/components/Section/unidades-nuevas/Destacados/Destacados";
 export const UnidadesNuevas = () => {
   return(
     <Fragment classname={`${styles.html}`}>
@@ -20,6 +21,10 @@ export const UnidadesNuevas = () => {
         ) : null
       }
     <LayoutSection />
+
+    <LayoutSection>
+      <Destacados />
+    </LayoutSection>
 
     <LayoutSection>
       <div id="apartments"></div>
