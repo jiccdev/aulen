@@ -15,9 +15,9 @@ import styles from '../../styles/components/propiedades/details/Details.module.c
 import { icons } from '../../src/components/Icons';
 
 const PropiedadId = () => {
+  const { contextData } = useContext(PropertiesContext);
   const { query } = useRouter();
   const { propertyId } = query;
-  const { contextData } = useContext(PropertiesContext);
   const [data] = contextData;
   const { BsHeart } = icons;
 
@@ -25,9 +25,13 @@ const PropiedadId = () => {
     ?.filter((item) => item?.cod == propertyId)
     ?.map((item) => item);
 
+  // useEffect(() => {
+  //   getProperty(id, realtorId, statusId);
+  // }, [id]);
+
   return (
     <Fragment>
-      <HeadPage title={`Departamento-${propertyId}`} />
+      <HeadPage title={`Departamento-x`} />
       <ul className={styles.propertyTypeInfo}>
         <li>
           <Link href="/propiedades">Volver al listado</Link>

@@ -8,12 +8,19 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import styles from '../../../../styles/components/propiedades/DepartmentItem.module.css';
 
-const DepartmentItem = ({ department, isGrid, isList }) => {
+const DepartmentItem = ({
+  department,
+  isGrid,
+  isList,
+  realtorId,
+  statusId,
+}) => {
   const { id, image, title, address, price } = department;
   const imageSliced = image?.slice(26, image?.length);
 
-  console.log('image-sliced', imageSliced);
-  console.log('image', image);
+  // useEffect(() => {
+  //   getProperty(imageSliced, realtorId, statusId);
+  // }, [imageSliced]);
 
   return (
     <Col md={isGrid ? 4 : isList ? 12 : 4} className={styles.col}>
@@ -53,7 +60,10 @@ const DepartmentItem = ({ department, isGrid, isList }) => {
               Venta: {parseToCLPCurrency(price)}/m<sup>2</sup>
             </span>
             <span>
-              <Link href={'/'} className={styles.details}>
+              <Link
+                href={`/propiedades/${id}?realtorId=${realtorId}&statusId=${statusId}`}
+                className={styles.details}
+              >
                 Detalles
               </Link>
             </span>

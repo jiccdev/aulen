@@ -6,7 +6,6 @@ import DepartmentItem from './DepartmentItem';
 import OutstandingProjects from './OutstandingProjects';
 import IconFilter from '../../IconFilter/IconFilter';
 import { icons } from '../../Icons/index.js';
-import { propertiesData } from '../../../api/fakeData/properties';
 import { orderDepartmentBy } from '../../../api/fakeData/selects';
 
 /** Bootstrap components */
@@ -14,15 +13,13 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import styles from '../../../../styles/components/propiedades/Departments.module.css';
 
-const Departments = ({ data }) => {
+const Departments = ({ data, dataProperty, realtorId, statusId }) => {
   const [isGrid, setIsGrid] = useState(false);
   const [isList, setIsList] = useState(false);
-
   const { BiMap } = icons;
 
   const onOrderDepartmentByChange = (option) => {
     console.log(orderDepartmentBy[0]);
-    console.log(option);
   };
 
   return (
@@ -65,6 +62,9 @@ const Departments = ({ data }) => {
                 department={department}
                 isGrid={isGrid}
                 isList={isList}
+               
+                realtorId={realtorId}
+                statusId={statusId}
               />
             ))}
         </Row>

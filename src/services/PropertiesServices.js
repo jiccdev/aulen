@@ -8,8 +8,10 @@ const PropertiesServices = {
     return response.data;
   },
 
-  getProperty: async (id) => {
-    const response = await api.get(`properties/${id}`);
+  getProperty: async (id, realtorId, statusId) => {
+    const response = await api.get(
+      `properties/${id}?realtorId=${realtorId}&statusId=${statusId}`
+    );
     return response.data;
   },
 };

@@ -2,7 +2,6 @@ import React, { Fragment, useState, useEffect, useContext } from 'react';
 import Image from 'next/image';
 import PlanFrom from '../src/components/Form/PlanFrom';
 import House from '../src/img/soy-propietario/house.jpg';
-import PropertiesContext from '../src/context/properties/PropertiesContext';
 import HeadPage from '../src/components/HeadPage/HeadPage';
 import styles from '../styles/Inicio.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,8 +12,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Inicio = () => {
-  const { properties, getProperties } = useContext(PropertiesContext);
-
   /** Icon desctructuring  */
   const { FaUserAlt } = icons;
 
