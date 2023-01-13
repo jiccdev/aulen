@@ -19,12 +19,12 @@
   position: absolute;
   top: 0%;
   background: transparent;
-  padding: 0 .5em;
-  width: 420px;
+  padding: 0.5em .5em;
+  width: 450px;
   height: 80px;
   /* border: solid 1px black; */
   border-radius: var(--border-radius-md, 0.4rem);
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  /* box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75); */
   transition: transform 300ms linear,
   box-shadow 300ms linear,
   background 300ms linear,
@@ -38,8 +38,7 @@
 .divContainer3:is(:hover),
 .divContainer4:is(:hover){
   transform: scale(1.2);
-  box-shadow: 0px 0px 300px 0px rgba(0,0,0,0.25);
-  background: var(--color-white, #fff);
+  
 }
 
 .divContainer1{
@@ -91,17 +90,21 @@
 }
 
 .imgStep{
-  min-width: 64px;
-  max-width: 72px;
-  height: 64px;
-  max-height: 72px;
-  padding: .6rem;
+  min-width: 128px;
+  height: 128px;
+  max-height: 128px;
+  padding: 1.5rem;
   color: var(--color-white, #fff);
   background: var(--color-primary);
   border-radius: 50%;
+  transition: min-width 300ms linear,
+  height 300ms linear;
 }
 
 @media (990px <= width <= 1250px){
+  .divContainer{
+    width: 400px;
+  }
   .divContainer3,
   .divContainer3 > div,
   .divContainer4 > div,
@@ -128,6 +131,11 @@
     top: 87%;
     left: 65%;
   }
+  .imgStep{
+    min-width: 72px;
+    height: 72px;
+    padding: .6rem;
+  }
 }
 
 @media (width < 990px){
@@ -136,6 +144,12 @@
     top: 0;
     right: 0;
     left: 0;
+  }
+
+  .imgStep{
+    min-width: 64px;
+    height: 64px;
+    padding: .6rem;
   }
 
   .divContainer3,
