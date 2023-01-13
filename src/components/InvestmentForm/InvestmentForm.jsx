@@ -4,7 +4,8 @@ import React from "react";
 import styles from '../../../styles/components/soy-inversionista/InvestmentForm.module.css';
 import { icons } from '../Icons';
 /** Recibe un objeto con los datos. */
-export const InvestmentForm = ({ formData }) => {
+export const InvestmentForm = ({ formData, isForm }) => {
+  const { h2, h3, btn } = formData
   const { FaUserAlt, BsTelephoneFill, MdOutlineMailOutline } = icons
   return (
     <form className={`${styles.customRow} ${styles.mainContainer}`} >
@@ -15,7 +16,8 @@ export const InvestmentForm = ({ formData }) => {
             <h2>{formData.h2}</h2>
             <h3>{formData.h3}</h3>
           </header>
-          <main className={`${styles.customCol} ${styles.form__inputs}`}>
+          {isForm ?
+            <main className={`${styles.customCol} ${styles.form__inputs}`}>
             <div className={`${styles.customRow} ${styles.form__inputs__name}`}>
               <FaUserAlt className={styles.formIcon} />
               <input type="text" placeholder="Nombre" />
@@ -29,7 +31,10 @@ export const InvestmentForm = ({ formData }) => {
               <input type="text" placeholder="Correo electrónico" />
             </div>
           </main>
-          <button className={styles.form__btn}>{formData.btn}</button>
+          : null
+        }
+          
+          <button className={styles.form__btn}>{isForm ? formData.btn : 'Agenda una reunión'}</button>
         </div>
       </div>
     </form>

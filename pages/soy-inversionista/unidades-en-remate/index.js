@@ -22,7 +22,7 @@ export const UnidadesEnRemate = () =>{
     <LayoutSection>
       {investmentFormData.length > 0 ?
       investmentFormData.map(el =>
-        <InvestmentForm formData={el} />
+        <InvestmentForm formData={el} isForm />
         ) : null
       }
     </LayoutSection>

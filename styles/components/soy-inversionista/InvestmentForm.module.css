@@ -23,6 +23,7 @@
   justify-content: flex-end;
   width: 1000px;
   padding: 2em;
+  min-height: 543px;
 
   position: relative;
 }
@@ -107,7 +108,7 @@
   border-radius: var(--border-radius-3xl, 1.4rem);
 
   text-align: center;
-  width: calc(100%/3.8);
+  min-width: calc(100% / 3.8);
   padding: .5em 1.1em;
 
   filter: brightness(100%);
