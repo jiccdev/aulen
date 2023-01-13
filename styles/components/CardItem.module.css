@@ -12,12 +12,12 @@
   border: none;
   padding: 1rem 0.5rem !important;
   font-size: var(--font-size-sm);
+  transition: all 0.3s ease-in-out !important;
 }
 
 .card:hover {
   background-color: var(--color-secondary);
   scale: 1.1;
-  transition: 0.3s all ease;
   z-index: 999;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -25,7 +25,6 @@
 
 .card:hover .moreInfo {
   background-color: var(--color-primary) !important;
-  transition: 0.3s all ease;
 }
 
 .card:hover .moreInfo:hover {

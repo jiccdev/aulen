@@ -8,12 +8,20 @@ import PropertiesServices from '../../services/PropertiesServices';
 const PropertiesProvider = ({ children }) => {
   const [data, setData] = useState(propertiesData);
   const [properties, setProperties] = useState([]);
+  const [statusCodeMsg, setStatusCodeMsg] = useState('');
 
-  // Get all properties
-  const getProperties = async () => {
-    const response = await PropertiesServices.getProperties();
-    const data = response?.data;
-    setProperties(data);
+  /** Get Properties */
+  const getProperties = async (realtorId, statusId) => {
+    try {
+      const response = await PropertiesServices.getProperties(
+        realtorId,
+        statusId
+      );
+      setProperties(response.data);
+    } catch (error) {
+      const { statusCode } = error.response.data;
+      setStatusCodeMsg(statusCode) && new Error(error.response.data);
+    }
   };
 
   return (

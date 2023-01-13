@@ -14,7 +14,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import styles from '../../../../styles/components/propiedades/Departments.module.css';
 
-const Departments = () => {
+const Departments = ({ data }) => {
   const [isGrid, setIsGrid] = useState(false);
   const [isList, setIsList] = useState(false);
 
@@ -58,10 +58,10 @@ const Departments = () => {
 
       <Col xl={9} className={styles.col}>
         <Row className={styles.rowItems}>
-          {propertiesData &&
-            propertiesData.map((department) => (
+          {data &&
+            data.map((department) => (
               <DepartmentItem
-                key={department?.cod}
+                key={department?.id}
                 department={department}
                 isGrid={isGrid}
                 isList={isList}

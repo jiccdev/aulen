@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useContext } from 'react';
+import React, { Fragment, useState, useEffect, useContext } from 'react';
 import Image from 'next/image';
 import PlanFrom from '../src/components/Form/PlanFrom';
 import House from '../src/img/soy-propietario/house.jpg';
@@ -14,10 +14,6 @@ import Col from 'react-bootstrap/Col';
 
 const Inicio = () => {
   const { properties, getProperties } = useContext(PropertiesContext);
-
-  useEffect(() => {
-    getProperties();
-  }, []);
 
   /** Icon desctructuring  */
   const { FaUserAlt } = icons;
