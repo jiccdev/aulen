@@ -12,7 +12,7 @@ const TableDetails = ({ propertyData }) => {
         <tr>
           <th>Superficie útil</th>
           <td className="bg-white">
-            {surface_m2 === null ? 'sin registro' : surface_m2} m<sup>2</sup>
+            {surface_m2 === null ? 'sin registro en' : surface_m2} m<sup>2</sup>
           </td>
         </tr>
         <tr>
@@ -25,10 +25,12 @@ const TableDetails = ({ propertyData }) => {
         </tr>
         <tr>
           <th>Fecha de entrega</th>
+          <td>sin registro</td>
           {/* <td>{deliveryDate || ''}</td> */}
         </tr>
         <tr>
           <th>Estado del Proyecto</th>
+          <td>sin registro</td>
           {/* <td>{projectStatus || ''}</td> */}
         </tr>
       </tbody>

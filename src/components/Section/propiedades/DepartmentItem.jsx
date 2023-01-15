@@ -18,10 +18,6 @@ const DepartmentItem = ({
   const { id, image, title, address, price } = department;
   const imageSliced = image?.slice(26, image?.length);
 
-  // useEffect(() => {
-  //   getProperty(imageSliced, realtorId, statusId);
-  // }, [imageSliced]);
-
   return (
     <Col md={isGrid ? 4 : isList ? 12 : 4} className={styles.col}>
       <Card className={styles.card}>

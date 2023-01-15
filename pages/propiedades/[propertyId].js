@@ -21,10 +21,6 @@ const PropiedadId = () => {
   const [data] = contextData;
   const { BsHeart } = icons;
 
-  const filtredData = data
-    ?.filter((item) => item?.cod == propertyId)
-    ?.map((item) => item);
-
   useEffect(() => {
     getProperty(propertyId, 1, 1);
   }, [propertyId]);

@@ -4,7 +4,7 @@ import { parseToCLPCurrency } from '../../../../utils';
 import { icons } from '../../../../components/Icons';
 import styles from '../../../../../styles/components/propiedades/details/Details.module.css';
 
-const Details = ({ filtredData, propertyData }) => {
+const Details = ({ propertyData }) => {
   const { BiBuildingHouse, IoBedOutline, FaBath } = icons;
   return (
     <Fragment>
@@ -46,7 +46,7 @@ const Details = ({ filtredData, propertyData }) => {
         </section>
       ) : null}
 
-      <Executive filtredData={filtredData} propertyData={propertyData}/>
+      <Executive propertyData={propertyData} />
     </Fragment>
   );
 };
