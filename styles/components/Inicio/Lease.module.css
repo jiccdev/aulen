@@ -1,0 +1,67 @@
+.leaseContainer {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.leaseCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 15%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .leaseCard {
+    height: 450px;
+  }
+}
+
+.leaseCard .leaseCardBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1rem;
+  border-radius: 0px 0px 55px 55px;
+  -webkit-border-radius: 0px 0px 55px 55px;
+  -moz-border-radius: 0px 0px 55px 55px;
+  background-color: var(--color-primary);
+  transition: 0.3s all ease-in-out;
+}
+
+.leaseCard:hover > .leaseCardBody {
+  background-color: var(--color-secondary);
+}
+
+.leaseCard:hover {
+  scale: 1.1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.leaseCard .leaseCardBody .leaseCardTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 55px 55px 0px 0px;
+  -webkit-border-radius: 55px 55px 0px 0px;
+  -moz-border-radius: 55px 55px 0px 0px;
+  border: none;
+}
+
+@media screen and (min-width: 992px) {
+  .leaseContainer {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
