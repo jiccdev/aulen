@@ -4,48 +4,49 @@ import { parseToCLPCurrency } from '../../../../utils';
 import { icons } from '../../../../components/Icons';
 import styles from '../../../../../styles/components/propiedades/details/Details.module.css';
 
-const Details = ({ filtredData }) => {
+const Details = ({ filtredData, propertyData }) => {
   const { BiBuildingHouse, IoBedOutline, FaBath } = icons;
   return (
     <Fragment>
-      {filtredData &&
-        filtredData?.map((detail) => (
-          <section key={detail.cod} className={styles.detailContainer}>
-            <h2>{detail.address?.city}</h2>
-            <h4>Publicado por {detail.createdBy?.username}</h4>
+      {Object.keys(propertyData).length > 0 ? (
+        <section key={propertyData.id} className={styles.detailContainer}>
+          <h2>{propertyData?.address}</h2>
+          <h4>
+            Publicado por {propertyData.createdBy?.username || 'Username'}
+          </h4>
 
-            <div className={styles.pricesContainer}>
-              <h3>Desde</h3>
-              <p className={styles.ufPrice}>UF {detail.price?.uf}</p>
-              <p className={styles.clpPrice}>
-                {parseToCLPCurrency(detail.price?.clp)}
-              </p>
-            </div>
+          <div className={styles.pricesContainer}>
+            <h3>Desde</h3>
+            <p className={styles.ufPrice}>UF {propertyData?.price || 232443}</p>
+            <p className={styles.clpPrice}>
+              {parseToCLPCurrency(propertyData.price)}
+            </p>
+          </div>
 
-            <div className={styles.deptoPropsContainer}>
-              <span>
-                <strong>
-                  <BiBuildingHouse />
-                </strong>{' '}
-                {detail.squareMeters} m<sup>2</sup> útiles
-              </span>
-              <span>
-                <strong>
-                  <IoBedOutline />
-                </strong>{' '}
-                {detail.bedrooms} dormitorios
-              </span>
-              <span>
-                <strong>
-                  <FaBath />
-                </strong>{' '}
-                {detail.bathrooms} baños
-              </span>
-            </div>
-          </section>
-        ))}
+          <div className={styles.deptoPropsContainer}>
+            <span>
+              <strong>
+                <BiBuildingHouse />
+              </strong>{' '}
+              {propertyData?.surface_m2 === null ? '' : ''} m<sup>2</sup> útiles
+            </span>
+            <span>
+              <strong>
+                <IoBedOutline />
+              </strong>{' '}
+              {propertyData?.bedrooms === null ? '' : ''} dormitorios
+            </span>
+            <span>
+              <strong>
+                <FaBath />
+              </strong>{' '}
+              {propertyData?.bathrooms === null ? '' : ''} baños
+            </span>
+          </div>
+        </section>
+      ) : null}
 
-      <Executive filtredData={filtredData} />
+      <Executive filtredData={filtredData} propertyData={propertyData}/>
     </Fragment>
   );
 };

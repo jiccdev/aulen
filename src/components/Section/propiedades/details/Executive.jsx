@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from '../../../../../styles/components/propiedades/details/Executive.module.css';
 
-const Executive = ({ filtredData }) => {
+const Executive = ({ filtredData, propertyData }) => {
   return (
     <div className={styles.executiveContainer}>
       <Row className={styles.row}>

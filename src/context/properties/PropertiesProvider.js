@@ -18,7 +18,7 @@ const PropertiesProvider = ({ children }) => {
         realtorId,
         statusId
       );
-      setProperties(response.data);
+      setProperties(response?.data);
     } catch (error) {
       const { statusCode } = error.response.data;
       setStatusCodeMsg(statusCode) && new Error(error.response.data);
@@ -33,7 +33,8 @@ const PropertiesProvider = ({ children }) => {
         realtorId,
         statusId
       );
-      setProperty(response.data);
+      console.log('response', response);
+      setProperty(response);
     } catch (error) {
       const { statusCode } = error.response.data;
       setStatusCodeMsg(statusCode) && new Error(error.response.data);
