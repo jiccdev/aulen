@@ -33,7 +33,6 @@ const PropertiesProvider = ({ children }) => {
         realtorId,
         statusId
       );
-      console.log('response', response);
       setProperty(response);
     } catch (error) {
       const { statusCode } = error.response.data;

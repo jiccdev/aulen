@@ -62,7 +62,6 @@ const Departments = ({ data, dataProperty, realtorId, statusId }) => {
                 department={department}
                 isGrid={isGrid}
                 isList={isList}
-               
                 realtorId={realtorId}
                 statusId={statusId}
               />
