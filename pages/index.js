@@ -1,17 +1,19 @@
 import React, { Fragment, useState, useEffect, useContext } from 'react';
 import Image from 'next/image';
+import Inicio from './inicio';
+
 import PlanFrom from '../src/components/Form/PlanFrom';
 import House from '../src/img/soy-propietario/house.jpg';
 import HeadPage from '../src/components/HeadPage/HeadPage';
 import styles from '../styles/Inicio.module.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { icons } from '../src/components/Icons';
 
 /** Bootstrap components */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Inicio = () => {
+const Home = () => {
   /** Icon desctructuring  */
   const { FaUserAlt } = icons;
 
@@ -19,34 +21,10 @@ const Inicio = () => {
     <Fragment>
       <HeadPage title="Inicio" />
 
-      <section>
-        <h1 className={styles.title}>
-          Inicio <FaUserAlt />
-        </h1>
-        <h1></h1>
-
-        <Row>
-          <Col>
-            <Image
-              height={500}
-              width={500}
-              src={House}
-              alt="house"
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                borderRadius: '10px',
-              }}
-            />
-          </Col>
-          <Col>
-            <PlanFrom />
-          </Col>
-        </Row>
-      </section>
+      {/* INICIO */}
+      <Inicio />
     </Fragment>
   );
 };
 
-export default Inicio;
+export default Home;
