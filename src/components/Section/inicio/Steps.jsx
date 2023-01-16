@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import HeaderSection from '../../Section/HeaderSection';
 import { stepsData } from '../../../api/fakeData/steps';
 import styles from '../../../../styles/components/Inicio/Steps.module.css';
@@ -42,7 +43,11 @@ const Steps = () => {
             ))
           : null}
 
-        <div className={styles.publishForFreeContainer}>dsdsd</div>
+        <div className={styles.publishForFreeContainer}>
+          <Link href="/" className={styles.publishForFreeLink}>
+            Publica gratis
+          </Link>
+        </div>
       </Row>
     </div>
   );

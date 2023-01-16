@@ -51,6 +51,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3rem 0 !important;
+}
+
+.publishForFreeLink {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.3rem 2rem;
+  border-radius: var(--border-radius-3xl);
+}
+
+.publishForFreeLink:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
 }
 
 @media screen and (min-width: 992px) {
