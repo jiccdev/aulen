@@ -69,13 +69,15 @@
 }
 
 @media screen and (min-width: 992px) {
-  .leaseCard {
-    height: 500px !important;
-  }
   .leaseContainer {
     width: 80%;
     margin: 0 auto;
   }
+
+  .leaseCard {
+    height: 500px !important;
+  }
+
   .leaseCard .leaseCardBody .leaseCardTitle {
     width: 60%;
   }

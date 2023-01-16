@@ -19,12 +19,15 @@ import {
   FaWalking,
   FaRegHandshake,
   FaPercent,
+  FaTabletAlt,
 } from 'react-icons/fa';
 import {
   MdOutlineMailOutline,
   MdOutlinePanTool,
   MdOutlineVerified,
   MdOutlineTimer,
+  MdEngineering,
+  MdOutlineManageAccounts,
 } from 'react-icons/md';
 import {
   RiMoneyDollarCircleLine,
@@ -40,6 +43,7 @@ import { GrClose } from 'react-icons/gr';
 import { ImArrowRight } from 'react-icons/im';
 import { IoBedOutline } from 'react-icons/io5';
 import { TfiFacebook } from 'react-icons/tfi';
+import { GiReceiveMoney } from 'react-icons/gi';
 
 export const icons = {
   FaUserAlt,
@@ -81,4 +85,8 @@ export const icons = {
   TfiFacebook,
   BsInstagram,
   AiFillYoutube,
+  MdEngineering,
+  FaTabletAlt,
+  MdOutlineManageAccounts,
+  GiReceiveMoney,
 };
