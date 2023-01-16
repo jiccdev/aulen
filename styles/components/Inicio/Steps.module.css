@@ -40,10 +40,10 @@
   font-weight: bold;
 }
 
-.stepCardTitle {
+.stepCardBody .stepCardTitle {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
-  color: var(--color-balck);
+  color: var(--color-black);
 }
 
 .publishForFreeContainer {
