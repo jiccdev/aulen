@@ -10,11 +10,11 @@
   align-items: center;
   flex-direction: column;
   border: none !important;
+  width: 100%;
 }
 
 .stepCardBody .stepsIconContainer {
   height: auto;
-  /* background-color: red; */
 }
 
 .stepCardBody .stepsIconContainer .stepsIcon {
@@ -40,9 +40,27 @@
   font-weight: bold;
 }
 
+.stepCardTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-balck);
+}
+
+.publishForFreeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 992px) {
   .stepContainer {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+  }
+
+  .stepCardBody {
+    width: 90%;
+    text-align: center;
   }
 }

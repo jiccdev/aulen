@@ -34,11 +34,15 @@ const Steps = () => {
                     <Card.Title className={styles.stepCardTitle}>
                       {item?.title}
                     </Card.Title>
+
+                    <Card.Text>{item?.description}</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
             ))
           : null}
+
+        <div className={styles.publishForFreeContainer}>dsdsd</div>
       </Row>
     </div>
   );

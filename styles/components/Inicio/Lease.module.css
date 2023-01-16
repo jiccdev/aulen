@@ -64,7 +64,7 @@
 
 .leaseUl li {
   line-height: 2.3rem;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   color: var(--color-dark);
 }
 
