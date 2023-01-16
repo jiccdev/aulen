@@ -35,6 +35,11 @@ const Lease = () => {
                     </Card.Title>
                   </Card.Body>
                 </Card>
+                <ul className={styles.leaseUl}>
+                  {item?.itemsList?.length > 0
+                    ? item?.itemsList?.map((item) => <li> {item}</li>)
+                    : null}
+                </ul>
               </Col>
             ))
           : null}

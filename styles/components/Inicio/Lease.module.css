@@ -6,11 +6,12 @@
 .leaseCard {
   width: 100%;
   height: 100%;
-  border-radius: 15%;
-  border: none;
+  border-radius: 55px;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
   height: auto;
+  border: none !important;
+  border-radius: 55px !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -61,7 +62,19 @@
 
 @media screen and (min-width: 992px) {
   .leaseContainer {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
   }
+}
+
+.leaseUl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: 1rem 0 3rem 0;
+}
+
+.leaseUl li {
+  line-height: 2.3rem;
+  font-size: var(--font-size-md);
 }
