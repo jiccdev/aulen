@@ -72,12 +72,12 @@
 
 @media screen and (min-width: 992px) {
   .stepContainer {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
 
   .stepCardBody {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 }

@@ -4,6 +4,7 @@ import Principal from '../../src/components/Section/inicio/Prinicipal';
 import Lease from '../../src/components/Section/inicio/Lease';
 import Steps from '../../src/components/Section/inicio/Steps';
 import Investing from '../../src/components/Section/inicio/Investing';
+import NewProperties from '../../src/components/Section/inicio/NewProperties';
 
 const Inicio = () => {
   return (
@@ -19,6 +20,9 @@ const Inicio = () => {
 
       {/* INVERTIR EN INMUEBLES CON AULEN */}
       <Investing />
+
+      {/* PROPIEDADES NUEVAS */}
+      <NewProperties />
     </LayoutSection>
   );
 };
