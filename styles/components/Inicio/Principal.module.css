@@ -1,4 +1,6 @@
 .principalContainer {
+  margin: 3rem auto;
+  width: 100%;
 }
 
 .rowPlanForm {
@@ -23,6 +25,10 @@
 }
 
 @media screen and (min-width: 992px) {
+  .principalContainer {
+    width: 100%;
+    margin: 3rem auto;
+  }
   .rowPlanForm {
     width: 85% !important;
   }
