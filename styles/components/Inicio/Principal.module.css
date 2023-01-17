@@ -15,6 +15,7 @@
   height: 300px !important;
   object-fit: cover !important;
   border-radius: 50px !important;
+  cursor: pointer;
 }
 
 .principalCol {
