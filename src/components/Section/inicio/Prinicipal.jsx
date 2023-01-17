@@ -14,20 +14,15 @@ const Prinicipal = () => {
     <div className={styles.principalContainer}>
       <HeaderSection titleSection="¡Aulén, contigo en cada paso!" />
       <Row className={styles.rowPlanForm}>
-        <Col sm={12} lg={7}>
+        <Col sm={12} lg={7} className={styles.principalCol}>
           <Image
             width="100%"
             src={Empacando}
             alt="house"
-            style={{
-              width: '100%',
-              height: 520,
-              objectFit: 'cover',
-              borderRadius: '10%',
-            }}
+            className={styles.principalImage}
           />
         </Col>
-        <Col sm={12} lg={5}>
+        <Col sm={12} lg={5} className={styles.principalCol}>
           <PropertyForm
             titleContentForm="Vende o arrienda tu propiedad rápido y sin complicaciones"
             textAlign="center"

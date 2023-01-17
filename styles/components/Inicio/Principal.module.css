@@ -10,8 +10,28 @@
   align-items: center;
 }
 
+.principalImage {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  border-radius: 50px !important;
+}
+
+.principalCol {
+  padding: 0.5rem 0rem;
+}
+
 @media screen and (min-width: 992px) {
   .rowPlanForm {
     width: 85% !important;
+  }
+  .principalImage {
+    width: 100% !important;
+    height: 520px !important;
+    object-fit: cover !important;
+    border-radius: 50px !important;
+  }
+  .principalCol {
+    padding: 0.5rem 1rem;
   }
 }
