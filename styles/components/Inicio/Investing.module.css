@@ -1,7 +1,7 @@
 .investingContainer {
   position: relative;
   width: 100%;
-  margin: auto;
+  margin: 3rem auto;
 }
 
 .investingCol {
@@ -35,7 +35,7 @@
   .investingColAbsolute {
     position: absolute !important;
     right: -5rem !important;
-    top: 35% !important;
+    top: 30% !important;
     width: 50% !important;
     height: 60% !important;
     border-radius: var(--border-radius-5xl) !important;
@@ -90,8 +90,8 @@
 
 @media screen and (min-width: 992px) {
   .investingContainer {
-    width: 70%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 3rem auto;
   }
   .investingColContent {
     width: 55%;
