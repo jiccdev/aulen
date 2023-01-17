@@ -16,9 +16,6 @@ const DepartmentItem = ({
   statusId,
 }) => {
   const { id, image, title, address, price } = department;
-  const imageSliced = image?.slice(26, image?.length);
-
-  console.log('IMG', department);
 
   return (
     <Col md={isGrid ? 4 : isList ? 12 : 4} className={styles.col}>
@@ -32,8 +29,13 @@ const DepartmentItem = ({
         >
           {/* {status?.name} */}
         </span>
-        <Image
-          src={imageSliced}
+        <img
+          src={image}
+          alt={`imagen-departamento-${title}`}
+          className={styles.cardImage}
+        />
+        {/* <Image
+          src={image}
           alt={`imagen-departamento-${title}`}
           width={300}
           height={200}
@@ -43,8 +45,7 @@ const DepartmentItem = ({
             objectFit: 'cover',
           }}
           className={styles.cardImage}
-        />
-
+        /> */}
         <Card.Body className={styles.cardBody}>
           <small className={styles.deptCode}>Cod: {id || ''}</small>
           <Card.Title className={styles.cardTitle}>

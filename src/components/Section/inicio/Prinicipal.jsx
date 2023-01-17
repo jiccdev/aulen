@@ -21,7 +21,7 @@ const Prinicipal = () => {
             alt="house"
             style={{
               width: '100%',
-              height: 'auto',
+              height: 500,
               objectFit: 'cover',
               borderRadius: '10%',
             }}

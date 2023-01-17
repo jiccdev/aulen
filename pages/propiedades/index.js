@@ -10,7 +10,8 @@ const Propiedades = () => {
   const [statusId, setStatusId] = useState(1);
 
   useEffect(() => {
-    getProperties(realtorId, statusId);
+    // getProperties(realtorId, statusId);
+    getProperties(5, 5);
   }, []);
 
   return (

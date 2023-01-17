@@ -22,7 +22,8 @@ const PropiedadId = () => {
   const { BsHeart } = icons;
 
   useEffect(() => {
-    getProperty(propertyId, 1, 1);
+    // getProperty(propertyId, 1, 1);
+    getProperty(propertyId, 5, 5);
   }, [propertyId]);
 
   console.log('Property', property);
