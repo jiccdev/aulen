@@ -22,9 +22,7 @@ const NewProperties = () => {
 
         <Col sm={12} lg={6} xl={6} className={styles.newPropertiesCol}>
           <div className={styles.newPropertiesColContent}>
-            <h2 className={styles.newPropertiesColTitle}>
-              Propiedades en remates
-            </h2>
+            <h2 className={styles.newPropertiesColTitle}>Propiedades nuevas</h2>
             <p>
               Un modelo de inversión único en el mercado que genera hasta un 15%
               de rentabilidad por operación. Invierte de manera segura, y cuenta

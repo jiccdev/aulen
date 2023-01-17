@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import HeaderSection from '../../Section/HeaderSection';
-import SoldHome from '../../../assets/img/SoldHome/sold-home.jpg';
+import PropiedadesEnRemate from '../../../assets/img/Inicio/Principal/propiedades-en-remate.jpg';
 import styles from '../../../../styles/components/Inicio/Investing.module.css';
 
 /** Bootstrap components */
@@ -32,7 +32,7 @@ const Investing = () => {
           </div>
         </Col>
         <div className={styles.investingColAbsolute}>
-          <Image src={SoldHome} className={styles.investingImg} />
+          <Image src={PropiedadesEnRemate} className={styles.investingImg} />
         </div>
       </Row>
     </div>
