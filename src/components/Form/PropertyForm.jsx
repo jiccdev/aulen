@@ -18,7 +18,7 @@ const PropertyForm = ({ titleContentForm, textAlign, subtitle, ...props }) => {
     ev.preventDefault();
   };
 
-  console.log('componentProps', !!haveAction1);
+  // console.log('componentProps', !!haveAction1);
 
   return (
     <div>

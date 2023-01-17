@@ -37,7 +37,9 @@ const Lease = () => {
                 </Card>
                 <ul className={styles.leaseUl}>
                   {item?.itemsList?.length > 0
-                    ? item?.itemsList?.map((item) => <li> {item}</li>)
+                    ? item?.itemsList?.map((item) => (
+                        <li key={item?.id}> {item}</li>
+                      ))
                     : null}
                 </ul>
               </Col>

@@ -32,7 +32,11 @@ const Investing = () => {
           </div>
         </Col>
         <div className={styles.investingColAbsolute}>
-          <Image src={PropiedadesEnRemate} className={styles.investingImg} />
+          <Image
+            src={PropiedadesEnRemate}
+            alt="Propieda en remate"
+            className={styles.investingImg}
+          />
         </div>
       </Row>
     </div>
