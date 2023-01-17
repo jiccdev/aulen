@@ -4,10 +4,12 @@ import FeaturedCard from "../FeaturedCard"
 export const Destacados = () => {
   return(
     <>
-    <section>
-      <h2>Proyectos destacados</h2>
-      <div>
+    <section className={`${styles.customCol}`}>
+      <h2 className={`${styles.section__h2}`}>Proyectos destacados</h2>
+      <div className={`${styles.customRow}`}>
+        <button></button>
         <FeaturedCard />
+        <button></button>
       </div>
     </section>
     </>

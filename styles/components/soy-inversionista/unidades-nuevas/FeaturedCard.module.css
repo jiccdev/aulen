@@ -101,4 +101,10 @@
 
   padding: .2em 1em;
   max-height: 1.5em;
+
+  transition: filter 300ms linear;
+}
+
+.card__details__btn:hover{
+  filter: brightness(120%);
 }
