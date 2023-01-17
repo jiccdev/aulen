@@ -12,7 +12,7 @@
   color: var(--color-dark) !important;
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
-  margin-bottom: 1.5rem;
+  margin: 1rem 0rem 2.5rem 0rem;
 }
 
 .form p {
@@ -31,9 +31,9 @@
 
 .formGroup {
   display: flex !important;
-  width: 100%;
+  width: 100% !important;
   align-items: center;
-  margin: 1rem 0;
+  margin: 0.7rem 0;
   justify-content: center;
 }
 
@@ -82,11 +82,10 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-md) !important;
   border: none;
-  padding: 0.5rem 1rem;
   border-radius: var(--border-radius-2xl);
   cursor: pointer;
   transition: 0.3s all ease-in-out;
-  width: 100% !important;
+  width: 200px !important;
 }
 
 .btnSubmit[type='submit']:hover {
@@ -97,7 +96,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 105%;
+  width: 100;
   margin: 0 auto;
   white-space: nowrap;
 }
@@ -108,7 +107,7 @@
   font-weight: var(--font-weight-bold);
   text-align: start;
   width: 85%;
-  margin: 0 auto;
+  margin: 2rem 0 1rem 0;
 }
 
 @media screen and (min-width: 992px) {

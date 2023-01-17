@@ -11,7 +11,7 @@ import styles from '../../../../styles/components/Inicio/Principal.module.css';
 
 const Prinicipal = () => {
   return (
-    <div>
+    <div className={styles.principalContainer}>
       <HeaderSection titleSection="¡Aulén, contigo en cada paso!" />
       <Row className={styles.rowPlanForm}>
         <Col sm={12} lg={7}>
@@ -21,7 +21,7 @@ const Prinicipal = () => {
             alt="house"
             style={{
               width: '100%',
-              height: 500,
+              height: 520,
               objectFit: 'cover',
               borderRadius: '10%',
             }}

@@ -81,6 +81,15 @@ const PropertyForm = ({ titleContentForm, textAlign, subtitle, ...props }) => {
           />
         </Form.Group>
 
+        <Form.Group className={styles.formGroup} controlId="formBasicCheckbox">
+          <Form.Check
+            type="checkbox"
+            label="Al continuar estás aceptando los términos y condiciones y la política de privacidad"
+            className={styles.formCheck}
+            name="terms"
+          />
+        </Form.Group>
+
         <Row className={styles.rowBtnForm}>
           {!!haveAction1 && (
             <Col sm={12} lg={6}>
@@ -102,15 +111,6 @@ const PropertyForm = ({ titleContentForm, textAlign, subtitle, ...props }) => {
             </Col>
           )}
         </Row>
-
-        <Form.Group className={styles.formGroup} controlId="formBasicCheckbox">
-          <Form.Check
-            type="checkbox"
-            label="Al continuar estás aceptando los términos y condiciones y la política de privacidad"
-            className={styles.formCheck}
-            name="terms"
-          />
-        </Form.Group>
       </Form>
     </div>
   );
