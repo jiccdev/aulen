@@ -1,0 +1,104 @@
+.customCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+}
+
+.customRow {
+  display: flex;
+  justify-content: space-between;
+  gap: .5em;
+}
+
+.card{
+  border: 2px solid var(--color-primary, #f57914);
+  border-radius: var(--border-radius-lg, 0.6rem);
+
+  padding: .4em;
+  width: min-content;
+  position: relative;
+}
+
+.card__img{
+  max-width: 350px;
+  max-height: 250px;
+  object-fit: cover;
+
+  border-radius: var(--border-radius-lg, 0.6rem);
+}
+
+.card__cod{
+  background: var(--color-primary, #f57914);
+  border-radius: var(--border-radius-lg, 0.6rem);
+  font-size: var(--font-size-sm, 0.8rem);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-white, #fff);
+
+  cursor: default;
+  padding: .2em 1em;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.cardContainer__1,
+.cardContainer__2,
+.cardContainer__3{
+  width: 100%;
+  gap: .1em;
+}
+
+.card__name,
+.card__location,
+.card__price,
+.card__specs__bedroom,
+.card__specs__bathroom,
+.card__specs__size{
+  margin: 0;
+  font-size: var(--font-size-md, 1rem);
+  cursor: default;
+}
+
+.card__price,
+.card__specs__bathroom,
+.card__specs__bedroom,
+.card__specs__size{
+  font-size: var(--font-size-sm, .8rem);
+}
+
+.cardContainer__1{
+  align-items: flex-start;
+}
+
+.card__name{
+  font-weight: var(--font-weight-bold, 700);
+}
+
+
+.cardContainer__2{
+  align-items: flex-end;
+}
+
+.card__specs{
+  align-items: center;
+  justify-content: space-between;
+  gap: .1em;
+}
+
+.cardContainer__3{
+  align-items: center;
+}
+
+.card__details__btn{
+  all: unset;
+
+  background: var(--color-primary, #f57914);
+  border-radius: 100vmax;
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-white, #fff);
+  font-size: var(--font-size-sm, .8rem);
+
+  padding: .2em 1em;
+  max-height: 1.5em;
+}
