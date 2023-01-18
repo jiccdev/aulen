@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import HeaderSection from '../../Section/HeaderSection';
 import SoldHome from '../../../assets/img/SoldHome/sold-home.jpg';
 import styles from '../../../../styles/components/Inicio/NewProperties.module.css';
 
@@ -12,7 +11,6 @@ import Col from 'react-bootstrap/Col';
 const NewProperties = () => {
   return (
     <div className={styles.newPropertiesContainer}>
-      <HeaderSection titleSection="¡Invierte en inmuebles con nosotros!" />
       <Row className={styles.rowNewProperties}>
         <Col sm={12} lg={6} xl={6} className={styles.newPropertiesCol}>
           <div className={styles.newPropertiesColAbsolute}>

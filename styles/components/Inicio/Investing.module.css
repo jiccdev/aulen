@@ -31,18 +31,6 @@
   border-radius: var(--border-radius-5xl) !important;
 }
 
-@media screen and (min-width: 992px) {
-  .investingColAbsolute {
-    position: absolute !important;
-    right: -5rem !important;
-    top: 31% !important;
-    width: 50% !important;
-    height: 60% !important;
-    border-radius: var(--border-radius-5xl) !important;
-    display: block !important;
-  }
-}
-
 .investingColContent .investingColTitle {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
@@ -91,8 +79,19 @@
 @media screen and (min-width: 992px) {
   .investingContainer {
     width: 80%;
-    margin: 3rem auto;
+    margin: 8rem auto;
   }
+
+  .investingColAbsolute {
+    position: absolute !important;
+    right: -5rem !important;
+    top: 31% !important;
+    width: 50% !important;
+    height: 60% !important;
+    border-radius: var(--border-radius-5xl) !important;
+    display: block !important;
+  }
+
   .investingColContent {
     width: 55%;
     padding: 3rem;

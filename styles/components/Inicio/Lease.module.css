@@ -1,6 +1,7 @@
 .leaseContainer {
-  margin: 3rem auto;
+  position: relative;
   width: 100%;
+  margin: 3rem auto;
 }
 
 .leaseCard {
@@ -71,16 +72,19 @@
 @media screen and (min-width: 992px) {
   .leaseContainer {
     width: 80%;
-    margin: 3rem auto;
+    margin: 8rem auto;
   }
+
   .leaseCard {
     height: 500px !important;
   }
+
   .leaseCard:hover {
     scale: 1.08;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
       rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   }
+
   .leaseCard .leaseCardBody .leaseCardTitle {
     width: 60%;
   }
