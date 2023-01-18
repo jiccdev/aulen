@@ -30,14 +30,22 @@ const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen, handleModal }) => {
                 <div className={styles.bgChange}></div>
 
                 <li className={`${styles.msLi} ${styles.msLi2} `}>
-                  <a href="javascript:void(0)">
+                  <a href="https://www.whatsapp.com/?lang=es" target="_blank">
                     <span class="fa fa-flask">
                       <AiOutlineWhatsApp />
                     </span>
                   </a>
                 </li>
-                <li className={`${styles.msLi} ${styles.msLi1}`}>
-                  <a href="javascript:void(0)">
+                <li
+                  className={`${styles.msLi} ${styles.msLi1}`}
+                  onClick={() => setIsModalOpen(!isModalOpen)}
+                >
+                  <a
+                    href="#"
+                    onClick={(ev) => {
+                      ev.preventDefault();
+                    }}
+                  >
                     <span class="fa fa-fort-awesome">
                       <BsTelephoneFill />
                     </span>
@@ -45,10 +53,15 @@ const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen, handleModal }) => {
                 </li>
                 <li className={styles.msMain}>
                   <a href="javascript:void(0)">
-                    <label class="ms-menu-toggle-lbl" for="ms-menu">
-                      <span class="fa fa-plus">
-                        <BsPlusLg />
-                      </span>
+                    <label className="ms-menu-toggle-lbl" for="ms-menu">
+                      <BsPlusLg
+                        style={{
+                          fontSize: '2rem',
+                          color: '#fff',
+                          position: 'relative',
+                          top: '.9rem',
+                        }}
+                      />
                     </label>
                   </a>
                 </li>

@@ -258,14 +258,15 @@
 
 .msNav > li a {
   font-size: 30px;
-  color: var(--color-white);
   background: var(--color-white);
+  color: var(--color-primary);
   width: 60px;
   height: 60px;
   display: block;
   border-radius: 100%;
   position: relative;
   text-align: center;
+  cursor: pointer;
 }
 
 .msNav {
@@ -302,7 +303,7 @@
   width: 30px;
   opacity: 0;
   z-index: 12;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 @keyframes border-top-animation {
