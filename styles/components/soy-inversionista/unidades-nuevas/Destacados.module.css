@@ -10,3 +10,46 @@
   justify-content: space-between;
   gap: .5em;
 }
+
+.section{
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.featuredCards{
+  overflow: hidden;
+}
+
+.section__h2{
+  font-size: var(--font-size-3xl, 2rem);
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.button{
+  all: unset;
+  width: 3em;
+  max-width: 3em;
+  border: none;
+
+  align-items: center;
+
+  border-radius: var(--border-radius-lg, 0.6rem);
+  background: var(--color-white, #fff);
+  transition: filter 300ms linear,
+  color 300ms linear;
+}
+
+.button:hover{
+  filter: brightness(90%);
+}
+
+.button:hover .arrow{
+  color: var(--color-pale-gray-dark, #adadad);
+}
+
+.arrow{
+  color: var(--color-pale-gray, #adadad);
+  min-width: 48px;
+  min-height: 48px;
+  transition: color 300ms linear;
+}

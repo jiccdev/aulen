@@ -30,6 +30,8 @@ import {
   RiMoneyDollarCircleLine,
   RiUserHeartLine,
   RiTimerFlashLine,
+  RiArrowRightSLine,
+  RiArrowLeftSLine,
 } from 'react-icons/ri';
 import { TbChecklist, TbHandClick, TbTarget } from 'react-icons/tb';
 import { BiTimer, BiMap, BiBuildingHouse } from 'react-icons/bi';
@@ -81,4 +83,6 @@ export const icons = {
   TfiFacebook,
   BsInstagram,
   AiFillYoutube,
+  RiArrowRightSLine,
+  RiArrowLeftSLine,
 };
