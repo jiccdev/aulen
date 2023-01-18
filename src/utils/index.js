@@ -1,5 +1,5 @@
 /** Truncate string lenght */
-export const truncateString = (str, limit = 25) =>
+export const truncateString = (str, limit = 40) =>
   str.length > limit ? `${str.substring(0, limit)}...` : str;
 
 /** Parse number to CLP currency */

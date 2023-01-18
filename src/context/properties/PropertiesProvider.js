@@ -8,17 +8,47 @@ import PropertiesServices from '../../services/PropertiesServices';
 const PropertiesProvider = ({ children }) => {
   const [data, setData] = useState(propertiesData);
   const [properties, setProperties] = useState([]);
+  const [property, setProperty] = useState({});
+  const [statusCodeMsg, setStatusCodeMsg] = useState('');
 
-  // Get all properties
-  const getProperties = async () => {
-    const response = await PropertiesServices.getProperties();
-    const data = response?.data;
-    setProperties(data);
+  /** Get Properties */
+  const getProperties = async (realtorId, statusId) => {
+    try {
+      const response = await PropertiesServices.getProperties(
+        realtorId,
+        statusId
+      );
+      setProperties(response?.data);
+    } catch (error) {
+      const { statusCode } = error.response.data;
+      setStatusCodeMsg(statusCode) && new Error(error.response.data);
+    }
+  };
+
+  /** Get Property */
+  const getProperty = async (id, realtorId, statusId) => {
+    try {
+      const response = await PropertiesServices.getProperty(
+        id,
+        realtorId,
+        statusId
+      );
+      setProperty(response);
+    } catch (error) {
+      const { statusCode } = error.response.data;
+      setStatusCodeMsg(statusCode) && new Error(error.response.data);
+    }
   };
 
   return (
     <PropertiesContext.Provider
-      value={{ properties, getProperties, contextData: [data, setData] }}
+      value={{
+        properties,
+        property,
+        getProperties,
+        getProperty,
+        contextData: [data, setData],
+      }}
     >
       {children}
     </PropertiesContext.Provider>

@@ -1,0 +1,88 @@
+.newPropertiesContainer {
+  position: relative;
+  width: 100%;
+  margin: 3rem auto;
+  padding: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rowNewProperties {
+  background-color: var(--color-light);
+  border-radius: var(--border-radius-5xl);
+  padding: 2rem 3rem;
+}
+
+.newPropertiesImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius-5xl);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.newPropertiesColContent {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.newPropertiesColContent .newPropertiesColTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.consultationContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.consultationContainer .consultation {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.3rem 2rem;
+  border-radius: var(--border-radius-3xl);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.consultationContainer .consultation:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 992px) {
+  .newPropertiesContainer {
+    width: 70%;
+    margin: 3rem auto;
+  }
+
+  .newPropertiesImg {
+    width: 90%;
+  }
+
+  .rowNewProperties {
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-5xl);
+    padding: 2rem 3rem;
+  }
+
+  .newPropertiesColContent {
+    padding: 2rem;
+  }
+}

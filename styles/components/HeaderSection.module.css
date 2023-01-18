@@ -25,6 +25,6 @@
 @media screen and (min-width: 992px) {
   .h2 {
     font-size: var(--font-size-5xl);
-    padding: 2rem 1rem 4rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 }

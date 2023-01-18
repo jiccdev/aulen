@@ -1,0 +1,87 @@
+.leaseContainer {
+  margin: 3rem auto;
+  width: 100%;
+}
+
+.leaseCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 55px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  height: 400px !important;
+  border: none !important;
+  border-radius: 55px !important;
+}
+
+.leaseCard .leaseCardBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1rem;
+  border-radius: 0px 0px 55px 55px;
+  -webkit-border-radius: 0px 0px 55px 55px;
+  -moz-border-radius: 0px 0px 55px 55px;
+  background-color: var(--color-primary);
+  transition: 0.3s all ease-in-out;
+}
+
+.leaseCard:hover > .leaseCardBody {
+  background-color: var(--color-secondary);
+}
+
+.leaseCard:hover {
+  scale: 1.03;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.leaseCard .leaseCardBody .leaseCardTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 55px 55px 0px 0px;
+  -webkit-border-radius: 55px 55px 0px 0px;
+  -moz-border-radius: 55px 55px 0px 0px;
+  border: none;
+}
+
+.leaseUl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: 1rem 0 3rem 0;
+}
+
+.leaseUl li {
+  line-height: 2.3rem;
+  font-size: var(--font-size-md);
+  color: var(--color-dark);
+}
+
+@media screen and (min-width: 992px) {
+  .leaseContainer {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  .leaseCard {
+    height: 500px !important;
+  }
+  .leaseCard:hover {
+    scale: 1.08;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  .leaseCard .leaseCardBody .leaseCardTitle {
+    width: 60%;
+  }
+}

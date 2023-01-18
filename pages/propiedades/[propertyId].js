@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from 'react';
+import React, { Fragment, useContext, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import HeadPage from '../../src/components/HeadPage/HeadPage';
@@ -15,33 +15,36 @@ import styles from '../../styles/components/propiedades/details/Details.module.c
 import { icons } from '../../src/components/Icons';
 
 const PropiedadId = () => {
+  const { getProperty, property, contextData } = useContext(PropertiesContext);
   const { query } = useRouter();
   const { propertyId } = query;
-  const { contextData } = useContext(PropertiesContext);
   const [data] = contextData;
   const { BsHeart } = icons;
 
-  const filtredData = data
-    ?.filter((item) => item?.cod == propertyId)
-    ?.map((item) => item);
+  useEffect(() => {
+    // getProperty(propertyId, 1, 1);
+    getProperty(propertyId, 5, 5);
+  }, [propertyId]);
+
+  console.log('Property', property);
 
   return (
     <Fragment>
-      <HeadPage title={`Departamento-${propertyId}`} />
+      <HeadPage title={`Departamento-x`} />
       <ul className={styles.propertyTypeInfo}>
         <li>
           <Link href="/propiedades">Volver al listado</Link>
         </li>
         <li>Departamentos</li>
         <li>Venta Proyectos</li>
-        {/* <li>{address?.city}</li>
-        <li>{address?.country}</li> */}
+        <li>{property?.commune}</li>
+        <li>{property?.address}</li>
       </ul>
 
       <Row className={styles.row}>
         <Col xs={12} xl={8}>
-          <GalleryCarousel filtredData={filtredData} />
-          <Characteristic filtredData={filtredData} />
+          <GalleryCarousel images={property?.images} />
+          <Characteristic propertyData={property} />
         </Col>
 
         <Col xs={12} xl={4} className={styles.col}>
@@ -57,7 +60,7 @@ const PropiedadId = () => {
               <BsHeart />
             </span>
           </div>
-          <Details filtredData={filtredData} />
+          <Details propertyData={property} />
         </Col>
       </Row>
 

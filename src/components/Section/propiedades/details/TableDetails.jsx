@@ -3,9 +3,8 @@ import React from 'react';
 /* Bootstrap components */
 import Table from 'react-bootstrap/Table';
 
-const TableDetails = ({ filtredData }) => {
-  const { squareMeters, bedrooms, bathrooms, projectStatus, deliveryDate } =
-    filtredData[0] || {};
+const TableDetails = ({ propertyData }) => {
+  const { surface_m2, bedrooms, bathrooms } = propertyData;
 
   return (
     <Table striped bordered>
@@ -13,24 +12,26 @@ const TableDetails = ({ filtredData }) => {
         <tr>
           <th>Superficie útil</th>
           <td className="bg-white">
-            {squareMeters || ''} m<sup>2</sup>
+            {surface_m2 === null ? 'sin registro en' : surface_m2} m<sup>2</sup>
           </td>
         </tr>
         <tr>
           <th>Dormitorios</th>
-          <td>{bedrooms || ''}</td>
+          <td>{bedrooms === null ? 'sin registro' : bedrooms}</td>
         </tr>
         <tr>
           <th>Baños</th>
-          <td>{bathrooms || ''}</td>
+          <td>{bathrooms === null ? 'sin registro' : bathrooms}</td>
         </tr>
         <tr>
           <th>Fecha de entrega</th>
-          <td>{deliveryDate || ''}</td>
+          <td>sin registro</td>
+          {/* <td>{deliveryDate || ''}</td> */}
         </tr>
         <tr>
           <th>Estado del Proyecto</th>
-          <td>{projectStatus || ''}</td>
+          <td>sin registro</td>
+          {/* <td>{projectStatus || ''}</td> */}
         </tr>
       </tbody>
     </Table>

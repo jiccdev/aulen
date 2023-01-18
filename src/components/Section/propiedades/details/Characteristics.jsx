@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from '../../../../../styles/components/propiedades/details/Characteristics.module.css';
 
-const Characteristics = ({ filtredData }) => {
+const Characteristics = ({ propertyData }) => {
   return (
     <div className={styles.characteristicsContainer}>
       <h2>Características</h2>
@@ -28,7 +28,7 @@ const Characteristics = ({ filtredData }) => {
           </p>
         </Col>
         <Col lg={5}>
-          <TableDetails filtredData={filtredData}/>
+          <TableDetails propertyData={propertyData} />
         </Col>
       </Row>
     </div>

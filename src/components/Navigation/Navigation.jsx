@@ -21,7 +21,7 @@ const Navigation = () => {
         <Nav>
           {navigationData &&
             navigationData.map((navItem) => (
-              <NavItem key={navItem?.id} navItem={navItem} />
+              <NavItem key={navItem?.id} navItem={navItem} navigationData={navigationData}/>
             ))}
         </Nav>
       </Navbar.Collapse>

@@ -8,6 +8,25 @@
   color: var(--color-dark) !important;
 }
 
+/* aca */
+.navItemActive {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: var(--border-radius-3xl);
+  min-width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* aca */
+
 .navItemBtn {
   background-color: var(--color-secondary);
   color: var(--color-white);
