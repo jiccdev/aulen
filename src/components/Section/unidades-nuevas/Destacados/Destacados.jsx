@@ -13,7 +13,7 @@ export const Destacados = () => {
             <RiArrowLeftSLine className={`${styles.arrow}`} />
           </button>
           <div className={`${styles.customRow} ${styles.featuredCards}`}>
-            <FeaturedCard />
+            <FeaturedCard data-aos='fade-in' />
             <FeaturedCard />
             <FeaturedCard />
           </div>
