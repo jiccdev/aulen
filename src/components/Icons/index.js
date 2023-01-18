@@ -7,6 +7,7 @@ import {
   BsPerson,
   BsHeart,
   BsInstagram,
+  BsPlusLg,
 } from 'react-icons/bs';
 import {
   FaUserAlt,
@@ -93,4 +94,5 @@ export const icons = {
   FaTabletAlt,
   MdOutlineManageAccounts,
   GiReceiveMoney,
+  BsPlusLg,
 };

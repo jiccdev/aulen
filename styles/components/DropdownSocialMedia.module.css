@@ -67,7 +67,7 @@
   animation-name: slideIn;
 }
 
-/* Nuevo */
+/* Gooey menu */
 .msNavContainer {
   position: relative;
   width: 100%;
@@ -78,6 +78,7 @@
 #ms-menu {
   display: none;
 }
+
 .bgChange {
   position: absolute;
   bottom: infinite;
@@ -87,6 +88,7 @@
   border-radius: 100% 0% 0% 0%;
   transition: all 0.25s ease;
 }
+
 .msNav .msMenuToggle {
   display: none;
 }
@@ -96,12 +98,14 @@
   height: 3000px;
   transition: all 0.5s ease;
 }
+
 .msNav {
   position: absolute;
   bottom: 75px;
   right: 75px;
   list-style: none;
 }
+
 .msNav > .msMain {
   position: relative;
 }
@@ -113,40 +117,51 @@
   transition: bottom 0.5s ease;
   z-index: 1;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi a {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi1 {
   bottom: 90px;
   transition: bottom 0.3s ease;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi1 a span {
   opacity: 1;
   transition: opacity 0.5s ease 0.1s;
 }
+
 .msNav .msMenuToggle:checked ~ .msMain:after {
   animation: big-border-bottom-animation 0.5s ease 0.1s;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi1:before {
   animation: border-top-animation 0.5s ease 0.2s;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi1:after {
   animation: border-bottom-animation 0.5s ease 0.2s;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi2 {
   bottom: 160px;
   transition: bottom 0.6s ease;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi2 a span {
   opacity: 1;
   transition: opacity 0.6s ease 0.2s;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi2:before {
   animation: border-top-animation 0.5s ease 0.2s;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi2:after {
   animation: border-bottom-animation 0.5s ease 0.3s;
 }
+
 .msNav .msMenuToggle ~ .msLi:before {
   content: '';
   width: 45px;
@@ -159,6 +174,7 @@
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
 }
+
 .msNav .msMenuToggle ~ .msLi:before {
   content: '';
   width: 45px;
@@ -171,6 +187,7 @@
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
 }
+
 .msNav .msMenuToggle:checked ~ .msLi:before {
   content: '';
   width: 45px;
@@ -230,9 +247,10 @@
 }
 
 .msNav .msMenuToggle:checked ~ .msMain span {
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
   transition: transform 0.35s ease;
 }
+
 .msNav .msMenuToggle ~ .msMain span {
   transition: transform 0.35s ease;
   opacity: 1;
@@ -272,6 +290,7 @@
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+
 .msNav > li > a span {
   position: absolute;
   top: 0;
@@ -283,7 +302,9 @@
   width: 30px;
   opacity: 0;
   z-index: 12;
+  margin-bottom: 2rem;
 }
+
 @keyframes border-top-animation {
   0% {
     bottom: 0px;
@@ -323,5 +344,3 @@
     display: none;
   }
 }
-
-

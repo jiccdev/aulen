@@ -12,7 +12,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import styles from '../../../styles/components/DropdownSocialMedia.module.css';
 
 const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen, handleModal }) => {
-  const { BsTelephoneFill, AiOutlineWhatsApp } = icons;
+  const { BsTelephoneFill, AiOutlineWhatsApp, BsPlusLg } = icons;
 
   return (
     <span className={styles.dropdownIconToggle}>
@@ -31,18 +31,24 @@ const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen, handleModal }) => {
 
                 <li className={`${styles.msLi} ${styles.msLi2} `}>
                   <a href="javascript:void(0)">
-                    <span class="fa fa-flask"></span>
+                    <span class="fa fa-flask">
+                      <AiOutlineWhatsApp />
+                    </span>
                   </a>
                 </li>
                 <li className={`${styles.msLi} ${styles.msLi1}`}>
                   <a href="javascript:void(0)">
-                    <span class="fa fa-fort-awesome"></span>
+                    <span class="fa fa-fort-awesome">
+                      <BsTelephoneFill />
+                    </span>
                   </a>
                 </li>
                 <li className={styles.msMain}>
                   <a href="javascript:void(0)">
                     <label class="ms-menu-toggle-lbl" for="ms-menu">
-                      <span class="fa fa-plus"></span>
+                      <span class="fa fa-plus">
+                        <BsPlusLg />
+                      </span>
                     </label>
                   </a>
                 </li>
