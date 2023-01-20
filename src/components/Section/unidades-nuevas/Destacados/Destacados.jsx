@@ -1,4 +1,5 @@
 import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "../../../../../styles/components/soy-inversionista/unidades-nuevas/Destacados.module.css"
 import FeaturedCard from "../FeaturedCard"
 import { icons } from "../../../Icons"
@@ -13,7 +14,7 @@ export const Destacados = () => {
             <RiArrowLeftSLine className={`${styles.arrow}`} />
           </button>
           <div className={`${styles.customRow} ${styles.featuredCards}`}>
-            <FeaturedCard />
+            <FeaturedCard data-aos='fade-in' />
             <FeaturedCard />
             <FeaturedCard />
           </div>
