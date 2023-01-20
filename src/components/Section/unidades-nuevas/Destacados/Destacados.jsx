@@ -1,4 +1,5 @@
 import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "../../../../../styles/components/soy-inversionista/unidades-nuevas/Destacados.module.css"
 import FeaturedCard from "../FeaturedCard"
 import { icons } from "../../../Icons"
