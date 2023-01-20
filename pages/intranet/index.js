@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Login from '../../src/components/Section/intranet/Login';
 
 const Intranet = () => {
   return (
-    <section>
-      <h1>Intranet</h1>
-    </section>
+    <Fragment>
+      {/* LOGIN FORM - INTRANET */}
+      <Login />
+    </Fragment>
   );
 };
 
