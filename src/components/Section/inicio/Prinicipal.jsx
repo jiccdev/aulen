@@ -16,7 +16,7 @@ const Prinicipal = () => {
       <HeaderSection titleSection="¡Aulén, contigo en cada paso!" />
       <Row className={styles.rowPlanForm}>
         <Col sm={12} lg={7} className={styles.principalCol}>
-          <FadeComponent left cascade opposite duration={1400}>
+          <FadeComponent left cascade opposite duration={1000}>
             <Image
               width="100%"
               src={Empacando}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import HeaderSection from '../../Section/HeaderSection';
+import FadeComponent from '../../Reveal/FadeComponent';
 import { stepsData } from '../../../api/fakeData/steps';
 import styles from '../../../../styles/components/Inicio/Steps.module.css';
 
@@ -23,31 +24,39 @@ const Steps = () => {
                 xl={3}
                 className={styles.stepCol}
               >
-                <Card style={{ width: 'auto' }} className={styles.stepCard}>
-                  <Card.Body className={styles.stepCardBody}>
-                    <span className={styles.stepsIconContainer}>
-                      <strong className={styles.stepsIcon}>{item?.icon}</strong>
-                    </span>
+                <FadeComponent bottom cascade opposite duration={1500}>
+                  <Card style={{ width: 'auto' }} className={styles.stepCard}>
+                    <Card.Body className={styles.stepCardBody}>
+                      <span className={styles.stepsIconContainer}>
+                        <strong className={styles.stepsIcon}>
+                          {item?.icon}
+                        </strong>
+                      </span>
 
-                    <span className={styles.stepCardIdContainer}>
-                      <strong className={styles.stepCardId}>{item?.id}</strong>
-                    </span>
-                    <Card.Title className={styles.stepCardTitle}>
-                      {item?.title}
-                    </Card.Title>
+                      <span className={styles.stepCardIdContainer}>
+                        <strong className={styles.stepCardId}>
+                          {item?.id}
+                        </strong>
+                      </span>
+                      <Card.Title className={styles.stepCardTitle}>
+                        {item?.title}
+                      </Card.Title>
 
-                    <Card.Text>{item?.description}</Card.Text>
-                  </Card.Body>
-                </Card>
+                      <Card.Text>{item?.description}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </FadeComponent>
               </Col>
             ))
           : null}
 
-        <div className={styles.publishForFreeContainer}>
-          <Link href="/" className={styles.publishForFreeLink}>
-            Publica gratis
-          </Link>
-        </div>
+        <FadeComponent duration={500}>
+          <div className={styles.publishForFreeContainer}>
+            <Link href="/" className={styles.publishForFreeLink}>
+              Publica gratis
+            </Link>
+          </div>
+        </FadeComponent>
       </Row>
     </div>
   );
