@@ -2,6 +2,8 @@
   background-color: transparent !important;
   border: none !important;
   outline: none !important;
+  margin-left: 2rem !important;
+  width: 2.5rem !important;
 }
 
 .navbarToggle:focus {

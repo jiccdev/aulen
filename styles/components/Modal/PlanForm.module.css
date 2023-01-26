@@ -1,9 +1,13 @@
 .modal {
   transition: 0.4s all ease;
+  background-color: transparent !important;
+}
+
+.form {
+  background-color: transparent !important;
 }
 
 .closeModal {
-  background-color: var() !important;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -11,6 +15,11 @@
   top: 25px;
   right: 30px;
   cursor: pointer;
+}
+
+.btnSubmit {
+  width: 100% !important;
+  white-space: nowrap;
 }
 
 .closeModal span:hover {

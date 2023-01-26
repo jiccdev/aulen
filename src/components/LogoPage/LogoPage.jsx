@@ -11,6 +11,7 @@ const LogoPage = () => {
       className="img-fluid"
       width={220}
       height={220}
+      style={{ width: '100%', height: '100%' }}
     />
   );
 };
