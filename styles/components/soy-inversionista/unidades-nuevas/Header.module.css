@@ -32,6 +32,7 @@
 
 .chooseInvest__h2{
   font-weight: var(--font-weight-bold, 700);
+  text-align: center;
 }
 
 .chooseInvest{

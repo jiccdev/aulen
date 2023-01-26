@@ -141,3 +141,10 @@
     height: 600px;
   }
 }
+@media (width < 400px){
+  .form{
+    width: 100%;
+    max-width: 100%;
+    max-height: max-content;
+  }
+}

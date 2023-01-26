@@ -159,3 +159,35 @@
     flex-direction: row;
   }
 }
+
+@media (width < 400px){
+  .divContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 300px;
+    margin-top: 3rem;
+  }
+
+  .divContainer:is(:hover, :focus){
+    transform: scale(1);
+  }
+
+  .idtext{
+    flex-direction: column !important;
+  }
+  .imgStep{
+    display: none;
+  }
+  .step__h3{
+    font-size: var(--font-size-md, 1rem);
+    font-weight: var(--font-weight-bold, 700);
+  }
+  
+  .step__p{
+    font-size: var(--font-size-sm, .6rem);
+  }
+
+}

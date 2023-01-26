@@ -50,3 +50,10 @@
   }
 }
 
+@media (width < 400px){
+  .mainContainer{
+    height: max-content;
+    max-height: max-content;
+  }
+}
+
