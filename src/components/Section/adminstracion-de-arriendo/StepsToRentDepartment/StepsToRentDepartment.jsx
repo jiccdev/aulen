@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderSection from '../../../../../src/components/Section/HeaderSection';
 import StepItem from '../../../../../src/components/Card/StepItem';
+import FadeComponent from '../../../Reveal/FadeComponent';
 import { stepsToRentDepartmentData } from '../../../../api/fakeData/stepsToRentDepartment';
 
 /** Bootstrap components */
@@ -14,12 +15,14 @@ const StepsToRentDepartment = () => {
       <Col xl={8} className={styles.col}>
         <HeaderSection titleSection="¡Manten tú depa ocupado y a tí desocupado!" />
 
-        <Row className={styles.rowItems}>
-          {stepsToRentDepartmentData &&
-            stepsToRentDepartmentData.map((step) => (
-              <StepItem key={step?.id} step={step} />
-            ))}
-        </Row>
+        <FadeComponent bottom cascade duration={1400}>
+          <Row className={styles.rowItems}>
+            {stepsToRentDepartmentData &&
+              stepsToRentDepartmentData.map((step) => (
+                <StepItem key={step?.id} step={step} />
+              ))}
+          </Row>
+        </FadeComponent>
       </Col>
     </Row>
   );

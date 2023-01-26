@@ -3,6 +3,7 @@ import Image from 'next/image';
 import HeaderSection from '../../Section/HeaderSection';
 import Empacando from '../../../../src/assets/img/Inicio/Principal/empacando.webp';
 import PropertyForm from '../../Form/PropertyForm';
+import FadeComponent from '../../Reveal/FadeComponent';
 
 /** Bootstrap components */
 import Row from 'react-bootstrap/Row';
@@ -15,12 +16,14 @@ const Prinicipal = () => {
       <HeaderSection titleSection="¡Aulén, contigo en cada paso!" />
       <Row className={styles.rowPlanForm}>
         <Col sm={12} lg={7} className={styles.principalCol}>
-          <Image
-            width="100%"
-            src={Empacando}
-            alt="house"
-            className={styles.principalImage}
-          />
+          <FadeComponent left cascade opposite duration={1400}>
+            <Image
+              width="100%"
+              src={Empacando}
+              alt="house"
+              className={styles.principalImage}
+            />
+          </FadeComponent>
         </Col>
         <Col sm={12} lg={5} className={styles.principalCol}>
           <PropertyForm
