@@ -17,6 +17,7 @@
 
   padding: .4em;
   width: min-content;
+  max-width: 350px;
   position: relative;
 }
 

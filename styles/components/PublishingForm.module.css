@@ -25,6 +25,13 @@
   padding: 2em 2.5em;
 }
 
+.following{
+  position: fixed;
+
+  top: 20%;
+  left: calc(60vw + 2rem);
+}
+
 /* HEADER */
 
 .form__header {
@@ -141,7 +148,17 @@
     height: 600px;
   }
 }
-@media (width < 400px){
+
+@media (width < 650px){
+  .form{
+    width: 100%;
+    max-width: 90%;
+    max-height: max-content;
+  }
+}
+
+
+@media (width < 500px){
   .form{
     width: 100%;
     max-width: 100%;

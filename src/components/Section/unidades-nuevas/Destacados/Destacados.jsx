@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 import styles from "../../../../../styles/components/soy-inversionista/unidades-nuevas/Destacados.module.css"
 import FeaturedCard from "../FeaturedCard"
 import { icons } from "../../../Icons"
+import GliderJs from "../../../GliderJs/GliderJs";
 
 export const Destacados = () => {
   const { RiArrowRightSLine, RiArrowLeftSLine } = icons
@@ -15,18 +16,16 @@ export const Destacados = () => {
     <>
       <section className={`${styles.customCol} ${styles.section}`}>
         <h2 className={`${styles.section__h2}`}>Proyectos destacados</h2>
-        <div className={`${styles.customRow}`}>
-          <button className={`${styles.customCol} ${styles.button}`}>
-            <RiArrowLeftSLine className={`${styles.arrow}`} />
-          </button>
-          <div className={`${styles.customRow} ${styles.featuredCards}`} data-aos='fade-up' >
+        <div className={`${styles.customRow} ${styles.container}`}>
+          <div className={`${styles.customRow} ${styles.containerGlider}`} data-aos='fade-up' >
+            <GliderJs>
             <FeaturedCard  data-aos='fade-up' data-aos-delay="100" />
             <FeaturedCard  data-aos='fade-up' data-aos-delay="200" />
             <FeaturedCard  data-aos='fade-up' data-aos-delay="300" />
+            <FeaturedCard  data-aos='fade-up' data-aos-delay="300" />
+            <FeaturedCard  data-aos='fade-up' data-aos-delay="300" />
+            </GliderJs>
           </div>
-          <button className={`${styles.customCol} ${styles.button}`}>
-            <RiArrowRightSLine className={`${styles.arrow}`} />
-          </button>
         </div>
       </section>
     </>

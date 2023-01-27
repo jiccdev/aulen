@@ -4,6 +4,7 @@ import { icons } from '../Icons';
 /** Recibe un objeto con los datos. */
 export const PublishingForm = ({formData}) => {
   const { FaUserAlt, BsTelephoneFill, MdOutlineMailOutline } = icons
+  
   return (
     <form className={`${styles.customCol} ${styles.form}`} >
       <header className={`${styles.customCol} ${styles.form__header}`}>
