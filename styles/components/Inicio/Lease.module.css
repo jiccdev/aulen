@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   margin: 3rem auto;
+  position: relative;
 }
 
 .leaseCard {
@@ -13,6 +14,7 @@
   height: 400px !important;
   border: none !important;
   border-radius: 55px !important;
+  position: relative;
 }
 
 .leaseCard .leaseCardBody {
@@ -57,10 +59,11 @@
 }
 
 .leaseUl {
+  position: relative;
   list-style: none;
   padding: 0;
-  margin: 0;
   margin: 1rem 0 3rem 0;
+  height: auto;
 }
 
 .leaseUl li {
@@ -77,6 +80,7 @@
 
   .leaseCard {
     height: 500px !important;
+    margin-bottom: 1rem;
   }
 
   .leaseCard:hover {

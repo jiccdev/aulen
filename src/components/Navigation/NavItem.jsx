@@ -6,7 +6,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import styles from '../../../styles/components/NavItem.module.css';
 
 const NavItem = ({ navItem }) => {
-  const [isNavItemActive, setIsNavItemActive] = useState(false);
   const { name, url, submenu } = navItem;
   const hasdropDownData = navItem?.submenu;
 
