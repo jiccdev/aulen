@@ -5,11 +5,12 @@ import Plans from '../../../src/components/Section/adminstracion-de-arriendo/Pla
 import CustomerExperience from '../../../src/components/Section/adminstracion-de-arriendo/CustomerExperience/CustomerExperience';
 import HeroSection from '../../../src/components/Section/quiero-vender/HeroSection/HeroSection';
 import StepsSection from '../../../src/components/Section/quiero-vender/StepsSection/StepsSection';
-
+import HeadPage from '../../../src/components/HeadPage/HeadPage';
 
 const QuieroVender = () => {
   return (
     <>
+      <HeadPage title="Quiero vender" />
       <LayoutSection>
         <HeroSection />
       </LayoutSection>

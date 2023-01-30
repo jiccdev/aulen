@@ -6,11 +6,13 @@ import HeaderSection from "../../../src/components/Section/unidades-en-remate/He
 import { InvestmentForm } from "../../../src/components/InvestmentForm/InvestmentForm";
 import { investmentFormData } from "../../../src/api/fakeData/investmentForm";
 import HeroSection from "../../../src/components/Section/unidades-en-remate/HeroSection";
-
+import HeadPage from "../../../src/components/HeadPage/HeadPage";
 
 export const UnidadesEnRemate = () =>{
   return(
     <>
+    <HeadPage title="Unidades en remate" />
+
     <LayoutSection>
       <HeaderSection />
     </LayoutSection>
