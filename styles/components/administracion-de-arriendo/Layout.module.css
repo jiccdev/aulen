@@ -1,5 +1,8 @@
 .row {
   position: relative;
+  position: relative;
+  margin: 3rem auto;
+  width: 100%;
 }
 
 .rightCol {
@@ -24,6 +27,11 @@
 }
 
 @media screen and (min-width: 992px) {
+  .row {
+    width: 100%;
+    margin: 3rem auto;
+  }
+
   .rightCol {
     position: fixed;
     right: 4rem;
@@ -34,7 +42,7 @@
   .isScrolledPast {
     position: fixed;
     right: 4rem;
-    top: 4rem;
+    top: 8rem;
     display: block;
   }
 
