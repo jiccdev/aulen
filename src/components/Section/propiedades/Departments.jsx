@@ -43,15 +43,17 @@ const Departments = ({ data, dataProperty, realtorId, statusId }) => {
             onChange={onOrderDepartmentByChange}
           />
         </div>
-      </div>
 
-      {/* FILTAR PROPIEDADES */}
-      <IconFilter
-        isGrid={isGrid}
-        setIsGrid={setIsGrid}
-        isList={isList}
-        setIsList={setIsList}
-      />
+        <div>
+          {/* FILTAR PROPIEDADES */}
+          <IconFilter
+            isGrid={isGrid}
+            setIsGrid={setIsGrid}
+            isList={isList}
+            setIsList={setIsList}
+          />
+        </div>
+      </div>
 
       <Col xl={9} className={styles.col}>
         <Row className={styles.rowItems}>

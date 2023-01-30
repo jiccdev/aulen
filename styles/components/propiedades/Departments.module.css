@@ -1,8 +1,17 @@
+.rowContainer {
+  position: relative;
+  margin: 5rem auto;
+  width: 100%;
+}
+
 .headerProperties {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  background-color: var(--color-light);
+  border-radius: var(--border-radius-sm);
+  border-left: 3px solid var(--color-primary);
 }
 
 .title {
@@ -42,8 +51,13 @@
 }
 
 @media screen and (min-width: 992px) {
+  .rowContainer {
+    width: 100%;
+    margin: 8.5rem auto;
+  }
+
   .headerProperties {
-    width: 75%;
+    width: 74%;
     display: flex;
     justify-content: space-between;
     align-items: center;
