@@ -1,7 +1,8 @@
 .principalContainer {
   position: relative;
-  margin: 3rem auto;
+  margin: 3rem 2;
   width: 100%;
+  background-color: red;
 }
 
 .rowPlanForm {

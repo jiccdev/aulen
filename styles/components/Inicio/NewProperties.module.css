@@ -53,7 +53,6 @@
   padding: 0.3rem 2rem;
   border-radius: var(--border-radius-3xl);
   text-align: center;
-  white-space: nowrap;
 }
 
 .consultationContainer .consultation:hover {
