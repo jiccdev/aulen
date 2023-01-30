@@ -1,6 +1,5 @@
 .iconFilterContainer {
-  width: 100%;
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-2xl);
   display: flex;
   justify-content: flex-end;
 }
@@ -19,16 +18,8 @@
 
 .iconFilterContainer span:hover {
   background-color: var(--color-pale-gray);
-  padding: 0.5rem;
   border-radius: var(--border-radius-3xl);
   color: var(--color-primary);
-}
-
-@media screen and (min-width: 992px) {
-  .iconFilterContainer {
-    width: 75%;
-    padding: 0.5rem 0;
-  }
 }
 
 .isFilterGridActive {

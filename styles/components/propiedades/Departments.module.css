@@ -14,6 +14,14 @@
   border-left: 3px solid var(--color-primary);
 }
 
+.headerProperties h1 {
+  margin: 1rem;
+}
+
+.containerForm {
+  margin: 1rem;
+}
+
 .title {
   display: flex;
   justify-content: center;
@@ -38,6 +46,8 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  width: 93%;
+  margin: 0 auto;
 }
 
 .spanMapIcon {
@@ -65,5 +75,12 @@
     margin: 0rem 0rem 2rem 0;
   }
   .title {
+  }
+  .headerProperties h1 {
+    margin: 0;
+  }
+  .urlViewMap {
+    margin: 0;
+    width: 100%;
   }
 }

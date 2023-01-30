@@ -13,12 +13,13 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import styles from '../../../../styles/components/propiedades/Departments.module.css';
 
-const Departments = ({ data, dataProperty, realtorId, statusId }) => {
+const Departments = ({ data, realtorId, statusId }) => {
   const [isGrid, setIsGrid] = useState(false);
   const [isList, setIsList] = useState(false);
   const { BiMap } = icons;
 
   const onOrderDepartmentByChange = (option) => {
+    console.log(option);
     console.log(orderDepartmentBy[0]);
   };
 
@@ -36,12 +37,14 @@ const Departments = ({ data, dataProperty, realtorId, statusId }) => {
             Ver mapa
           </Link>
         </div>
-        <div>
-          <RSelect
-            options={orderDepartmentBy}
-            defaultValue={orderDepartmentBy[0]}
-            onChange={onOrderDepartmentByChange}
-          />
+        <div className={styles.containerForm}>
+          <form>
+            <RSelect
+              options={orderDepartmentBy}
+              defaultValue={orderDepartmentBy[0]}
+              onChange={onOrderDepartmentByChange}
+            />
+          </form>
         </div>
 
         <div>
