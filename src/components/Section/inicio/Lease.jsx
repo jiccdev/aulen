@@ -38,13 +38,15 @@ const Lease = () => {
                     </Card.Body>
                   </Card>
 
-                  <ul className={styles.leaseUl}>
-                    {item?.itemsList?.length > 0
-                      ? item?.itemsList?.map((item) => (
-                          <li key={item?.id}> {item}</li>
-                        ))
-                      : null}
-                  </ul>
+                  <FadeComponent bottom cascade opposite duration={1500}>
+                    <ul className={styles.leaseUl}>
+                      {item?.itemsList?.length > 0
+                        ? item?.itemsList?.map((item) => (
+                            <li key={item?.id}>{item}</li>
+                          ))
+                        : null}
+                    </ul>
+                  </FadeComponent>
                 </FadeComponent>
               </Col>
             ))

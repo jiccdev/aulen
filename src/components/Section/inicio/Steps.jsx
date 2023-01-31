@@ -50,7 +50,7 @@ const Steps = () => {
             ))
           : null}
 
-        <FadeComponent duration={500}>
+        <FadeComponent bottom cascade opposite duration={1500}>
           <div className={styles.publishForFreeContainer}>
             <Link href="/" className={styles.publishForFreeLink}>
               Publica gratis
