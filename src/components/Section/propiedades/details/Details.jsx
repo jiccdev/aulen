@@ -1,11 +1,10 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import Executive from './Executive';
 import { parseToCLPCurrency } from '../../../../utils';
 import { icons } from '../../../../components/Icons';
 import styles from '../../../../../styles/components/propiedades/details/Details.module.css';
 
 // !api uf
-import ExchangeRateServices from '../../../../services/ExchangeRateServices';
 // import axios from 'axios';
 
 // const API_KEY = '2WyiQh7CBv4JzQnO4no8Ac6cLNfG73pV';
@@ -15,37 +14,8 @@ import ExchangeRateServices from '../../../../services/ExchangeRateServices';
 // https://openexchangerates.org
 // https://apilayer.com/docs api key=2WyiQh7CBv4JzQnO4no8Ac6cLNfG73pV
 
-// !api uf
-
 const Details = ({ propertyData }) => {
   const { BiBuildingHouse, IoBedOutline, FaBath } = icons;
-
-  // ! api uf
-  const [clp, setClp] = useState(0);
-  const [uf, setUf] = useState(0);
-  const [exchangeRate, setExchangeRate] = useState(0);
-
-  const getUf = async () => {
-    try {
-      const response = await ExchangeRateServices.getExchangeRateUF();
-      const { data } = await axios.get(API_URL);
-
-      console.log('result', JSON.parse(data));
-      setExchangeRate(response.data.result);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
-  useEffect(() => {
-    getUf();
-  }, []);
-
-  useEffect(() => {
-    setUf(clp / exchangeRate);
-  }, [clp, exchangeRate]);
-
-  // ! api uf
 
   return (
     <Fragment>
@@ -59,15 +29,6 @@ const Details = ({ propertyData }) => {
 
           <div className={styles.pricesContainer}>
             <h3>Desde</h3>
-            {/* aca */}
-            <input
-              type="number"
-              value={clp}
-              onChange={(e) => setClp(e.target.value)}
-            />
-            <p>CLP: {clp}</p>
-            <p>UF: {uf}</p>
-            {/* aca */}
 
             <p className={styles.ufPrice}>UF {propertyData?.price || 232443}</p>
             <p className={styles.clpPrice}>

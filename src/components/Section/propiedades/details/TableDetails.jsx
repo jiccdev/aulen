@@ -2,12 +2,13 @@ import React from 'react';
 
 /* Bootstrap components */
 import Table from 'react-bootstrap/Table';
+import styles from '../../../../../styles/components/propiedades/details/TableDetails.module.css';
 
 const TableDetails = ({ propertyData }) => {
   const { surface_m2, bedrooms, bathrooms } = propertyData;
 
   return (
-    <Table striped bordered>
+    <Table striped bordered className={styles.tableDetails}>
       <tbody>
         <tr>
           <th>Superficie útil</th>

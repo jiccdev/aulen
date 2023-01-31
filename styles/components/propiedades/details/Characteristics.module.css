@@ -1,4 +1,25 @@
 .characteristicsContainer {
+  margin: 0;
+  padding: 0;
+  height: 420px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* cambiar propiedad de scroll */
+.characteristicsContainer::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* fondo del scroll */
+.characteristicsContainer::-webkit-scrollbar-track {
+  background: var(--color-white);
+}
+
+/* scroll en si */
+
+.characteristicsContainer::-webkit-scrollbar-thumb {
+  background: var(--color-light);
+  border-radius: 5px;
 }
 
 .characteristicsContainer h2 {
@@ -14,4 +35,37 @@
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-normal);
   line-height: 1.2rem;
+}
+
+.cardDescription {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.2rem;
+  border: none;
+}
+
+.buttonCollapse {
+  background-color: var(--color-white);
+  border: none;
+  color: var(--color-dark);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  padding: 0;
+  margin: 0.3rem 0;
+  text-align: left;
+  width: 100%;
+}
+
+.buttonCollapse:hover {
+  background-color: var(--color-white);
+  color: var(--color-dark-light);
+}
+
+.buttonCollapse:active {
+  background-color: var(--color-white) !important;
+  color: var(--color-dark) !important;
+}
+
+.tableDetailsContainer {
+  padding: 2.9rem 2rem;
 }
