@@ -42,7 +42,7 @@ import { BiTimer, BiMap, BiBuildingHouse } from 'react-icons/bi';
 import { CgSearchFound } from 'react-icons/cg';
 import { VscPerson } from 'react-icons/vsc';
 import { AiOutlineWhatsApp, AiFillYoutube } from 'react-icons/ai';
-import { GrClose } from 'react-icons/gr';
+import { GrClose, GrFormPrevious, GrFormNext } from 'react-icons/gr';
 import { ImArrowRight } from 'react-icons/im';
 import { IoBedOutline } from 'react-icons/io5';
 import { TfiFacebook } from 'react-icons/tfi';
@@ -95,4 +95,6 @@ export const icons = {
   MdOutlineManageAccounts,
   GiReceiveMoney,
   BsPlusLg,
+  GrFormPrevious,
+  GrFormNext,
 };

@@ -48,6 +48,7 @@ const PropertiesProvider = ({ children }) => {
         getProperties,
         getProperty,
         contextData: [data, setData],
+        // getPagination,
       }}
     >
       {children}

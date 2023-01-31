@@ -14,6 +14,11 @@ const PropertiesServices = {
     );
     return response.data;
   },
+
+  getPagination: async (limit, page) => {
+    const response = await api.get(`/properties?limit=${limit}&page=${page}`);
+    return response.data;
+  },
 };
 
 export default PropertiesServices;

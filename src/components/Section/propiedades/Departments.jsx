@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
+import PropertiesContext from '../../../context/properties/PropertiesContext';
 import Link from 'next/link';
 import RSelect from '../../RSelect/RSelect';
 import AdvancedSearchForm from '../../Form/AdvancedSearchForm';
@@ -12,9 +13,19 @@ import { orderDepartmentBy } from '../../../api/fakeData/selects';
 /** Bootstrap components */
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
 import styles from '../../../../styles/components/propiedades/Departments.module.css';
+import PaginationComponent from '../../Pagination/Pagination';
+
+/** API services */
+import PropertiesServices from '../../../services/PropertiesServices';
 
 const Departments = ({ data, realtorId, statusId }) => {
+  // const { getPagination } = useContext(PropertiesContext);
+  const [totalItems, setTotalItems] = useState(null);
+  const [itemPerPage, setItemPerPage] = useState(10);
+  const [metaData, setMetaData] = useState({});
+
   const [isGrid, setIsGrid] = useState(false);
   const [isList, setIsList] = useState(false);
   const { BiMap } = icons;
@@ -23,6 +34,19 @@ const Departments = ({ data, realtorId, statusId }) => {
     console.log(option);
     console.log(orderDepartmentBy[0]);
   };
+
+  const getPagination = async (limit, page) => {
+    const response = await PropertiesServices.getPagination(limit, page);
+    console.log('RESPONSE', response);
+    // const { data } = response;
+    // setTotalItems(data.total);
+    // setItemPerPage(data.per_page);
+    // setMetaData(data);
+  };
+
+  useEffect(() => {
+    getPagination(10, 1);
+  });
 
   return (
     <Row className={styles.rowContainer}>
@@ -75,6 +99,21 @@ const Departments = ({ data, realtorId, statusId }) => {
               ))}
           </Row>
         </FadeComponent>
+
+        {/* PAGINATION */}
+        <Card>
+          <PaginationComponent
+            itemPerPage={10}
+            totalItems={10}
+            paginate={1}
+            metaData={1}
+
+            // itemPerPage={itemPerPage}
+            // totalItems={totalItems}
+            // paginate={paginate}
+            // metaData={metaData}
+          />
+        </Card>
       </Col>
 
       <Col xl={3} className={styles.colForm}>

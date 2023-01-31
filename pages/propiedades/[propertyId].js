@@ -25,7 +25,7 @@ const PropiedadId = () => {
     getProperty(propertyId, 5, 5);
   }, [propertyId]);
 
-  console.log('Property', property);
+ 
 
   return (
     <Fragment>
