@@ -1,5 +1,6 @@
 import React from 'react';
 import RSelect from '../RSelect/RSelect';
+import FadeComponent from '../Reveal/FadeComponent';
 import {
   typeOfOperation,
   typeOfProperty,
@@ -16,7 +17,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import styles from '../../../styles/components/AdvancedSearchForm.module.css';
-import Select from '../../../styles/components/Select.module.css';
 
 const AdvancedSearchForm = () => {
   const onFormSubmit = (ev) => {
@@ -59,133 +59,135 @@ const AdvancedSearchForm = () => {
   };
 
   return (
-    <Form className={styles.form} onSubmit={onFormSubmit}>
-      <Form.Group className="mb-3">
-        <Form.Label className={styles.label}>Tipo de operación</Form.Label>
-        <RSelect
-          options={typeOfOperation}
-          defaultValue={typeOfOperation[0]}
-          onChange={onOrderDepartmentByChange}
-          className={styles.rSelect}
-        />
-      </Form.Group>
+    <FadeComponent right cascade duration={500}>
+      <Form className={styles.form} onSubmit={onFormSubmit}>
+        <Form.Group className="mb-3">
+          <Form.Label className={styles.label}>Tipo de operación</Form.Label>
+          <RSelect
+            options={typeOfOperation}
+            defaultValue={typeOfOperation[0]}
+            onChange={onOrderDepartmentByChange}
+            className={styles.rSelect}
+          />
+        </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label className={styles.label}>Tipo de propiedad</Form.Label>
-        <RSelect
-          options={typeOfProperty}
-          defaultValue={typeOfProperty[0]}
-          onChange={onTypeOfPropertyChange}
-          className={styles.rSelect}
-        />
-      </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label className={styles.label}>Tipo de propiedad</Form.Label>
+          <RSelect
+            options={typeOfProperty}
+            defaultValue={typeOfProperty[0]}
+            onChange={onTypeOfPropertyChange}
+            className={styles.rSelect}
+          />
+        </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label className={styles.label}>Región</Form.Label>
-        <RSelect
-          options={regions}
-          defaultValue={regions[0]}
-          onChange={onRegionsChange}
-          className={styles.rSelect}
-        />
-      </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label className={styles.label}>Región</Form.Label>
+          <RSelect
+            options={regions}
+            defaultValue={regions[0]}
+            onChange={onRegionsChange}
+            className={styles.rSelect}
+          />
+        </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label className={styles.label}>Comuna</Form.Label>
-        <RSelect
-          options={communes}
-          defaultValue={communes[0]}
-          onChange={onCommunesChange}
-          className={styles.rSelect}
-        />
-      </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label className={styles.label}>Comuna</Form.Label>
+          <RSelect
+            options={communes}
+            defaultValue={communes[0]}
+            onChange={onCommunesChange}
+            className={styles.rSelect}
+          />
+        </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label className={styles.label}>Superficie</Form.Label>
-        <Form.Control type="text" placeholder="Superficie" name="surface" />
-      </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label className={styles.label}>Superficie</Form.Label>
+          <Form.Control type="text" placeholder="Superficie" name="surface" />
+        </Form.Group>
 
-      <Form.Group className="mb-3">
+        <Form.Group className="mb-3">
+          <Row>
+            <Col>
+              <Form.Label className={styles.label}>Precio</Form.Label>
+            </Col>
+            <Col>
+              <Form.Check>
+                <Form.Check.Input
+                  type="radio"
+                  name="price"
+                  className={styles.radio}
+                />
+                <Form.Check.Label className={styles.label}>
+                  Pesos
+                </Form.Check.Label>
+              </Form.Check>
+            </Col>
+            <Col>
+              <Form.Check>
+                <Form.Check.Input
+                  type="radio"
+                  name="price"
+                  className={styles.radio}
+                />
+                <Form.Check.Label className={styles.label}>UF</Form.Check.Label>
+              </Form.Check>
+            </Col>
+          </Row>
+        </Form.Group>
+
         <Row>
           <Col>
-            <Form.Label className={styles.label}>Precio</Form.Label>
+            <Form.Group className="mb-3">
+              <Form.Label className={styles.label}>Desde</Form.Label>
+              <Form.Control type="number" placeholder="Desde" name="from" />
+            </Form.Group>
           </Col>
           <Col>
-            <Form.Check>
-              <Form.Check.Input
-                type="radio"
-                name="price"
-                className={styles.radio}
-              />
-              <Form.Check.Label className={styles.label}>
-                Pesos
-              </Form.Check.Label>
-            </Form.Check>
-          </Col>
-          <Col>
-            <Form.Check>
-              <Form.Check.Input
-                type="radio"
-                name="price"
-                className={styles.radio}
-              />
-              <Form.Check.Label className={styles.label}>UF</Form.Check.Label>
-            </Form.Check>
+            <Form.Group className="mb-3">
+              <Form.Label className={styles.label}>Hasta</Form.Label>
+              <Form.Control type="number" placeholder="Hasta" name="to" />
+            </Form.Group>
           </Col>
         </Row>
-      </Form.Group>
 
-      <Row>
-        <Col>
-          <Form.Group className="mb-3">
-            <Form.Label className={styles.label}>Desde</Form.Label>
-            <Form.Control type="number" placeholder="Desde" name="from" />
-          </Form.Group>
-        </Col>
-        <Col>
-          <Form.Group className="mb-3">
-            <Form.Label className={styles.label}>Hasta</Form.Label>
-            <Form.Control type="number" placeholder="Hasta" name="to" />
-          </Form.Group>
-        </Col>
-      </Row>
+        <Form.Group className="mb-3">
+          <Form.Label className={styles.label}>Dormitorios</Form.Label>
+          <RSelect
+            options={bedrooms}
+            defaultValue={bedrooms[0]}
+            onChange={onBedroomsChange}
+            className={styles.rSelect}
+          />
+        </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label className={styles.label}>Dormitorios</Form.Label>
-        <RSelect
-          options={bedrooms}
-          defaultValue={bedrooms[0]}
-          onChange={onBedroomsChange}
-          className={styles.rSelect}
-        />
-      </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label className={styles.label}>Baños</Form.Label>
+          <RSelect
+            options={bathrooms}
+            defaultValue={bathrooms[0]}
+            onChange={onBathroomsChange}
+            className={styles.rSelect}
+          />
+        </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label className={styles.label}>Baños</Form.Label>
-        <RSelect
-          options={bathrooms}
-          defaultValue={bathrooms[0]}
-          onChange={onBathroomsChange}
-          className={styles.rSelect}
-        />
-      </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label className={styles.label}>Estacionamientos</Form.Label>
+          <RSelect
+            options={parkingLots}
+            defaultValue={parkingLots[0]}
+            onChange={onParkingLotsChange}
+            className={styles.rSelect}
+          />
+        </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label className={styles.label}>Estacionamientos</Form.Label>
-        <RSelect
-          options={parkingLots}
-          defaultValue={parkingLots[0]}
-          onChange={onParkingLotsChange}
-          className={styles.rSelect}
-        />
-      </Form.Group>
-
-      <Form.Group className="mb-3">
-        <Button variant="primary" type="submit" className={styles.btnSubmit}>
-          Buscar
-        </Button>
-      </Form.Group>
-    </Form>
+        <Form.Group className="mb-3">
+          <Button variant="primary" type="submit" className={styles.btnSubmit}>
+            Buscar
+          </Button>
+        </Form.Group>
+      </Form>
+    </FadeComponent>
   );
 };
 

@@ -5,6 +5,7 @@ import AdvancedSearchForm from '../../Form/AdvancedSearchForm';
 import DepartmentItem from './DepartmentItem';
 import OutstandingProjects from './OutstandingProjects';
 import IconFilter from '../../IconFilter/IconFilter';
+import FadeComponent from '../../Reveal/FadeComponent';
 import { icons } from '../../Icons/index.js';
 import { orderDepartmentBy } from '../../../api/fakeData/selects';
 
@@ -59,19 +60,21 @@ const Departments = ({ data, realtorId, statusId }) => {
       </div>
 
       <Col xl={9} className={styles.col}>
-        <Row className={styles.rowItems}>
-          {data &&
-            data.map((department) => (
-              <DepartmentItem
-                key={department?.id}
-                department={department}
-                isGrid={isGrid}
-                isList={isList}
-                realtorId={realtorId}
-                statusId={statusId}
-              />
-            ))}
-        </Row>
+        <FadeComponent bottom cascade duration={1400}>
+          <Row className={styles.rowItems}>
+            {data &&
+              data.map((department) => (
+                <DepartmentItem
+                  key={department?.id}
+                  department={department}
+                  isGrid={isGrid}
+                  isList={isList}
+                  realtorId={realtorId}
+                  statusId={statusId}
+                />
+              ))}
+          </Row>
+        </FadeComponent>
       </Col>
 
       <Col xl={3} className={styles.colForm}>

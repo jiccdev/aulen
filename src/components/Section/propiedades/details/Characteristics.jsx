@@ -4,13 +4,15 @@ import TableDetails from './TableDetails';
 /** Bootstrap components */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Card, Button, Collapse } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import Collapse from 'react-bootstrap/Collapse';
 import styles from '../../../../../styles/components/propiedades/details/Characteristics.module.css';
 
 const Characteristics = ({ propertyData }) => {
   const [open, setOpen] = useState(false);
   const text = propertyData?.description || 'Sin descripción';
-  const shortText = text.length > 400 ? text.substring(0, 300) + '...' : text;
+  const shortText = text.slice(400);
 
   return (
     <div className={styles.characteristicsContainer}>
@@ -20,14 +22,14 @@ const Characteristics = ({ propertyData }) => {
           <h6>Descripción</h6>
           <Card className={styles.cardDescription}>
             <Card.Body>
-              <Card.Text>{shortText}</Card.Text>
+              <Card.Text>{text}</Card.Text>
 
               <Collapse in={open}>
                 <div id="example-collapse-text">
-                  <Card.Text>{text}</Card.Text>
+                  <Card.Text>{shortText}</Card.Text>
                 </div>
               </Collapse>
-              {text.length > 400 && (
+              {text.length > 300 && (
                 <Button
                   onClick={() => setOpen(!open)}
                   aria-controls="example-collapse-text"
