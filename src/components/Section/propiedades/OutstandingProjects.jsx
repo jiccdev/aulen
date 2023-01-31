@@ -1,21 +1,22 @@
 import React from 'react';
-import { propertiesData } from '../../../api/fakeData/properties';
 import OutstandingProject from './OutstandingProject';
 
 /** Bootstrap components */
 import Row from 'react-bootstrap/Row';
 import styles from '../../../../styles/components/propiedades/PropiedadesDestacadas.module.css';
 
-const OutstandingProjects = () => {
+const OutstandingProjects = ({ data }) => {
+  console.log('dataXd', data);
+
   return (
     <Row className={styles.row}>
       <h2 className={styles.titleSection}>Proyectos destacados</h2>
-      {propertiesData?.length > 0 ? (
-        propertiesData
-          .filter((property) => property?.status?.name === 'Destacado')
+      {data?.length > 0 ? (
+        data
+          .filter((property) => property?.status === 'Pendiente visacion')
           .slice(0, 2)
-          .map(({ cod, name, image }) => (
-            <OutstandingProject key={cod} cod={cod} name={name} image={image} />
+          .map((department) => (
+            <OutstandingProject key={department.id} data={department} />
           ))
       ) : (
         <p>No existen propiedades destacadas</p>

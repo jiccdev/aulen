@@ -9,9 +9,11 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background-color: var(--color-light);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light);
   border-radius: var(--border-radius-sm);
   border-left: 3px solid var(--color-primary);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .headerProperties h1 {
@@ -58,6 +60,12 @@
 .urlViewMap:hover {
   background-color: var(--color-primary-dark);
   color: var(--color-white);
+}
+
+.colForm {
+  background-color: var(--color-light);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-xl);
 }
 
 @media screen and (min-width: 992px) {

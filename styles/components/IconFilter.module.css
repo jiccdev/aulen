@@ -1,5 +1,5 @@
 .iconFilterContainer {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   display: flex;
   justify-content: flex-end;
 }

@@ -23,6 +23,8 @@ const Departments = ({ data, realtorId, statusId }) => {
     console.log(orderDepartmentBy[0]);
   };
 
+  console.log(data);
+
   return (
     <Row className={styles.rowContainer}>
       <div className={styles.headerProperties}>
@@ -79,7 +81,7 @@ const Departments = ({ data, realtorId, statusId }) => {
         <AdvancedSearchForm />
 
         {/* PROYECTOS DESTACADOS */}
-        <OutstandingProjects />
+        <OutstandingProjects data={data}/>
       </Col>
     </Row>
   );
