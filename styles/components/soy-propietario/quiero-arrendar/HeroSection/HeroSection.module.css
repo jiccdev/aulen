@@ -10,6 +10,11 @@
     justify-content: space-between;
     gap: .5em;
 }
+
+.sectionHeroContainer{
+    margin-top: 8rem;
+}
+
 .heroH1{
     font-weight: var(--font-weight-bold, 700);
 }

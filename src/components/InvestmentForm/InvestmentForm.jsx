@@ -3,12 +3,14 @@ import houseImg from "../../img/soy-propietario/house.jpg"
 import React from "react";
 import styles from '../../../styles/components/soy-inversionista/InvestmentForm.module.css';
 import { icons } from '../Icons';
+import FadeComponent from "../Reveal/FadeComponent";
 /** Recibe un objeto con los datos. */
 export const InvestmentForm = ({ formData, isForm }) => {
   const { h2, h3, btn } = formData
   const { FaUserAlt, BsTelephoneFill, MdOutlineMailOutline } = icons
   return (
     <form className={`${styles.customRow} ${styles.mainContainer}`} >
+      <FadeComponent right cascade opposite duration={1000}>
       <div className={`${styles.customRow} ${styles.submainContainer}`}>
         <Image className={styles.image} src={houseImg} />
         <div className={`${styles.customCol} ${styles.form}`}>
@@ -37,6 +39,7 @@ export const InvestmentForm = ({ formData, isForm }) => {
           <button className={styles.form__btn}>{isForm ? formData.btn : 'Agenda una reunión'}</button>
         </div>
       </div>
+      </FadeComponent>
     </form>
   )
 }

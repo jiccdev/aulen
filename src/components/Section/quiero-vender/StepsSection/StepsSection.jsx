@@ -1,7 +1,7 @@
 import React from "react";
 import styles from '../../../../../styles/components/soy-propietario/quiero-vender/StepsSection/StepsSection.module.css';
 import { icons } from '../../../Icons/index.js'
-
+import FadeComponent from "../../../Reveal/FadeComponent";
 export const StepsSection = () => {
   const {
     BsPuzzle,
@@ -11,7 +11,7 @@ export const StepsSection = () => {
   } = icons
   return (
     <section className={`${styles.customCol} ${styles.stepSectionContainer}`}>
-
+      <FadeComponent left cascade>
       <main className={`${styles.customCol} ${styles.mainContainer}`}>
         <header className={`${styles.customCol} ${styles.stepHeader}`}>
           <h2>Vendemos tu propiedad en cuatro simples pasos</h2>
@@ -36,6 +36,7 @@ export const StepsSection = () => {
           </div>
         </div>
       </main>
+      </FadeComponent>
     </section>
   )
 }

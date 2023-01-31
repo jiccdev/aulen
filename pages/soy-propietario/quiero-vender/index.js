@@ -7,9 +7,10 @@ import HeroSection from '../../../src/components/Section/quiero-vender/HeroSecti
 import StepsSection from '../../../src/components/Section/quiero-vender/StepsSection/StepsSection';
 import HeadPage from '../../../src/components/HeadPage/HeadPage';
 
+
 const QuieroVender = () => {
   return (
-    <>
+    <React.Fragment >
       <HeadPage title="Quiero vender" />
       <LayoutSection>
         <HeroSection />
@@ -26,7 +27,7 @@ const QuieroVender = () => {
       <LayoutSection>
         <CustomerExperience />
       </LayoutSection>
-    </>
+    </React.Fragment>
 
   );
 };

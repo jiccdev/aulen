@@ -11,6 +11,10 @@
   gap: .5em;
 }
 
+.sectionContainer{
+  margin-top: 8rem;
+}
+
 .title{
   text-align: center;
 }

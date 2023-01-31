@@ -1,5 +1,6 @@
 import React from "react"
 import styles from '../../../../styles/components/soy-inversionista/SimpleCard.module.css'
+import FadeComponent from "../../Reveal/FadeComponent"
 export const SimpleCard = ({ img, title }) => {
   return (
     <>
@@ -9,6 +10,7 @@ export const SimpleCard = ({ img, title }) => {
           <h3 className={`${styles.card__title}`}>{title}</h3>
         </a>
       </button>
+  
     </>
   )
 }

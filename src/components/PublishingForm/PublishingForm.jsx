@@ -1,12 +1,14 @@
 import React from "react";
 import styles from '../../../styles/components/PublishingForm.module.css';
 import { icons } from '../Icons';
+import FadeComponent from "../Reveal/FadeComponent";
 /** Recibe un objeto con los datos. */
 export const PublishingForm = ({formData}) => {
   const { FaUserAlt, BsTelephoneFill, MdOutlineMailOutline } = icons
   
   return (
     <form className={`${styles.customCol} ${styles.form}`} >
+      <FadeComponent right cascade>
       <header className={`${styles.customCol} ${styles.form__header}`}>
         <h2>{formData.h2}</h2>
         <h3>{formData.h3}</h3>
@@ -30,6 +32,7 @@ export const PublishingForm = ({formData}) => {
         </label>
       </main>
       <button className={styles.form__btn}>{formData.btn}</button>
+      </FadeComponent>
     </form>
   )
 }
