@@ -23,6 +23,11 @@
 }
 
 @media screen and (min-width: 992px) {
+  .containerSection {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .h2 {
     font-size: var(--font-size-5xl);
     padding: 0rem 1rem 3.5rem 1rem;

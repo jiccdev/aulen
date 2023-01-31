@@ -2,7 +2,7 @@ import React from 'react';
 import { icons } from '../Icons';
 import styles from '../../../styles/components/DropdownSocialMedia.module.css';
 
-const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen, handleModal }) => {
+const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen }) => {
   const { BsTelephoneFill, AiOutlineWhatsApp, BsPlusLg } = icons;
 
   return (
@@ -19,7 +19,7 @@ const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen, handleModal }) => {
 
           <li className={`${styles.msLi} ${styles.msLi2} `}>
             <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-              <span class="fa fa-flask">
+              <span className="fa fa-flask">
                 <AiOutlineWhatsApp />
               </span>
             </a>
@@ -34,14 +34,14 @@ const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen, handleModal }) => {
                 ev.preventDefault();
               }}
             >
-              <span class="fa fa-fort-awesome">
+              <span className="fa fa-fort-awesome">
                 <BsTelephoneFill />
               </span>
             </a>
           </li>
           <li className={styles.msMain}>
-            <a href="javascript:void(0)">
-              <label className="ms-menu-toggle-lbl" for="ms-menu">
+            <a href="#">
+              <label className="ms-menu-toggle-lbl" htmlFor="ms-menu">
                 <BsPlusLg
                   style={{
                     fontSize: '1.3rem',
@@ -55,19 +55,6 @@ const DropDownSocialMedia = ({ isModalOpen, setIsModalOpen, handleModal }) => {
           </li>
         </ul>
       </div>
-
-      {/* <DropdownButton
-        id="dropdown-item-button"
-        title=""
-        className={styles.dropdownBtn}
-      >
-        <Dropdown.Item as="span" className={styles.dropdownItem}>
-          <AiOutlineWhatsApp />
-        </Dropdown.Item>
-        <Button variant="primary" onClick={() => setIsModalOpen(!isModalOpen)}>
-          <BsTelephoneFill />
-        </Button>
-      </DropdownButton> */}
     </span>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
 /** Bootstrap components */
@@ -11,12 +11,15 @@ const NavItem = ({ navItem }) => {
 
   return hasdropDownData?.length > 0 ? (
     <Dropdown className={styles.dropdown}>
-      <Dropdown.Toggle id="dropdown-basic" className={styles.dropdownToggle}>
+      <Dropdown.Toggle
+        id="dropdown-basic"
+        className={`${styles.dropdownToggle}`}
+      >
         {name}
       </Dropdown.Toggle>
       <Dropdown.Menu className={styles.dropdownMenu}>
         {submenu &&
-          submenu.map((item, index) => (
+          submenu.map((item) => (
             <Dropdown.Item
               href={item?.url}
               key={item?.id}

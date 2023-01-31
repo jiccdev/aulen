@@ -41,8 +41,8 @@ const Lease = () => {
                   <FadeComponent bottom cascade opposite duration={1500}>
                     <ul className={styles.leaseUl}>
                       {item?.itemsList?.length > 0
-                        ? item?.itemsList?.map((item) => (
-                            <li key={item?.id}>{item}</li>
+                        ? item?.itemsList?.map((item, index) => (
+                            <li key={index}>{item}</li>
                           ))
                         : null}
                     </ul>

@@ -15,11 +15,10 @@ import styles from '../../styles/components/propiedades/details/Details.module.c
 import { icons } from '../../src/components/Icons';
 
 const PropiedadId = () => {
-  const { getProperty, property, contextData } = useContext(PropertiesContext);
+  const { getProperty, property } = useContext(PropertiesContext);
   const { query } = useRouter();
   const { propertyId } = query;
-  const [data] = contextData;
-  const { BsHeart } = icons;
+  // const [data] = contextData;
 
   useEffect(() => {
     // getProperty(propertyId, 1, 1);
@@ -30,41 +29,40 @@ const PropiedadId = () => {
 
   return (
     <Fragment>
-      <HeadPage title={`Departamento-x`} />
-      <ul className={styles.propertyTypeInfo}>
-        <li>
-          <Link href="/propiedades">Volver al listado</Link>
-        </li>
-        <li>Departamentos</li>
-        <li>Venta Proyectos</li>
-        <li>{property?.commune}</li>
-        <li>{property?.address}</li>
-      </ul>
+      <HeadPage title={`Departamento ${propertyId}`} />
+      <div className={styles.propertyDetailContainer}>
+        <ul className={styles.propertyTypeInfo}>
+          <li>
+            <Link href="/propiedades">Volver al listado</Link>
+          </li>
+          <li>Departamentos</li>
+          <li>Venta Proyectos</li>
+          <li>{property?.commune}</li>
+          <li>{property?.address}</li>
+        </ul>
 
-      <Row className={styles.row}>
-        <Col xs={12} xl={8}>
-          <GalleryCarousel images={property?.images} />
-          <Characteristic propertyData={property} />
-        </Col>
+        <Row className={styles.row}>
+          <Col xs={12} xl={8}>
+            <GalleryCarousel images={property?.images} />
+            <Characteristic propertyData={property} />
+          </Col>
 
-        <Col xs={12} xl={4} className={styles.col}>
-          <div className={styles.deptoDetailsShare}>
-            <Link href="/" className={styles.shareLink}>
-              Compartir
-            </Link>{' '}
-            |{' '}
-            <Link href="/" className={styles.printLink}>
-              Imprimir
-            </Link>{' '}
-            <span className="">
-              <BsHeart />
-            </span>
-          </div>
-          <Details propertyData={property} />
-        </Col>
-      </Row>
+          <Col xs={12} xl={4} className={styles.col}>
+            <div className={styles.deptoDetailsShare}>
+              <Link href="/" className={styles.shareLink}>
+                Compartir
+              </Link>{' '}
+              |{' '}
+              <Link href="/" className={styles.printLink}>
+                Imprimir
+              </Link>{' '}
+            </div>
+            <Details propertyData={property} />
+          </Col>
+        </Row>
 
-      <InformationOnTheArea />
+        <InformationOnTheArea />
+      </div>
     </Fragment>
   );
 };

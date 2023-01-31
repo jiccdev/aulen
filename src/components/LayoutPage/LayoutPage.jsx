@@ -15,7 +15,7 @@ const LayoutPage = ({ children }) => {
   const handleModal = () => setIsModalOpen(!isModalOpen);
 
   return (
-    <Container fluid>
+    <Container fluid className="m-0 p-0">
       {/* Header */}
       <HeaderPage />
 

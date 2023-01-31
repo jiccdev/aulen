@@ -1,3 +1,9 @@
+.propertyDetailContainer {
+  position: relative;
+  margin: 6.5rem auto;
+  width: 100%;
+}
+
 .row {
   margin: 2rem auto !important;
   height: auto;
@@ -119,6 +125,9 @@
 }
 
 @media screen and (min-width: 1400px) {
+  .propertyDetailContainer {
+    margin: 7.5rem auto;
+  }
   .row {
     height: 950px;
   }

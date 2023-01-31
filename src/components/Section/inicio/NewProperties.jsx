@@ -17,7 +17,11 @@ const NewProperties = () => {
           <Col sm={12} lg={6} xl={6} className={styles.newPropertiesCol}>
             <FadeComponent left cascade opposite duration={1000}>
               <div className={styles.newPropertiesColAbsolute}>
-                <Image src={SoldHome} className={styles.newPropertiesImg} />
+                <Image
+                  src={SoldHome}
+                  className={styles.newPropertiesImg}
+                  alt="imagen-nuevas-propiedades"
+                />
               </div>
             </FadeComponent>
           </Col>
