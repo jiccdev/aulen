@@ -8,11 +8,14 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import styles from '../../../../styles/components/propiedades/PropiedadDestacada.module.css';
 
-const OutstandingProject = ({ data }) => {
+const OutstandingProject = ({ data, realtorId, statusId }) => {
   return (
     <Col>
       <Card>
-        <Link href={`/propiedades/${data.id}`} className={styles.link}>
+        <Link
+          href={`/propiedades/${data.id}?realtorId=${realtorId}&statusId=${statusId}`}
+          className={styles.link}
+        >
           {/* <Image
             src={data.image}
             alt={`imagen-destacada-${data.title}`}
