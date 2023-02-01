@@ -1,21 +1,33 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import Executive from './Executive';
-import { parseToCLPCurrency } from '../../../../utils';
+import { parseToCLPCurrency, clpToUf } from '../../../../utils';
 import { icons } from '../../../../components/Icons';
 import styles from '../../../../../styles/components/propiedades/details/Details.module.css';
 
 // !api uf
-// import axios from 'axios';
-
-// const API_KEY = '2WyiQh7CBv4JzQnO4no8Ac6cLNfG73pV';
-// const API_URL = `https://api.apilayer.com/exchange_rates/convert?from=CLP&to=CLF&amount=1&apikey=${API_KEY}`;
-
-// services
-// https://openexchangerates.org
-// https://apilayer.com/docs api key=2WyiQh7CBv4JzQnO4no8Ac6cLNfG73pV
+import ExchangeRateServices from '../../../../services/ExchangeRateServices';
 
 const Details = ({ propertyData }) => {
+  const [ufCurrentValue, setUfCurrentValue] = useState(0);
   const { BiBuildingHouse, IoBedOutline, FaBath } = icons;
+
+  const getExchangeRateUF = async () => {
+    try {
+      const response = await ExchangeRateServices.getExchangeRateUF();
+      const ufValue = response?.UFs[0]?.Valor;
+      const ufValueAsNumber = parseFloat(ufValue.replace(',', '.'));
+
+      console.log(ufValue)
+
+      setUfCurrentValue(ufValueAsNumber);
+    } catch (error) {
+      throw error.response;
+    }
+  };
+
+  useEffect(() => {
+    getExchangeRateUF();
+  }, [ufCurrentValue]);
 
   return (
     <Fragment>
@@ -30,10 +42,10 @@ const Details = ({ propertyData }) => {
           <div className={styles.pricesContainer}>
             <h3>Desde</h3>
 
-            <p className={styles.ufPrice}>UF {propertyData?.price || 232443}</p>
-            <p className={styles.clpPrice}>
-              {parseToCLPCurrency(propertyData.price)}
+            <p className={styles.ufPrice}>
+              UF {clpToUf(propertyData?.price, ufCurrentValue)}
             </p>
+            <p className={styles.clpPrice}>{propertyData.price}</p>
           </div>
 
           <div className={styles.deptoPropsContainer}>

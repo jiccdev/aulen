@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { icons } from '../../components/Icons';
 
 /** Bootstrap components */
@@ -109,12 +110,16 @@ const PropertyForm = ({ titleContentForm, textAlign, subtitle, ...props }) => {
             className={styles.formGroup}
             controlId="formBasicCheckbox"
           >
-            <Form.Check
+            {/* <Form.Check
               type="checkbox"
               label="Al continuar estás aceptando los términos y condiciones y la política de privacidad"
               className={styles.formCheck}
               name="terms"
-            />
+            /> */}
+            <Link href="/" target="_blank" className={styles.formCheck}>
+              Al continuar estás aceptando los términos y condiciones y la
+              política de privacidad
+            </Link>
           </Form.Group>
         </Form>
       </FadeComponent>
