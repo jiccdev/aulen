@@ -35,18 +35,18 @@ const Departments = ({ data, realtorId, statusId }) => {
     console.log(orderDepartmentBy[0]);
   };
 
-  const getPagination = async (limit, page) => {
-    const response = await PropertiesServices.getPagination(limit, page);
-    console.log('RESPONSE', response);
-    // const { data } = response;
-    // setTotalItems(data.total);
-    // setItemPerPage(data.per_page);
-    // setMetaData(data);
-  };
+  // const getPagination = async (limit, page) => {
+  //   const response = await PropertiesServices.getPagination(limit, page);
+  //   console.log('RESPONSE', response);
+  //   // const { data } = response;
+  //   // setTotalItems(data.total);
+  //   // setItemPerPage(data.per_page);
+  //   // setMetaData(data);
+  // };
 
-  useEffect(() => {
-    getPagination(10, 1);
-  });
+  // useEffect(() => {
+  //   getPagination(10, 1);
+  // });
 
   return (
     <Row className={styles.rowContainer}>

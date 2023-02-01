@@ -99,20 +99,25 @@
   width: 100;
   margin: 0 auto;
   white-space: nowrap;
+  margin-top: 1rem !important;
 }
 
 .formCheck {
   font-size: var(--font-size-sm);
   color: var(--color-dark);
   font-weight: var(--font-weight-bold);
+  width: 100%;
+  margin-top: -0.5rem;
+  line-height: 0.9rem;
   text-align: start;
-  width: 85%;
-  margin: 2rem 0 1rem 0;
 }
 
 @media screen and (min-width: 992px) {
   .form {
     width: 100%;
     padding: 2rem 2.5rem;
+  }
+  .rowBtnForm {
+    margin-top: 2rem !important;
   }
 }
