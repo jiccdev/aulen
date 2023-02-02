@@ -12,7 +12,8 @@ const SocialMediaFooter = () => {
       <ul className={styles.socialMediaNavbarNav}>
         <li className={styles.socialMediaNavItem}>
           <a
-            href="https://www.facebook.com/aulenpropiedades"
+            // href="https://www.facebook.com/aulenpropiedades"
+            href="/"
             target="_blank"
             className={styles.socialMediaNavLink}
           >
@@ -21,7 +22,8 @@ const SocialMediaFooter = () => {
         </li>
         <li className={styles.socialMediaNavItem}>
           <a
-            href="https://www.instagram.com/aulenpropiedades/"
+            // href="https://www.instagram.com/aulenpropiedades/"
+            href="/"
             target="_blank"
             className={styles.socialMediaNavLink}
           >
@@ -30,7 +32,8 @@ const SocialMediaFooter = () => {
         </li>
         <li className={styles.socialMediaNavItem}>
           <a
-            href="https://www.youtube.com"
+            // href="https://www.youtube.com"
+            href="/"
             target="_blank"
             className={styles.socialMediaNavLink}
           >

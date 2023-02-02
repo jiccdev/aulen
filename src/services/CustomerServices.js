@@ -1,4 +1,3 @@
-import api from '../../src/api';
 import axios from 'axios';
 
 const CustomerServices = {
