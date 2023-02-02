@@ -1,77 +1,85 @@
 .customCol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+  gap: 0.5em;
+  width: 100% !important;
 }
-  
+
+@media screen and (min-width: 1200px) {
+  .customCol {
+    width: 80% !important;
+  }
+}
+
 .customRow {
-    display: flex;
-    justify-content: space-between;
-    gap: .5em;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
 }
 
-.mainContainer{
-    width: 100%;
-    align-items: flex-start;
-    gap: 3rem;
+.mainContainer {
+  width: 100%;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
-.iconDivsContainer{
-    width: 50%;
-    align-items: flex-start;
-    gap: 3rem;
+.iconDivsContainer {
+  width: 50%;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
 /* STEPS HEADING */
-.stepHeader{
-    text-align: center;
-    width: 50%;
+.stepHeader {
+  text-align: center;
+  width: 50%;
 }
-.stepHeader h2{
-    font-weight: var(--font-weight-bold, 700);
-    font-size: var(--font-size-2xl, 1.8rem);
+.stepHeader h2 {
+  font-weight: var(--font-weight-bold, 700);
+  font-size: var(--font-size-2xl, 1.8rem);
 
-    margin-bottom: .1rem;
+  margin-bottom: 0.1rem;
 }
-.stepHeader h3{
-    font-weight: var(--font-weight-medium, 500);
-    font-size: var(--font-size-sm, 0.8rem);
+.stepHeader h3 {
+  font-weight: var(--font-weight-medium, 500);
+  font-size: var(--font-size-sm, 0.8rem);
 }
 /* END STEPS HEAING */
 
 /* STEPS */
-.stepsContainer{
-    align-items: center;
-    justify-content: start;
-    gap: 3rem;
+.stepsContainer {
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
 }
 
-.stepsContainer p{
-    font-size: var(--font-size-md, 1rem);
+.stepsContainer p {
+  font-size: var(--font-size-md, 1rem);
 }
 
 /* END STEPS */
 
 /* STEP ICON */
-.stepIcon{
-    max-width: 128px;
-    min-width: 72px;
-    max-height: 128px;
-    min-height: 72px;
+.stepIcon {
+  max-width: 128px;
+  min-width: 72px;
+  max-height: 128px;
+  min-height: 72px;
 
-    color: var(--color-primary, #f57914);
+  color: var(--color-primary, #f57914);
 }
 /* END STEP ICON */
 
-@media (width < 1200px){
-    .stepHeader{
-        width: 100%;
-    }
-    .iconDivsContainer{
-        width: 90%;
-    }
-    .mainContainer{
-        align-items: center;
-    }
+@media (width < 1200px) {
+  .stepHeader {
+    width: 100%;
+  }
+  .iconDivsContainer {
+    width: 90%;
+  }
+  .mainContainer {
+    align-items: center;
+  }
 }

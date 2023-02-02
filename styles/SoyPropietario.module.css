@@ -1,79 +1,75 @@
 /* CONSTANT STYLES */
 
 .customCol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5em;
-  }
-  
-  .customRow {
-    display: flex;
-    justify-content: space-between;
-    gap: .5em;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.customRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+}
 
 /* END CONSTANT STYLES */
 
 /* SELL PAGE */
 
-.sellPageHeader h1{
-    position: relative;
-    text-align: center;
-    font-weight: var(--font-weight-bold, 700);
-    font-size: var(--font-size-3xl, 2rem);
+.sellPageHeader h1 {
+  position: relative;
+  text-align: center;
+  font-weight: var(--font-weight-bold, 700);
+  font-size: var(--font-size-3xl, 2rem);
+  background: var(--color-dark-light, #868686);
 }
 
 /* END SELL PAGE */
 
-
-
 /* STEPS SECTION */
 
-.stepSectionContainer{
-    width: 60%;
+.stepSectionContainer {
+  width: 60%;
 }
 
 /* END STEPS SECTION */
 
 /* STEPS HEADING */
-.stepHeader{
-    text-align: center;
+.stepHeader {
+  text-align: center;
 }
-.stepHeader h2{
-    font-weight: var(--font-weight-bold, 700);
-    font-size: var(--font-size-2xl, 1.8rem);
+.stepHeader h2 {
+  font-weight: var(--font-weight-bold, 700);
+  font-size: var(--font-size-2xl, 1.8rem);
 
-    margin-bottom: .1rem;
+  margin-bottom: 0.1rem;
 }
-.stepHeader h3{
-    font-weight: var(--font-weight-medium, 500);
-    font-size: var(--font-size-sm, 0.8rem);
+.stepHeader h3 {
+  font-weight: var(--font-weight-medium, 500);
+  font-size: var(--font-size-sm, 0.8rem);
 }
 /* END STEPS HEAING */
 
 /* STEPS */
-.stepsContainer p{
-    font-size: var(--font-size-md, 1rem);
+.stepsContainer p {
+  font-size: var(--font-size-md, 1rem);
 }
 
 /* END STEPS */
 
 /* IMG-HEADER */
-.imgContainer{
-    width: 60%;
-    align-self: flex-start;
-    justify-content: center;
-
+.imgContainer {
+  width: 60%;
+  align-self: flex-start;
+  justify-content: center;
 }
-.imgHeader{
-    min-width: 320px;
-    min-height: 433px;
-    
+.imgHeader {
+  min-width: 320px;
+  min-height: 433px;
 
-    border-radius: var(--border-radius-5xl, 4rem);
+  border-radius: var(--border-radius-5xl, 4rem);
 
-    background: var(--color-dark-light, #868686);
-
+  background: var(--color-dark-light, #868686);
 }
 /* END IMG-HEADER */
