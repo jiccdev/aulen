@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { truncateString, parseToCLPCurrency } from '../../../utils';
 
@@ -15,37 +14,30 @@ const DepartmentItem = ({
   realtorId,
   statusId,
 }) => {
-  const { id, image, title, address, price } = department;
+  const { id, image, title, address, price, status } = department;
 
   return (
     <Col md={isGrid ? 4 : isList ? 12 : 4} className={styles.col}>
       <Card className={styles.card}>
-        <span
-        // className={
-        //   status?.name === 'Venta'
-        //     ? styles.deptStatusForSales
-        //     : styles.deptStatusFeatured
-        // }
+        {/* <span
+          className={
+            status?.name === 'Venta'
+              ? styles.deptStatusForSales
+              : styles.deptStatusFeatured
+          }
         >
-          {/* {status?.name} */}
+          {status?.name}
+        </span> */}
+        <span
+          className={id ? styles.deptStatusForSales : styles.deptStatusFeatured}
+        >
+          Venta
         </span>
         <img
           src={image}
           alt={`imagen-departamento-${title}`}
           className={styles.cardImage}
         />
-        {/* <Image
-          src={image}
-          alt={`imagen-departamento-${title}`}
-          width={300}
-          height={200}
-          style={{
-            width: '100%',
-            height: '200px',
-            objectFit: 'cover',
-          }}
-          className={styles.cardImage}
-        /> */}
         <Card.Body className={styles.cardBody}>
           <small className={styles.deptCode}>Cod: {id || ''}</small>
           <Card.Title className={styles.cardTitle}>

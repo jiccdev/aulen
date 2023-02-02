@@ -12,8 +12,11 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import styles from '../../../../../styles/components/propiedades/details/InformationOnTheArea.module.css';
 
-const InformationOnTheArea = () => {
+const InformationOnTheArea = ({ propertyData }) => {
   const [key, setKey] = useState('transportationTab');
+  const { LngLat } = propertyData;
+  const lng = Number(LngLat?.match(/Lng: ([-\d.]+)/)[1]) || 0;
+  const lat = Number(LngLat?.match(/Lat: ([-\d.]+)/)[1]) || 0;
 
   return (
     <div className={styles.informationOnTheAreaContainer}>
@@ -37,7 +40,7 @@ const InformationOnTheArea = () => {
             >
               <TransportationTab />
             </Tab>
-            <Tab
+            {/* <Tab
               eventKey="educationTab"
               title="Educación"
               className={styles.tab}
@@ -53,12 +56,12 @@ const InformationOnTheArea = () => {
             </Tab>
             <Tab eventKey="stores" title="Comercios" className={styles.tab}>
               <Stores />
-            </Tab>
+            </Tab> */}
           </Tabs>
         </Col>
 
         <Col xs={12} lg={6}>
-          <ReactMap longitudeProp={-70.642578} latitudeProp={-33.50706} />
+          <ReactMap longitudeProp={lng} latitudeProp={lat} propertyData={propertyData}/>
         </Col>
       </Row>
     </div>

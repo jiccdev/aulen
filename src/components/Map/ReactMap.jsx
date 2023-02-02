@@ -1,21 +1,29 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Map, {
   Marker,
   NavigationControl,
   GeolocateControl,
   FullscreenControl,
+  Popup,
 } from 'react-map-gl';
 
 /** Bootstrap components */
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import { icons } from '../../components/Icons';
 import styles from '../../../styles/components/propiedades/details/Maps.module.css';
 
-const ReactMap = ({ longitudeProp, latitudeProp }) => {
+const ReactMap = ({ longitudeProp, latitudeProp, propertyData }) => {
   const [longitude, setLongitude] = useState(longitudeProp);
   const [latitude, setLatitude] = useState(latitudeProp);
+  const [showPopup, setShowPopup] = useState(true);
   const { BiMap } = icons;
+
+  const imgPopup = propertyData.images;
+
+  console.log(imgPopup);
 
   return (
     <div className={styles.mapContainer}>
@@ -26,7 +34,9 @@ const ReactMap = ({ longitudeProp, latitudeProp }) => {
             <span className={styles.spanIcon}>
               <BiMap />
             </span>
-            <span>descripción</span>
+            <span>
+              {propertyData?.address || ''} {propertyData?.city || ''}
+            </span>
           </div>
           <Link href="/" className={styles.showAreaInfo}>
             Ver información de la zona
@@ -36,13 +46,17 @@ const ReactMap = ({ longitudeProp, latitudeProp }) => {
       <Map
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
         initialViewState={{
-          longitude,
-          latitude,
-          zoom: 14,
-          pitch: 45,
-          bearing: 0,
-          width: 'auto',
-          height: 300,
+          // longitude,
+          // latitude,
+          // zoom: 14,
+          // pitch: 45,
+          // bearing: 0,
+          // width: 'auto',
+          // height: 300,
+
+          longitude: longitude,
+          latitude: latitude,
+          zoom: 3.5,
         }}
         mapStyle={'mapbox://styles/mapbox/streets-v11'}
         style={{
@@ -62,10 +76,45 @@ const ReactMap = ({ longitudeProp, latitudeProp }) => {
             cursor: 'pointer',
             zIndex: 100,
           }}
-        />
-        <NavigationControl />
+        >
+          {showPopup && (
+            <Popup
+              longitude={longitude}
+              latitude={latitude}
+              onClose={() => setShowPopup(false)}
+              style={{
+                width: 'auto',
+                height: '60px',
+                borderRadius: '10px',
+                padding: '1rem',
+                margin: '1rem',
+              }}
+            >
+              <Card.Img
+                variant="top"
+                src={propertyData?.images?.[0]}
+                style={{
+                  width: '100%',
+                  height: '100px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                }}
+              />
+              <p>{propertyData?.title || 'sin descripción'}</p>
+              <span
+                style={{
+                  fontWeight: 'bold',
+                }}
+              >
+                {propertyData?.address || ''}, {propertyData?.city || ''}
+              </span>
+            </Popup>
+          )}
+        </Marker>
+
+        {/* <NavigationControl />
         <GeolocateControl />
-        <FullscreenControl />
+        <FullscreenControl /> */}
       </Map>
     </div>
   );

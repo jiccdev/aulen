@@ -61,7 +61,7 @@ const PropiedadId = () => {
           </Col>
         </Row>
 
-        <InformationOnTheArea />
+        <InformationOnTheArea propertyData={property}/>
       </div>
     </Fragment>
   );
