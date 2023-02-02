@@ -15,13 +15,13 @@ const SoldHome = () => {
           src={SoldHomeImg}
           alt="Sold Home"
           width={600}
-          height={800}
+          height={500}
           className={styles.img}
           style={{
             objectFit: 'cover',
             position: 'center',
             borderRadius: '15%',
-            height: '600px',
+            height: '500px',
             width: '500px',
           }}
         />

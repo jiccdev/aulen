@@ -1,3 +1,9 @@
+.rowContainerSoldHome {
+  position: relative;
+  width: 100%;
+  margin: 3rem auto;
+}
+
 .rowItems {
   display: flex;
   justify-content: center;
@@ -19,6 +25,11 @@
 }
 
 @media screen and (min-width: 992px) {
+  .rowContainerSoldHome {
+    width: 50%;
+    margin: 8rem auto;
+  }
+
   .colSoldHome {
     margin: 0rem;
   }

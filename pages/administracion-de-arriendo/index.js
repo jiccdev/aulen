@@ -13,9 +13,9 @@ const AdministracionDeArriendo = () => {
       <HeadPage title="Administración de arriendo" />
 
       <Layout>
-        {/* CONOCE NUESTROS PLANES */}
+        {/* CASA VENDIDA */}
         <LayoutSection>
-          <Plans />
+          <SoldHome />
         </LayoutSection>
 
         {/* PASOS PARA ARRENDAR UN DEPARTAMENTO */}
@@ -23,9 +23,9 @@ const AdministracionDeArriendo = () => {
           <StepsToRentDepartment />
         </LayoutSection>
 
-        {/* CASA VENDIDA */}
+        {/* CONOCE NUESTROS PLANES */}
         <LayoutSection>
-          <SoldHome />
+          <Plans />
         </LayoutSection>
       </Layout>
 

@@ -26,7 +26,7 @@
   display: block;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1220px) {
   .row {
     width: 100%;
     margin: 3rem auto;
@@ -35,7 +35,7 @@
   .rightCol {
     position: fixed;
     right: 4rem;
-    top: 12rem;
+    top: 10rem;
     display: block;
   }
 
