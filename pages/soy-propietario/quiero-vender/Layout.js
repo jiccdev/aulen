@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
-// import PlanForm from '../../Form/PlanFrom';
 import { PublishingForm } from '../../../src/components/PublishingForm/PublishingForm';
 import { publishingFormData } from '../../../src/api/fakeData/publishingForm';
 
 /** Bootstrap components */
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import styles from '../../../styles/components/administracion-de-arriendo/Layout.module.css';
 import styles from '../../../styles/components/soy-propietario/quiero-vender/Layout.module.css';
 
 const Layout = ({ children }) => {
@@ -48,7 +46,6 @@ const Layout = ({ children }) => {
             : styles.rightCol
         }
       >
-        {/* <PlanForm /> */}
         <PublishingForm formData={publishingFormData[0]} />
       </Col>
     </Row>

@@ -2,7 +2,7 @@
 export const publishingFormData = [
     {
         id: 1,
-        h2: '¡Publica tu propiedad gratis!',
+        h2: '¡Despreocúpate por tupropiedad de inversión!',
         h3: 'COMPLETA EL FORMULARIO',
         btn: 'ENVIAR',
     },

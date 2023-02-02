@@ -14,15 +14,15 @@ export const typeOfOperation = [
   },
   {
     value: 1,
-    label: 'Tipo de Operación 1',
+    label: 'Arriendo',
   },
   {
     value: 2,
-    label: 'Tipo de Operación 2',
+    label: 'Arriendo Temporal',
   },
   {
     value: 3,
-    label: 'Tipo de Operación 3',
+    label: 'Venta',
   },
 ];
 
@@ -33,15 +33,47 @@ export const typeOfProperty = [
   },
   {
     value: 1,
-    label: 'Tipo de Propiedad 1',
+    label: 'Casa',
   },
   {
     value: 2,
-    label: 'Tipo de Propiedad 2',
+    label: 'Departamento',
   },
   {
     value: 3,
-    label: 'Tipo de Propiedad 3',
+    label: 'Agrícola',
+  },
+  {
+    value: 4,
+    label: 'Bodega',
+  },
+  {
+    value: 5,
+    label: 'Estacionamiento',
+  },
+  {
+    value: 6,
+    label: 'Industrial',
+  },
+  {
+    value: 7,
+    label: 'Local Comercial	',
+  },
+  {
+    value: 8,
+    label: 'Oficina',
+  },
+  {
+    value: 9,
+    label: 'Parcela',
+  },
+  {
+    value: 10,
+    label: 'Sitio',
+  },
+  {
+    value: 11,
+    label: 'Terreno En Construccion',
   },
 ];
 

@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .customRow {
   display: flex;
   justify-content: space-between;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .form {
@@ -19,13 +19,12 @@
   background-color: var(--color-pale-gray, #f4f3f1);
   border-radius: var(--border-radius-5xl, 4rem);
 
-
   width: 480px;
   max-height: 550px;
-  padding: 2em 2.5em;
+  padding: 4em 2.5em;
 }
 
-.following{
+.following {
   position: fixed;
 
   top: 20%;
@@ -38,18 +37,22 @@
   text-align: center;
 }
 
-.form__header>h2,
-.form__header>h3 {
+.form__header > h2,
+.form__header > h3 {
   font-weight: var(--font-weight-bold, 700);
 }
 
-.form__header>h2 {
+.form__header > h2 {
   /* font-weight: var(--font-weight-extra-bold, 800); */
-  font-size: var(--font-size-5xl, 4rem);
+  font-size: var(--font-size-xl, 1.4rem);
+  text-align: start;
+  width: 100%;
 }
 
-.form__header>h3 {
-  font-size: var(--font-size-xl, 1.4rem);
+.form__header > h3 {
+  font-size: var(--font-size-sm, 0.8rem);
+  text-align: start;
+  width: 100%;
 }
 
 /* END HEADER */
@@ -65,14 +68,14 @@
   border-radius: var(--border-radius-3xl, 1.4rem);
 
   text-align: center;
-  width: calc(100%/3);
-  padding: .5em 1.1em;
+  width: calc(100% / 3);
+  padding: 0.5em 1.1em;
 
   filter: brightness(100%);
   transition: filter 300ms linear;
 }
 
-.form__btn:hover{
+.form__btn:hover {
   filter: brightness(120%);
 }
 
@@ -80,30 +83,30 @@
 
 /* MAIN */
 
-.form__inputs{
-  margin: 1rem 0 ;
+.form__inputs {
+  margin: 1rem 0;
   width: 100%;
   gap: 1.2rem;
 }
 
 .form__inputs__name,
 .form__inputs__tel,
-.form__inputs__email{
+.form__inputs__email {
   width: 90%;
 }
 
-.form__inputs > div > input{
+.form__inputs > div > input {
   all: unset;
 
   background-color: var(--color-white, white);
   border-radius: var(--border-radius-3xl, 1.4rem);
   font-size: var(--font-size-md, 1rem);
 
-  padding: .3em 1em;
+  padding: 0.3em 1em;
   width: 100%;
 }
 
-.form__inputs > div > input::placeholder{
+.form__inputs > div > input::placeholder {
   font-weight: var(--font-weight-bold, 700);
   color: var(--color-dark, #252525);
 }
@@ -111,16 +114,16 @@
 /* END MAIN */
 
 /* LABEL */
-.form__inputs > label{
+.form__inputs > label {
   margin-top: 1rem;
-  font-size: var(--font-size-sm, .8rem);
+  font-size: var(--font-size-sm, 0.8rem);
   font-weight: var(--font-weight-bold, 700);
   max-width: 315px;
 }
 
-.form__inputs > label > input{
+.form__inputs > label > input {
   align-self: flex-start;
-  margin-top: .85%;
+  margin-top: 0.85%;
   border: none;
   width: 36px;
 }
@@ -128,7 +131,7 @@
 
 /* ICON */
 
-.formIcon{
+.formIcon {
   background: var(--color-white, white);
   color: var(--color-dark-light, #868686);
   border-radius: var(--border-radius-3xl, 1.4rem);
@@ -136,30 +139,28 @@
   width: 52px;
   height: 32px;
 
-  padding: .3em .6em;
-
+  padding: 0.3em 0.6em;
 }
 
 /* END ICON */
-@media (width < 991px){
-  .form{
+@media (width < 991px) {
+  .form {
     width: 70%;
     max-width: 70%;
     height: 600px;
   }
 }
 
-@media (width < 650px){
-  .form{
+@media (width < 650px) {
+  .form {
     width: 100%;
     max-width: 90%;
     max-height: max-content;
   }
 }
 
-
-@media (width < 500px){
-  .form{
+@media (width < 500px) {
+  .form {
     width: 100%;
     max-width: 100%;
     max-height: max-content;
