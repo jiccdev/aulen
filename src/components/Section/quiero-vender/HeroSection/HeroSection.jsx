@@ -21,7 +21,7 @@ export const HeroSection = () => {
             />
           </div>
         </FadeComponent>
-        <PublishingForm formData={publishingFormData[0]} />
+        {/* <PublishingForm formData={publishingFormData[0]} /> */}
       </div>
     </header>
   );

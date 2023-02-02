@@ -7,28 +7,31 @@ import HeroSection from '../../../src/components/Section/quiero-vender/HeroSecti
 import StepsSection from '../../../src/components/Section/quiero-vender/StepsSection/StepsSection';
 import HeadPage from '../../../src/components/HeadPage/HeadPage';
 
+import Layout from '../../../pages/soy-propietario/quiero-vender/Layout';
 
 const QuieroVender = () => {
   return (
-    <React.Fragment >
+    <React.Fragment>
       <HeadPage title="Quiero vender" />
-      <LayoutSection>
-        <HeroSection />
-      </LayoutSection>
 
-      <LayoutSection>
-        <StepsSection />
-      </LayoutSection>
+      <Layout>
+        <LayoutSection>
+          <HeroSection />
+        </LayoutSection>
 
-      <LayoutSection>
-        <Plans />
-      </LayoutSection>
+        <LayoutSection>
+          <StepsSection />
+        </LayoutSection>
+
+        <LayoutSection>
+          <Plans />
+        </LayoutSection>
+      </Layout>
 
       <LayoutSection>
         <CustomerExperience />
       </LayoutSection>
     </React.Fragment>
-
   );
 };
 

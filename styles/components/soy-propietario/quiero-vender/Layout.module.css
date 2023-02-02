@@ -1,0 +1,53 @@
+.row {
+  position: relative;
+  position: relative;
+  margin: 3rem auto;
+  width: 100%;
+}
+
+.rightCol {
+  position: fixed;
+  right: auto;
+  top: 0;
+  display: none;
+  margin-top: 3rem;
+}
+
+.isScrolledPast {
+  position: fixed;
+  top: 0;
+  /* right: 0; */
+  right: 4rem;
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
+  display: none;
+}
+
+.isScrolledPast2 {
+  display: block;
+}
+
+@media screen and (min-width: 1220px) {
+  .row {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .rightCol {
+    position: fixed;
+    right: 4rem;
+    top: 10rem;
+    display: block;
+  }
+
+  .isScrolledPast {
+    position: fixed;
+    right: 4rem;
+    top: 7rem !important;
+    display: block;
+  }
+
+  .isScrolledPast2 {
+    display: none;
+  }
+}
