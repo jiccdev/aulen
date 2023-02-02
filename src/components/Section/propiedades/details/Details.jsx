@@ -4,7 +4,7 @@ import { parseToCLPCurrency, clpToUf } from '../../../../utils';
 import { icons } from '../../../../components/Icons';
 import styles from '../../../../../styles/components/propiedades/details/Details.module.css';
 
-// !api uf
+/** Api services */
 import ExchangeRateServices from '../../../../services/ExchangeRateServices';
 
 const Details = ({ propertyData }) => {
@@ -16,8 +16,6 @@ const Details = ({ propertyData }) => {
       const response = await ExchangeRateServices.getExchangeRateUF();
       const ufValue = response?.UFs[0]?.Valor;
       const ufValueAsNumber = parseFloat(ufValue.replace(',', '.'));
-
-      console.log(ufValue)
 
       setUfCurrentValue(ufValueAsNumber);
     } catch (error) {
@@ -45,7 +43,9 @@ const Details = ({ propertyData }) => {
             <p className={styles.ufPrice}>
               UF {clpToUf(propertyData?.price, ufCurrentValue)}
             </p>
-            <p className={styles.clpPrice}>{propertyData.price}</p>
+            <p className={styles.clpPrice}>
+              {parseToCLPCurrency(propertyData.price)}
+            </p>
           </div>
 
           <div className={styles.deptoPropsContainer}>

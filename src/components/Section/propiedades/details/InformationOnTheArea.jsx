@@ -15,8 +15,8 @@ import styles from '../../../../../styles/components/propiedades/details/Informa
 const InformationOnTheArea = ({ propertyData }) => {
   const [key, setKey] = useState('transportationTab');
   const { LngLat } = propertyData;
-  const lng = Number(LngLat?.match(/Lng: ([-\d.]+)/)[1]) || 0;
-  const lat = Number(LngLat?.match(/Lat: ([-\d.]+)/)[1]) || 0;
+  const lng = Number(LngLat?.match(/Lng: ([-\d.]+)/)[1]) || -70.64827;
+  const lat = Number(LngLat?.match(/Lat: ([-\d.]+)/)[1]) || -33.45694;
 
   return (
     <div className={styles.informationOnTheAreaContainer}>
@@ -61,7 +61,11 @@ const InformationOnTheArea = ({ propertyData }) => {
         </Col>
 
         <Col xs={12} lg={6}>
-          <ReactMap longitudeProp={lng} latitudeProp={lat} propertyData={propertyData}/>
+          <ReactMap
+            longitudeProp={lng}
+            latitudeProp={lat}
+            propertyData={propertyData}
+          />
         </Col>
       </Row>
     </div>

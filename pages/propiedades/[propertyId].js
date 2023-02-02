@@ -12,7 +12,6 @@ import InformationOnTheArea from '../../src/components/Section/propiedades/detai
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from '../../styles/components/propiedades/details/Details.module.css';
-import { icons } from '../../src/components/Icons';
 
 const PropiedadId = () => {
   const { getProperty, property } = useContext(PropertiesContext);
@@ -24,8 +23,6 @@ const PropiedadId = () => {
     // getProperty(propertyId, 1, 1);
     getProperty(propertyId, 5, 5);
   }, [propertyId]);
-
- 
 
   return (
     <Fragment>
@@ -61,7 +58,7 @@ const PropiedadId = () => {
           </Col>
         </Row>
 
-        <InformationOnTheArea propertyData={property}/>
+        <InformationOnTheArea propertyData={property} />
       </div>
     </Fragment>
   );

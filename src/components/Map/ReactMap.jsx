@@ -20,10 +20,7 @@ const ReactMap = ({ longitudeProp, latitudeProp, propertyData }) => {
   const [latitude, setLatitude] = useState(latitudeProp);
   const [showPopup, setShowPopup] = useState(true);
   const { BiMap } = icons;
-
-  const imgPopup = propertyData.images;
-
-  console.log(imgPopup);
+  
 
   return (
     <div className={styles.mapContainer}>
@@ -81,7 +78,7 @@ const ReactMap = ({ longitudeProp, latitudeProp, propertyData }) => {
             <Popup
               longitude={longitude}
               latitude={latitude}
-              onClose={() => setShowPopup(false)}
+              // onClose={() => setShowPopup(false)}
               style={{
                 width: 'auto',
                 height: '60px',
@@ -112,9 +109,9 @@ const ReactMap = ({ longitudeProp, latitudeProp, propertyData }) => {
           )}
         </Marker>
 
-        {/* <NavigationControl />
+        <NavigationControl />
         <GeolocateControl />
-        <FullscreenControl /> */}
+        <FullscreenControl />
       </Map>
     </div>
   );
