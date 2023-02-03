@@ -1,6 +1,6 @@
 .principalContainer {
   position: relative;
-  margin: 5rem auto;
+  margin: 6rem auto;
   width: 100%;
 }
 
@@ -22,17 +22,17 @@
 }
 
 .principalCol {
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem;
 }
 
 @media screen and (min-width: 1024px) {
   .principalContainer {
     width: 100%;
-    margin: 8.5rem auto;
+    margin: 9rem auto;
   }
 
   .rowPlanForm {
-    width: 85% !important;
+    width: 80% !important;
   }
 
   .principalImage {
@@ -40,5 +40,11 @@
     height: 520px !important;
     object-fit: cover !important;
     border-radius: 50px !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .rowPlanForm {
+    width: 65% !important;
   }
 }

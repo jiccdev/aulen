@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   margin: 3rem auto;
+  /* background-color: red; */
 }
 
 .leaseCard {
@@ -14,6 +15,7 @@
   border: none !important;
   border-radius: 55px !important;
   position: relative;
+  margin: 1rem !important;
 }
 
 .leaseCard .leaseCardBody {
@@ -63,10 +65,11 @@
   padding: 0;
   margin: 1rem 0 3rem 0;
   height: auto;
+  margin: 1rem !important;
 }
 
 .leaseUl li {
-  line-height: 2.3rem;
+  line-height: 1.8rem;
   font-size: var(--font-size-md);
   color: var(--color-dark);
 }
