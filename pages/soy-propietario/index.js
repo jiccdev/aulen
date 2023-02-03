@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../styles/SoyPropietario.module.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { PublishingForm } from '../../src/components/PublishingForm/PublishingForm';
 
 const SoyPropietario = () => {

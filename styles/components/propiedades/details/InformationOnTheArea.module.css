@@ -1,6 +1,7 @@
 .informationOnTheAreaContainer {
   background-color: var(--color-light);
   padding: 1.5rem;
+  margin: 5rem 0;
 }
 
 .informationOnTheAreaContainer .headTitle {
