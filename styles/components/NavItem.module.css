@@ -8,24 +8,27 @@
   color: var(--color-dark) !important;
 }
 
-/* aca */
 .navItemActive {
-  background-color: var(--color-primary) !important;
-  color: var(--color-white) !important;
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  border-radius: 0.25rem;
+  position: relative;
+  margin-right: 1rem;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: 400;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  border-radius: var(--border-radius-3xl);
-  min-width: 120px;
-  text-align: center;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-dark) !important;
+  transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
-/* aca */
+
+.navItemActive::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-primary);
+  transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
 
 .navItemBtn {
   background-color: var(--color-secondary);
@@ -75,11 +78,16 @@
   transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-
-
 @media screen and (min-width: 992px) {
   .navItem:hover::before,
   .dropdownToggle:hover::before {
+    left: 0;
+    right: center;
+    width: 40%;
+    margin: auto;
+  }
+
+  .navItemActive::before {
     left: 0;
     right: center;
     width: 40%;
