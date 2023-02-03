@@ -24,14 +24,17 @@ const Investing = () => {
                 </h2>
                 <p>
                   Un modelo de inversión único en el mercado que genera hasta un
-                  15% de rentabilidad por operación. Invierte de manera segura,
-                  y cuenta con la asesoría de expertos que te guiaran según tus
-                  objetivos, desde la elección del inmueble hasta la
-                  capitalización de tu inversión.
+                  15% de rentabilidad por operación.
+                </p>
+
+                <p>
+                  Invierte de manera segura, y cuenta con la asesoría de
+                  expertos que te guiaran según tus objetivos, desde la elección
+                  del inmueble hasta la capitalización de tu inversión.
                 </p>
                 <div className={styles.consultationContainer}>
                   <Link href="/" className={styles.consultation}>
-                    Publica gratis
+                    Quiero una asesoría
                   </Link>
                 </div>
               </div>

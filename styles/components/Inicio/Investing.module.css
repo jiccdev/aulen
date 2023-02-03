@@ -39,6 +39,10 @@
   margin-bottom: 1rem;
 }
 
+.investingColTitle p {
+  color: red !important;
+}
+
 .investingImg {
   width: 100%;
   height: 100%;
@@ -50,8 +54,9 @@
 
 .investingColContent p {
   font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
-  color: var(--color-black);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark);
+  font-family: var(--font-family-body);
 }
 
 .consultationContainer {
@@ -84,16 +89,22 @@
 
   .investingColAbsolute {
     position: absolute !important;
-    right: -5rem !important;
-    top: 31% !important;
+    right: -10rem !important;
+    top: 23% !important;
     width: 50% !important;
-    height: 60% !important;
+    height: 70% !important;
     border-radius: var(--border-radius-5xl) !important;
     display: block !important;
   }
 
   .investingColContent {
-    width: 55%;
+    width: 65%;
     padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .investingContainer {
+    width: 55% !important;
   }
 }

@@ -36,6 +36,13 @@
   margin-bottom: 1rem;
 }
 
+.newPropertiesColContent p {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark);
+  font-family: var(--font-family-body);
+}
+
 .consultationContainer {
   margin-top: 2rem;
   display: flex;
@@ -78,5 +85,11 @@
 
   .newPropertiesColContent {
     padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .newPropertiesContainer {
+    width: 65% !important;
   }
 }
