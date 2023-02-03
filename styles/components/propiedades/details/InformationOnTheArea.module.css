@@ -26,3 +26,9 @@
     padding: 3.5rem;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .informationOnTheAreaContainer {
+    margin: 11rem 0;
+  }
+}

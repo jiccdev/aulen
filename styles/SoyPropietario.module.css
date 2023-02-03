@@ -65,8 +65,9 @@
   justify-content: center;
 }
 .imgHeader {
-  min-width: 320px;
-  min-height: 433px;
+  /* min-width: 320px;
+  min-height: 433px; */
+  width: 500px;
 
   border-radius: var(--border-radius-5xl, 4rem);
 

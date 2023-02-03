@@ -125,10 +125,17 @@
 
 @media screen and (min-width: 992px) {
   .form {
-    width: 100%;
+    width: 95%;
     padding: 2rem 2.5rem;
   }
   .rowBtnForm {
     margin-top: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .form {
+    width: 80%;
+    padding: 2rem 2.5rem;
   }
 }

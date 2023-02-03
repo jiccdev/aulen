@@ -3,6 +3,7 @@
   position: relative;
   margin: 3rem auto;
   width: 100%;
+  /* background-color: red; */
 }
 
 .rightCol {
@@ -48,5 +49,21 @@
 
   .isScrolledPast2 {
     display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .row {
+    width: 90%;
+    margin: 3rem auto;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .rightCol {
+    right: 6.5rem !important;
+  }
+  .isScrolledPast {
+    right: 6.5rem !important;
   }
 }

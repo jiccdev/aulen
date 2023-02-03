@@ -11,20 +11,7 @@ const SoldHome = () => {
   return (
     <Row className={styles.rowContainerSoldHome}>
       <Col xl={8} className={styles.colSoldHome}>
-        <Image
-          src={SoldHomeImg}
-          alt="Sold Home"
-          width={600}
-          height={500}
-          className={styles.img}
-          style={{
-            objectFit: 'cover',
-            position: 'center',
-            borderRadius: '15%',
-            height: '500px',
-            width: '500px',
-          }}
-        />
+        <Image src={SoldHomeImg} alt="Sold Home" className={styles.img} />
       </Col>
     </Row>
   );

@@ -1,66 +1,66 @@
 .customCol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  margin: 3rem;
 }
-  
+
 .customRow {
-    display: flex;
-    justify-content: space-between;
-    gap: .5em;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
 }
 
 /* SELL PAGE */
-
-.sellPageHeader{
-    margin-top: 8rem;
+.sellPageHeader {
+  margin-top: 8rem;
 }
 
-.sellPageHeader h1{
-    position: relative;
-    text-align: center;
-    font-weight: var(--font-weight-bold, 700);
-    font-size: var(--font-size-3xl, 2rem);
+.sellPageHeader h1 {
+  position: relative;
+  text-align: center;
+  font-weight: var(--font-weight-bold, 700);
+  font-size: var(--font-size-3xl, 2rem);
 }
-
 /* END SELL PAGE */
 
-.imgAndForm{
-    gap: 5%;
+.imgAndForm {
+  gap: 5%;
 }
 
 /* IMG-HEADER */
-.imgContainer{
-    align-self: center;
-    justify-content: center;
-    width: 50%;
-
+.imgContainer {
+  align-self: center;
+  justify-content: center;
+  width: 100%;
 }
-.imgHeader{
-    width: 470px;
-    height: 550px;
-    object-fit: cover;
-    
 
-    border-radius: var(--border-radius-5xl, 4rem);
-
-    /* background-image: url('../../../../../src/img/soy-propietario/key.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-
+.imgHeader {
+  width: 470px;
+  height: 515px;
+  object-fit: cover;
+  border-radius: var(--border-radius-5xl, 4rem);
 }
 /* END IMG-HEADER */
 
-@media (width < 991px){
-    .imgAndForm{
-        flex-wrap: wrap-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-    .imgContainer{
-        display: none;
-        width: 100%;
-    }
+@media (width < 991px) {
+  .imgAndForm {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+
+  .imgHeader {
+    width: 100%;
+    height: 50%;
+  }
+
+  .customCol {
+    margin: 2.5rem 0;
+  }
 }
