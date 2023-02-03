@@ -20,8 +20,8 @@ const PropertiesProvider = ({ children }) => {
       );
       setProperties(response?.data);
     } catch (error) {
-      const { statusCode } = error.response.data;
-      setStatusCodeMsg(statusCode) && new Error(error.response.data);
+      const { statusCode } = error?.response?.data;
+      setStatusCodeMsg(statusCode) && new Error(error?.response?.data);
     }
   };
 
@@ -35,8 +35,8 @@ const PropertiesProvider = ({ children }) => {
       );
       setProperty(response);
     } catch (error) {
-      const { statusCode } = error.response.data;
-      setStatusCodeMsg(statusCode) && new Error(error.response.data);
+      const { statusCode } = error?.response?.data;
+      setStatusCodeMsg(statusCode) && new Error(error?.response?.data);
     }
   };
 
