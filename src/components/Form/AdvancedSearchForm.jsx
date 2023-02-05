@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import RSelect from '../RSelect/RSelect';
 import FadeComponent from '../Reveal/FadeComponent';
 import {
@@ -15,48 +15,114 @@ import {
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
 import Form from 'react-bootstrap/Form';
 import styles from '../../../styles/components/AdvancedSearchForm.module.css';
 
-const AdvancedSearchForm = () => {
+const AdvancedSearchForm = ({
+  data,
+  setProperties,
+  getProperties,
+  newProperties,
+  setNewProperties,
+}) => {
+  const [notPropertiesMessage, setNotPropertiesMessage] = useState('');
+  const [filtredDataValue, setFiltredDataValue] = useState({
+    typeOfOperation: '',
+    typeOfProperty: '',
+    region: '',
+    commune: '',
+    surface: '',
+    priceCLP: false,
+    priceUF: false,
+    priceFrom: 0,
+    priceFrom: 0,
+    priceUpTo: 0,
+    bedrooms: '',
+    bathrooms: '',
+    parkingLots: '',
+  });
+
   const onFormSubmit = (ev) => {
     ev.preventDefault();
   };
 
   const onOrderDepartmentByChange = (option) => {
-    console.log(typeOfOperation[0]);
-    console.log(option);
+    setFiltredDataValue({
+      ...filtredDataValue,
+      typeOfOperation: option?.value,
+    });
+    console.log('typeOfOperation', filtredDataValue);
   };
 
   const onTypeOfPropertyChange = (option) => {
-    console.log(typeOfProperty[0]);
-    console.log(option);
+    setFiltredDataValue({
+      ...filtredDataValue,
+      typeOfProperty: option?.value,
+    });
+    console.log('typeOfProperty', filtredDataValue?.typeOfProperty);
   };
 
   const onRegionsChange = (option) => {
-    console.log(regions[0]);
-    console.log(option);
+    setFiltredDataValue({
+      ...filtredDataValue,
+      region: option?.value,
+    });
+    console.log('region', filtredDataValue?.region);
   };
 
   const onCommunesChange = (option) => {
-    console.log(communes[0]);
-    console.log(option);
+    setFiltredDataValue({
+      ...filtredDataValue,
+      commune: option?.value,
+    });
+    console.log('commune', filtredDataValue?.commune);
   };
 
   const onBedroomsChange = (option) => {
-    console.log(bedrooms[0]);
-    console.log(option);
+    setFiltredDataValue({
+      ...filtredDataValue,
+      bedrooms: option?.value,
+    });
+    console.log('bedrooms', filtredDataValue?.bedrooms);
   };
 
   const onBathroomsChange = (option) => {
-    console.log(bathrooms[0]);
-    console.log(option);
+    setFiltredDataValue({
+      ...filtredDataValue,
+      bathrooms: option?.value,
+    });
+    console.log('bathrooms', filtredDataValue?.bathrooms);
   };
 
   const onParkingLotsChange = (option) => {
-    console.log(parkingLots[0]);
-    console.log(option);
+    setFiltredDataValue({
+      ...filtredDataValue,
+      parkingLots: option?.value,
+    });
+    console.log('parkingLots', filtredDataValue?.parkingLots);
   };
+
+  /** Filter Properties by Bathrooms */
+  const filterPropertyBarhrooms = async (bathrooms) => {
+    const filtredProperties = await data?.filter(
+      (property) => property.bathrooms == bathrooms
+    );
+
+    if (filtredProperties.length > 0) {
+      setNewProperties(filtredProperties);
+      setNotPropertiesMessage('');
+    } else {
+      setNewProperties([]);
+      setNotPropertiesMessage('No se encontraron propiedades');
+    }
+  };
+
+  useEffect(() => {
+    filterPropertyBarhrooms(filtredDataValue?.bathrooms);
+  }, [filtredDataValue?.bathrooms]);
+
+  console.log('newProperties', newProperties);
 
   return (
     <FadeComponent right cascade duration={500}>
@@ -185,6 +251,12 @@ const AdvancedSearchForm = () => {
           <Button variant="primary" type="submit" className={styles.btnSubmit}>
             Buscar
           </Button>
+        </Form.Group>
+
+        <Form.Group className="mb-3">
+          {notPropertiesMessage && (
+            <Alert variant="danger">{notPropertiesMessage}</Alert>
+          )}
         </Form.Group>
       </Form>
     </FadeComponent>

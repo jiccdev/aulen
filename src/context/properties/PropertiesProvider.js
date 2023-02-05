@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import PropertiesContext from './PropertiesContext';
-import { propertiesData } from '../../api/fakeData/properties';
 
 /** API Services */
 import PropertiesServices from '../../services/PropertiesServices';
 
 const PropertiesProvider = ({ children }) => {
-  const [data, setData] = useState(propertiesData);
   const [properties, setProperties] = useState([]);
+  const [newProperties, setNewProperties] = useState([]);
   const [property, setProperty] = useState({});
   const [statusCodeMsg, setStatusCodeMsg] = useState('');
 
@@ -19,6 +18,7 @@ const PropertiesProvider = ({ children }) => {
         statusId
       );
       setProperties(response?.data);
+      setNewProperties(response?.data);
     } catch (error) {
       const { statusCode } = error?.response?.data;
       setStatusCodeMsg(statusCode) && new Error(error?.response?.data);
@@ -44,11 +44,13 @@ const PropertiesProvider = ({ children }) => {
     <PropertiesContext.Provider
       value={{
         properties,
+        setProperties,
         property,
         getProperties,
         getProperty,
-        contextData: [data, setData],
         // getPagination,
+        newProperties,
+        setNewProperties,
       }}
     >
       {children}

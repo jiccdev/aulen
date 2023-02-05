@@ -20,7 +20,6 @@ const ReactMap = ({ longitudeProp, latitudeProp, propertyData }) => {
   const [latitude, setLatitude] = useState(latitudeProp);
   const [showPopup, setShowPopup] = useState(true);
   const { BiMap } = icons;
-  
 
   return (
     <div className={styles.mapContainer}>

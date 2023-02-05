@@ -20,7 +20,15 @@ import PaginationComponent from '../../Pagination/Pagination';
 /** API services */
 import PropertiesServices from '../../../services/PropertiesServices';
 
-const Departments = ({ data, realtorId, statusId }) => {
+const Departments = ({
+  data,
+  setProperties,
+  realtorId,
+  statusId,
+  getProperties,
+  newProperties,
+  setNewProperties,
+}) => {
   // const { getPagination } = useContext(PropertiesContext);
   const [totalItems, setTotalItems] = useState(null);
   const [itemPerPage, setItemPerPage] = useState(10);
@@ -86,8 +94,8 @@ const Departments = ({ data, realtorId, statusId }) => {
       <Col xl={9} className={styles.col}>
         <FadeComponent bottom cascade duration={1400}>
           <Row className={styles.rowItems}>
-            {data &&
-              data.map((department) => (
+            {newProperties &&
+              newProperties.map((department) => (
                 <DepartmentItem
                   key={department?.id}
                   department={department}
@@ -118,7 +126,13 @@ const Departments = ({ data, realtorId, statusId }) => {
 
       <Col xl={3} className={styles.colForm}>
         {/* BÚSQUEDA AVANZADA */}
-        <AdvancedSearchForm />
+        <AdvancedSearchForm
+          data={data}
+          setProperties={setProperties}
+          getProperties={getProperties}
+          newProperties={newProperties}
+          setNewProperties={setNewProperties}
+        />
 
         {/* PROYECTOS DESTACADOS */}
         <OutstandingProjects
