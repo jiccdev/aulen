@@ -48,9 +48,9 @@ const PropertiesProvider = ({ children }) => {
         property,
         getProperties,
         getProperty,
-        // getPagination,
         newProperties,
         setNewProperties,
+        // getPagination,
       }}
     >
       {children}

@@ -63,7 +63,10 @@ const Departments = ({
           <h1 className={styles.title}>Departamentos</h1>
         </div>
         <div>
-          <Link href="/" className={styles.urlViewMap}>
+          <Link
+            href="/propiedades/maps-propiedades"
+            className={styles.urlViewMap}
+          >
             <span className={styles.spanMapIcon}>
               <BiMap />
             </span>

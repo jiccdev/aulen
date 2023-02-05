@@ -159,6 +159,10 @@ export const bathrooms = [
     value: 5,
     label: '5',
   },
+  {
+    value: 10,
+    label: '10',
+  },
 ];
 
 export const parkingLots = [

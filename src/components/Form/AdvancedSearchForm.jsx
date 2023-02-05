@@ -103,18 +103,35 @@ const AdvancedSearchForm = ({
     console.log('parkingLots', filtredDataValue?.parkingLots);
   };
 
+  // filtrar las propiedades por el mayor precio
+  const filterPropertyByPrice = async (priceFrom, priceUpTo) => {
+    const filtredProperties = await data?.filter(
+      (property) => property.price >= priceFrom && property.price <= priceUpTo
+    );
+
+    if (filtredProperties?.length > 0) {
+      setNewProperties(filtredProperties);
+      setNotPropertiesMessage('');
+    } else {
+      setNotPropertiesMessage('No hay propiedades disponibles');
+    }
+  };
+  useEffect(() => {
+    filterPropertyByPrice(
+      filtredDataValue?.priceFrom,
+      filtredDataValue?.priceUpTo
+    );
+  }, [filtredDataValue?.priceFrom, filtredDataValue?.priceUpTo]);
+
   /** Filter Properties by Bathrooms */
   const filterPropertyBarhrooms = async (bathrooms) => {
     const filtredProperties = await data?.filter(
       (property) => property.bathrooms == bathrooms
     );
 
-    if (filtredProperties.length > 0) {
+    if (filtredProperties?.length > 0) {
       setNewProperties(filtredProperties);
       setNotPropertiesMessage('');
-    } else {
-      setNewProperties([]);
-      setNotPropertiesMessage('No se encontraron propiedades');
     }
   };
 
