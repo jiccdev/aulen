@@ -30,42 +30,39 @@ const MapProperties = () => {
       style={{
         height: 'auto',
         width: '100%',
-        marginTop: '150px',
+        marginTop: '125px',
       }}
     >
       <div className={styles.mapContainer}>
         <Map
           mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
           initialViewState={{
-            // longitude,
-            // latitude,
-            zoom: 14,
             pitch: 45,
-            // bearing: 0,
-            // width: 'auto',
-            // height: 300,
-
-            // esto si funciona
+            width: 400,
+            height: 400,
+            attributionControl: false,
             longitude: -70.64827,
             latitude: -33.45694,
-            zoom: 3.5,
+            zoom: 12,
+            style: {
+              width: 'auto',
+              height: '80vh',
+              borderRadius: '15px',
+            },
           }}
-          mapStyle={'mapbox://styles/mapbox/streets-v11'}
+          mapStyle={'mapbox://styles/mapbox/streets-v12'}
           style={{
             width: 'auto',
             height: '80vh',
             borderRadius: '15px',
-            padding: '2rem',
-            margin: '1.5rem',
           }}
         >
           {newProperties?.map((property) => {
             let longitude =
               Number(property?.LngLat?.match(/Lng: ([-\d.]+)/)[1]) || -70.64827;
+
             let latitude =
               Number(property?.LngLat?.match(/Lat: ([-\d.]+)/)[1]) || -33.45694;
-            console.log('longitude_', longitude);
-            console.log('longitude_', latitude);
 
             return (
               <Marker
@@ -84,32 +81,41 @@ const MapProperties = () => {
                     longitude={longitude}
                     latitude={latitude}
                     onClose={() => setShowPopup(false)}
-                    style={{
-                      width: 'auto',
-                      height: '10px',
-                      borderRadius: '10px',
-                      padding: '1rem',
-                      margin: '1rem',
-                    }}
+                    anchor="bottom"
+                    closeButton={false}
+                    closeOnClick={false}
+                    dynamicPosition={true}
+                    focusAfterOpen={false}
+                    offsetTop={-10}
+                    offsetLeft={-10}
+                    closeOnMove={false}
                   >
-                    <Card.Img
-                      variant="top"
-                      src={property?.image || '/images/placeholder.png'}
+                    <div
                       style={{
-                        width: '100%',
-                        height: '100px',
-                        objectFit: 'cover',
-                        borderRadius: '10px',
-                      }}
-                    />
-                    <p>{property?.title || 'sin descripción'}</p>
-                    <span
-                      style={{
-                        fontWeight: 'bold',
+                        backgroundColor: 'whitesmoke',
+                        padding: '.2rem',
+                        borderRadius: '5px',
                       }}
                     >
-                      {property?.address || ''}, {property?.city || ''}
-                    </span>
+                      <Card.Img
+                        variant="top"
+                        src={property?.image || '/images/placeholder.png'}
+                        style={{
+                          width: '100%',
+                          height: '120px',
+                          objectFit: 'cover',
+                          borderRadius: '5px',
+                        }}
+                      />
+                      <p>{property?.title || 'sin descripción'}</p>
+                      <span
+                        style={{
+                          fontWeight: 'bold',
+                        }}
+                      >
+                        {property?.address || ''}, {property?.city || ''}
+                      </span>
+                    </div>
                   </Popup>
                 )}
               </Marker>
