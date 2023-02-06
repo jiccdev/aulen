@@ -13,12 +13,14 @@ import Map, {
 /** Bootstrap components */
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Toast from 'react-bootstrap/Toast';
 import { icons } from '../../../components/Icons';
 import styles from '../../../../styles/components/propiedades/details/Maps.module.css';
 
 const MapProperties = () => {
   const { newProperties, getProperties } = useContext(PropertiesContext);
   const [showPopup, setShowPopup] = useState(true);
+  const [propertyDetail, setPropertyDetail] = useState({});
   const [key, setKey] = useState('transportationTab');
 
   useEffect(() => {
@@ -33,6 +35,32 @@ const MapProperties = () => {
         marginTop: '125px',
       }}
     >
+      <div className={styles.mapContainer}>
+        <div className={styles.mainTopInfoContainer}>
+          <div className={styles.mapTopInfoContainer}>
+            <h2>Localización de Propiedades</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            </p>
+          </div>
+          <div className={styles.toastContainer}>
+            <Toast className={styles.toast}>
+              <div>
+                <strong className="mx-auto">
+                  {propertyDetail?.title || ''}
+                </strong>
+              </div>
+              <Toast.Body className={styles.toastBody}>
+                <span>
+                  {propertyDetail?.commune}, {propertyDetail?.city}{' '}
+                  {propertyDetail?.address || ''}
+                </span>
+              </Toast.Body>
+            </Toast>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.mapContainer}>
         <Map
           mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
@@ -76,48 +104,55 @@ const MapProperties = () => {
                   zIndex: 100,
                 }}
               >
-                {showPopup && (
-                  <Popup
-                    longitude={longitude}
-                    latitude={latitude}
-                    onClose={() => setShowPopup(false)}
-                    anchor="bottom"
-                    closeButton={false}
-                    closeOnClick={false}
-                    dynamicPosition={true}
-                    focusAfterOpen={false}
-                    offsetTop={-10}
-                    offsetLeft={-10}
-                    closeOnMove={false}
-                  >
-                    <div
-                      style={{
-                        backgroundColor: 'whitesmoke',
-                        padding: '.2rem',
-                        borderRadius: '5px',
-                      }}
+                <div
+                  onClick={() => {
+                    setPropertyDetail(property);
+                    console.log(property);
+                  }}
+                >
+                  {showPopup && (
+                    <Popup
+                      longitude={longitude}
+                      latitude={latitude}
+                      onClose={() => setShowPopup(false)}
+                      anchor="bottom"
+                      closeButton={false}
+                      closeOnClick={false}
+                      dynamicPosition={true}
+                      focusAfterOpen={false}
+                      offsetTop={-10}
+                      offsetLeft={-10}
+                      closeOnMove={false}
                     >
-                      <Card.Img
-                        variant="top"
-                        src={property?.image || '/images/placeholder.png'}
+                      <div
                         style={{
-                          width: '100%',
-                          height: '120px',
-                          objectFit: 'cover',
+                          backgroundColor: 'whitesmoke',
+                          padding: '.2rem',
                           borderRadius: '5px',
                         }}
-                      />
-                      <p>{property?.title || 'sin descripción'}</p>
-                      <span
-                        style={{
-                          fontWeight: 'bold',
-                        }}
                       >
-                        {property?.address || ''}, {property?.city || ''}
-                      </span>
-                    </div>
-                  </Popup>
-                )}
+                        <Card.Img
+                          variant="top"
+                          src={property?.image || '/images/placeholder.png'}
+                          style={{
+                            width: '100%',
+                            height: '120px',
+                            objectFit: 'cover',
+                            borderRadius: '5px',
+                          }}
+                        />
+                        <p>{property?.title || 'sin descripción'}</p>
+                        <span
+                          style={{
+                            fontWeight: 'bold',
+                          }}
+                        >
+                          {property?.address || ''}, {property?.city || ''}
+                        </span>
+                      </div>
+                    </Popup>
+                  )}
+                </div>
               </Marker>
             );
           })}
