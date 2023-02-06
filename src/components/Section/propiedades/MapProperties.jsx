@@ -38,6 +38,7 @@ const MapProperties = () => {
       <div className={styles.mapContainer}>
         <div className={styles.mainTopInfoContainer}>
           <div className={styles.mapTopInfoContainer}>
+            {/* caract y precio */}
             <h2>Localización de Propiedades</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -107,7 +108,7 @@ const MapProperties = () => {
                 <div
                   onClick={() => {
                     setPropertyDetail(property);
-                    console.log(property);
+                    setShowPopup(true);
                   }}
                 >
                   {showPopup && (
