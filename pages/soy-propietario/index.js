@@ -8,10 +8,9 @@ const SoyPropietario = () => {
     <>
       <header className={`${styles.customCol} ${styles.sellPageHeader}`}>
         <h1>¡Vende tu propiedad rápido y sin complicaciones!</h1>
-        {/* <img src="" alt="" /> */}
         <PublishingForm />
       </header>
-      <section className={`${styles.customCol} ${styles.stepSectionContainer}`}>
+      {/* <section className={`${styles.customCol} ${styles.stepSectionContainer}`}>
         <header className={`${styles.customCol} ${styles.stepHeader}`}>
           <h2>Vendemos tu propiedad en cuatro simples pasos</h2>
           <h3>
@@ -20,7 +19,6 @@ const SoyPropietario = () => {
         </header>
         <main>
           <div className={`${styles.customRow} ${styles.stepsContainer}`}>
-            {/* <img /> */}
             <p>
               Presentamos un estudio estratégico de acuerdo a tus objetivos y
               necesidades, respaldado por las ventas históricas y ofertas del
@@ -28,7 +26,6 @@ const SoyPropietario = () => {
             </p>
           </div>
           <div className={`${styles.customRow} ${styles.stepsContainer}`}>
-            {/* <img /> */}
             <p>
               Publicamos tu propiedad en los 43 portales inmobiliarios mas
               importantes del país, con sesión de fotos y videos profesionales
@@ -36,14 +33,12 @@ const SoyPropietario = () => {
             </p>
           </div>
           <div className={`${styles.customRow} ${styles.stepsContainer}`}>
-            {/* <img /> */}
             <p>
               Realizamos vistas con potenciales clientes a tu propiedad, para
               que recibas ofertas garantizadas.
             </p>
           </div>
           <div className={`${styles.customRow} ${styles.stepsContainer}`}>
-            {/* <img /> */}
             <p>
               ¡Conseguimos a tu comprador ideal! y te acompañamos en todo el
               proceso de postventa junto al respaldo de nuestro equipo legal
@@ -51,7 +46,7 @@ const SoyPropietario = () => {
             </p>
           </div>
         </main>
-      </section>
+      </section> */}
       <main>
         <h2>Conoce nuestros planes</h2>
       </main>
