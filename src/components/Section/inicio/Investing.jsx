@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HeaderSection from '../../Section/HeaderSection';
 import PropiedadesEnRemate from '../../../assets/img/Inicio/Principal/propiedades-en-remate.jpg';
-import FadeComponent from '../../Reveal/FadeComponent';
+// import FadeComponent from '../../Reveal/FadeComponent';
 import styles from '../../../../styles/components/Inicio/Investing.module.css';
 
 /** Bootstrap components */
@@ -12,12 +12,12 @@ import Col from 'react-bootstrap/Col';
 
 const Investing = () => {
   return (
-    <FadeComponent duration={500}>
+    // <FadeComponent duration={500}>
       <div className={styles.investingContainer}>
         <HeaderSection titleSection="¡Invierte en inmuebles con nosotros!" />
         <Row className={styles.rowPlanForm}>
           <Col sm={12} lg={12} xl={12} className={styles.investingCol}>
-            <FadeComponent left cascade opposite duration={500}>
+            {/* <FadeComponent left cascade opposite duration={500}> */}
               <div className={styles.investingColContent}>
                 <h2 className={styles.investingColTitle}>
                   Propiedades en remates
@@ -38,9 +38,9 @@ const Investing = () => {
                   </Link>
                 </div>
               </div>
-            </FadeComponent>
+            {/* </FadeComponent> */}
           </Col>
-          <FadeComponent right cascade opposite duration={1000}>
+          {/* <FadeComponent right cascade opposite duration={1000}> */}
             <div className={styles.investingColAbsolute}>
               <Image
                 src={PropiedadesEnRemate}
@@ -48,10 +48,10 @@ const Investing = () => {
                 className={styles.investingImg}
               />
             </div>
-          </FadeComponent>
+          {/* </FadeComponent> */}
         </Row>
       </div>
-    </FadeComponent>
+    // </FadeComponent>
   );
 };
 

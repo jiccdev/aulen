@@ -104,14 +104,9 @@
 }
 
 .right {
-  background: linear-gradient(
-      212.38deg,
-      var(--color-primary) 0%,
-      rgba(243, 134, 9, 0.71) 100%
-    ),
-    url('/src/assets/img/About/about.png');
   color: #fff;
   position: relative;
+  background: linear-gradient(-45deg, #452a5a, #452a5a);
 }
 
 .right .rightText {

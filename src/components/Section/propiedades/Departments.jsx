@@ -6,7 +6,7 @@ import AdvancedSearchForm from '../../Form/AdvancedSearchForm';
 import DepartmentItem from './DepartmentItem';
 import OutstandingProjects from './OutstandingProjects';
 import IconFilter from '../../IconFilter/IconFilter';
-import FadeComponent from '../../Reveal/FadeComponent';
+// import FadeComponent from '../../Reveal/FadeComponent';
 import { icons } from '../../Icons/index.js';
 import { orderDepartmentBy } from '../../../api/fakeData/selects';
 
@@ -95,7 +95,7 @@ const Departments = ({
       </div>
 
       <Col xl={9} className={styles.col}>
-        <FadeComponent bottom cascade duration={1400}>
+        {/* <FadeComponent bottom cascade duration={1400}> */}
           <Row className={styles.rowItems}>
             {newProperties &&
               newProperties.map((department) => (
@@ -109,7 +109,7 @@ const Departments = ({
                 />
               ))}
           </Row>
-        </FadeComponent>
+        {/* </FadeComponent> */}
 
         {/* PAGINATION */}
         <Card>

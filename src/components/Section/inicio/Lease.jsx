@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import HeaderSection from '../../Section/HeaderSection';
-import FadeComponent from '../../Reveal/FadeComponent';
+// import FadeComponent from '../../Reveal/FadeComponent';
 import { leaseData } from '../../../api/fakeData/lease';
 import styles from '../../../../styles/components/Inicio/Lease.module.css';
 
@@ -24,7 +24,7 @@ const Lease = () => {
                 xl={4}
                 className={styles.leaseCol}
               >
-                <FadeComponent bottom cascade opposite duration={1500}>
+                {/* <FadeComponent bottom cascade opposite duration={1500}> */}
                   <Card style={{ width: 'auto' }} className={styles.leaseCard}>
                     <Image
                       src={item?.src}
@@ -38,7 +38,7 @@ const Lease = () => {
                     </Card.Body>
                   </Card>
 
-                  <FadeComponent bottom cascade opposite duration={1500}>
+                  {/* <FadeComponent bottom cascade opposite duration={1500}> */}
                     <ul className={styles.leaseUl}>
                       {item?.itemsList?.length > 0
                         ? item?.itemsList?.map((item, index) => (
@@ -46,8 +46,8 @@ const Lease = () => {
                           ))
                         : null}
                     </ul>
-                  </FadeComponent>
-                </FadeComponent>
+                  {/* </FadeComponent> */}
+                {/* </FadeComponent> */}
               </Col>
             ))
           : null}

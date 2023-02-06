@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import RSelect from '../RSelect/RSelect';
-import FadeComponent from '../Reveal/FadeComponent';
+// import FadeComponent from '../Reveal/FadeComponent';
 import {
   typeOfOperation,
   typeOfProperty,
@@ -142,7 +142,7 @@ const AdvancedSearchForm = ({
   console.log('newProperties', newProperties);
 
   return (
-    <FadeComponent right cascade duration={500}>
+    // <FadeComponent right cascade duration={500}>
       <Form className={styles.form} onSubmit={onFormSubmit}>
         <Form.Group className="mb-3">
           <Form.Label className={styles.label}>Tipo de operación</Form.Label>
@@ -276,7 +276,7 @@ const AdvancedSearchForm = ({
           )}
         </Form.Group>
       </Form>
-    </FadeComponent>
+    // </FadeComponent>
   );
 };
 

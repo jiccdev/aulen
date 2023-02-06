@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import SoldHome from '../../../assets/img/SoldHome/sold-home.jpg';
-import FadeComponent from '../../Reveal/FadeComponent';
+// import FadeComponent from '../../Reveal/FadeComponent';
 import styles from '../../../../styles/components/Inicio/NewProperties.module.css';
 
 /** Bootstrap components */
@@ -11,11 +11,11 @@ import Col from 'react-bootstrap/Col';
 
 const NewProperties = () => {
   return (
-    <FadeComponent duration={500}>
+    // <FadeComponent duration={500}>
       <div className={styles.newPropertiesContainer}>
         <Row className={styles.rowNewProperties}>
           <Col sm={12} lg={6} xl={6} className={styles.newPropertiesCol}>
-            <FadeComponent left cascade opposite duration={1000}>
+            {/* <FadeComponent left cascade opposite duration={1000}> */}
               <div className={styles.newPropertiesColAbsolute}>
                 <Image
                   src={SoldHome}
@@ -23,11 +23,11 @@ const NewProperties = () => {
                   alt="imagen-nuevas-propiedades"
                 />
               </div>
-            </FadeComponent>
+            {/* </FadeComponent> */}
           </Col>
 
           <Col sm={12} lg={6} xl={6} className={styles.newPropertiesCol}>
-            <FadeComponent right cascade opposite duration={500}>
+            {/* <FadeComponent right cascade opposite duration={500}> */}
               <div className={styles.newPropertiesColContent}>
                 <h2 className={styles.newPropertiesColTitle}>
                   Propiedades nuevas
@@ -45,11 +45,11 @@ const NewProperties = () => {
                   </Link>
                 </div>
               </div>
-            </FadeComponent>
+            {/* </FadeComponent> */}
           </Col>
         </Row>
       </div>
-    </FadeComponent>
+    // </FadeComponent>
   );
 };
 

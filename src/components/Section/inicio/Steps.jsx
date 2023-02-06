@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import HeaderSection from '../../Section/HeaderSection';
-import FadeComponent from '../../Reveal/FadeComponent';
+// import FadeComponent from '../../Reveal/FadeComponent';
 import { stepsData } from '../../../api/fakeData/steps';
 import styles from '../../../../styles/components/Inicio/Steps.module.css';
 
@@ -24,7 +24,7 @@ const Steps = () => {
                 xl={3}
                 className={styles.stepCol}
               >
-                <FadeComponent bottom cascade opposite duration={1500}>
+                {/* <FadeComponent bottom cascade opposite duration={1500}> */}
                   <Card style={{ width: 'auto' }} className={styles.stepCard}>
                     <Card.Body className={styles.stepCardBody}>
                       <span className={styles.stepsIconContainer}>
@@ -45,18 +45,18 @@ const Steps = () => {
                       <Card.Text>{item?.description}</Card.Text>
                     </Card.Body>
                   </Card>
-                </FadeComponent>
+                {/* </FadeComponent> */}
               </Col>
             ))
           : null}
 
-        <FadeComponent bottom cascade opposite duration={1500}>
+        {/* <FadeComponent bottom cascade opposite duration={1500}> */}
           <div className={styles.publishForFreeContainer}>
             <Link href="/" className={styles.publishForFreeLink}>
               Publica gratis
             </Link>
           </div>
-        </FadeComponent>
+        {/* </FadeComponent> */}
       </Row>
     </div>
   );

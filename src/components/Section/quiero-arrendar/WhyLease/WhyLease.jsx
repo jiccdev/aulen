@@ -6,22 +6,22 @@ import { FeaturesData } from '../../../../api/fakeData/featuresCard'
 import { StepsData } from '../../../../api/fakeData/stepsLease'
 import { PublishingForm } from '../../../PublishingForm/PublishingForm.jsx';
 import { publishingFormData } from "../../../../api/fakeData/publishingForm"
-import FadeComponent from "../../../Reveal/FadeComponent"
+// import FadeComponent from "../../../Reveal/FadeComponent"
 export const WhyLease = () => {
   return (
     <main className={`${styles.customRow} ${styles.mainWhyContainer}`} >
 
       <div className={`${styles.customCol} ${styles.whyContainer}`}>
-        <FadeComponent left cascade>
+        {/* <FadeComponent left cascade> */}
           <h2 className={`${styles.whyH2}`} >¿Por qué arrendar tu propiedad con nosotros?</h2>
           <div className={`${styles.customRow} ${styles.featureCardContainer}`} >
             <FeatureCard features={FeaturesData} />
           </div>
-        </FadeComponent>
+        {/* </FadeComponent> */}
         <div>
-          <FadeComponent left cascade>
+          {/* <FadeComponent left cascade> */}
             <h3 className={`${styles.whyH3}`}>Arrienda en 3 simples pasos</h3>
-          </FadeComponent>
+          {/* </FadeComponent> */}
           <div className={`${styles.customRow} ${styles.stepsContainer}`} >
             <Steps steps={StepsData} />
           </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import FadeComponent from '../../components/Reveal/FadeComponent';
+// import FadeComponent from '../../components/Reveal/FadeComponent';
 import { icons } from '../../components/Icons';
 
 /** Bootstrap components */
@@ -31,7 +31,7 @@ const PlanFrom = ({ props }) => {
         ''
       )}
 
-      <FadeComponent right cascade opposite duration={1400}>
+      {/* <FadeComponent right cascade opposite duration={1400}> */}
         <Form className={styles.form} onSubmit={onSubmit} id="planForm">
           <h3>¡Despreocúpate por tú propiedad de inversión!</h3>
           <p>Completa el formulacio y entérate como</p>
@@ -89,7 +89,7 @@ const PlanFrom = ({ props }) => {
             </Button>
           </Form.Group>
         </Form>
-      </FadeComponent>
+      {/* </FadeComponent> */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import FadeComponent from '../Reveal/FadeComponent';
+// import FadeComponent from '../Reveal/FadeComponent';
 
 /** Bootstrap components */
 import Col from 'react-bootstrap/Col';
@@ -11,7 +11,7 @@ const CardItem = ({ plan }) => {
   const { id, name, supply, brokersInfo, characteristics } = plan;
   return (
     <Col xs={12} md={4} key={id} plan={plan} className={styles.colCard}>
-      <FadeComponent bottom cascade duration={1400}>
+      {/* <FadeComponent bottom cascade duration={1400}> */}
         <Card className={styles.card}>
           <Card.Body className={styles.cardBody}>
             <Card.Title className={styles.cardTitle}>{name}</Card.Title>
@@ -40,7 +40,7 @@ const CardItem = ({ plan }) => {
             </Card.Footer>
           </Card.Body>
         </Card>
-      </FadeComponent>
+      {/* </FadeComponent> */}
     </Col>
   );
 };

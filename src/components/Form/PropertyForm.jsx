@@ -9,7 +9,7 @@ import Form from 'react-bootstrap/Form';
 import styles from '../../../styles/components/Forms/PlanForm.module.css';
 import stylesModal from '../../../styles/components/Modal/PlanForm.module.css';
 import { Col } from 'react-bootstrap';
-import FadeComponent from '../Reveal/FadeComponent';
+// import FadeComponent from '../Reveal/FadeComponent';
 
 const PropertyForm = ({ titleContentForm, textAlign, subtitle, ...props }) => {
   const { haveAction1, haveAction2 } = { ...props };
@@ -37,7 +37,7 @@ const PropertyForm = ({ titleContentForm, textAlign, subtitle, ...props }) => {
         ''
       )}
 
-      <FadeComponent right cascade opposite duration={1400}>
+      {/* <FadeComponent right cascade opposite duration={1400}> */}
         <Form className={styles.form} onSubmit={onSubmit} id="planForm">
           <h3
             style={{
@@ -122,7 +122,7 @@ const PropertyForm = ({ titleContentForm, textAlign, subtitle, ...props }) => {
             </Link>
           </Form.Group>
         </Form>
-      </FadeComponent>
+      {/* </FadeComponent> */}
     </div>
   );
 };

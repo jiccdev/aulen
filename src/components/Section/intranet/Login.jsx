@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-// import About from '../../../assets/img/About/about.png';
 import About from '../../../assets/img/Inicio/Principal/empacando.webp';
 
 import styles from '../../../../styles/components/Intranet/Login.module.css';
@@ -15,9 +14,7 @@ const Login = () => {
               <h3>INICIAR SESIÓN</h3>
               <input type="text" name="user" placeholder="Usuario" />
               <input type="text" name="password" placeholder="Contraseña" />
-              <button class="submit" className={styles.submit}>
-                Iniciar sesión
-              </button>
+              <button className={styles.submit}>Iniciar sesión</button>
             </form>
           </div>
         </div>

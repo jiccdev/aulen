@@ -3,7 +3,7 @@ import Image from 'next/image';
 import sofa from '../../../../img/soy-propietario/sofa.jpg';
 import styles from '../../../../../styles/components/soy-propietario/quiero-arrendar/HeroSection/HeroSection.module.css';
 import OurService from '../../../OurService/OurService';
-import FadeComponent from '../../../Reveal/FadeComponent';
+// import FadeComponent from '../../../Reveal/FadeComponent';
 
 export const HeroSection = () => {
   return (
@@ -11,7 +11,7 @@ export const HeroSection = () => {
       <div className={`${styles.customRow} ${styles.servicesContainer}`}>
         <OurService />
       </div>
-      <FadeComponent right cascade>
+      {/* <FadeComponent right cascade> */}
         <div className={`${styles.customCol} ${styles.headerContainer}`}>
           <h1 className={`${styles.heroH1}`}>
             ¡Disfruta de la tranquilidad de arrendar tu propiedad con Aulen!
@@ -22,7 +22,7 @@ export const HeroSection = () => {
             className={`${styles.heroImage}`}
           />
         </div>
-      </FadeComponent>
+      {/* </FadeComponent> */}
     </section>
   );
 };
